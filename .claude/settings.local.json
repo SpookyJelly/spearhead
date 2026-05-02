@@ -3,7 +3,14 @@
     "allow": [
       "Bash(npm create *)",
       "Bash(npm install *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "WebSearch",
+      "WebFetch(domain:assets.warhammer-community.com)",
+      "WebFetch(domain:warhammerguild.com)",
+      "WebFetch(domain:ttgamingdiary.wordpress.com)",
+      "WebFetch(domain:ageofminiatures.com)",
+      "WebFetch(domain:1d6chan.miraheze.org)",
+      "WebFetch(domain:www.warhammer-community.com)"
     ]
   }
 }
