@@ -177,7 +177,8 @@ export const factions = [
         notRecommended: [],
         units: [],
         playstyle: "",
-        imagePath: "/images/factions/daughters-of-khaine/heartflayer-troupe.jpg",
+        imagePath:
+          "/images/factions/daughters-of-khaine/heartflayer-troupe.jpg",
       },
       {
         id: "khainite-shadow-conven",
@@ -189,7 +190,8 @@ export const factions = [
         notRecommended: [],
         units: [],
         playstyle: "",
-        imagePath: "/images/factions/daughters-of-khaine/khainite-shadow-conven.jpg",
+        imagePath:
+          "/images/factions/daughters-of-khaine/khainite-shadow-conven.jpg",
       },
     ],
   },
@@ -597,6 +599,32 @@ export const factions = [
     ],
   },
   {
+    id: "ironjawz",
+    name: "Orruk Warclans — Ironjawz",
+    alliance: "destruction",
+    tagline: "가장 크고, 가장 녹색인 자가 지배한다",
+    lore: `아이언조즈는 오르루크 중에서도 가장 크고 강력한 자들이다. 도끼로 직접 두드려 만든 거친 갑옷을 두르고, 파괴와 전쟁 그 자체인 고르카모르카 신을 섬긴다. 그들에게 전투는 종교이자 즐거움이다.
+
+메가보스 고르그룹과 같은 위대한 전쟁군주 아래 뭉친 아이언조즈는 영역을 가리지 않고 쳐들어가 가장 강한 적을 찾아 싸운다. 그들은 이기기 위해 싸우는 것이 아니라, 싸움 자체를 즐기기 위해 싸운다.`,
+    color: "#1a5a1a",
+    accentColor: "#c8a84c",
+    imagePath: "/images/factions/kruleboyz/banner.webp",
+    spearheads: [
+      {
+        id: "swampskulka-gang",
+        name: "Swampskulka Gang",
+        gwUrl: "https://www.games-workshop.com",
+        description: "",
+        stats: { 공격력: 5, 생존력: 5, 기동성: 5, 미션수행: 5, 유틸리티: 5 },
+        recommended: [],
+        notRecommended: [],
+        units: [],
+        playstyle: "",
+        imagePath: "/images/factions/kruleboyz/swampskulka-gang.jpg",
+      },
+    ],
+  },
+  {
     id: "gloomspite-gitz",
     name: "Gloomspite Gitz",
     alliance: "destruction",
@@ -689,7 +717,7 @@ export const factions = [
     lore: "",
     color: "#3a5a7a",
     accentColor: "#c9a84c",
-    imagePath: "/images/factions/cities-of-sigmar/banner.jpg",
+    imagePath: "/images/factions/cities-of-sigmar/banner.webp",
     spearheads: [
       {
         id: "castellite-company",
@@ -725,7 +753,7 @@ export const factions = [
     lore: "",
     color: "#8a3a10",
     accentColor: "#f0a030",
-    imagePath: "/images/factions/fyreslayers/banner.jpg",
+    imagePath: "/images/factions/fyreslayers/banner.webp",
     spearheads: [
       {
         id: "saga-axeband",
@@ -749,7 +777,7 @@ export const factions = [
     lore: "",
     color: "#0d4060",
     accentColor: "#2ab8c8",
-    imagePath: "/images/factions/idoneth-deepkin/banner.jpg",
+    imagePath: "/images/factions/idoneth-deepkin/banner.webp",
     spearheads: [
       {
         id: "akhelian-tide-guard",
@@ -785,7 +813,7 @@ export const factions = [
     lore: "",
     color: "#2a5a7a",
     accentColor: "#c0d0e0",
-    imagePath: "/images/factions/kharadron-overlords/banner.jpg",
+    imagePath: "/images/factions/kharadron-overlords/banner.webp",
     spearheads: [
       {
         id: "skyhammer-task-force",
@@ -797,7 +825,8 @@ export const factions = [
         notRecommended: [],
         units: [],
         playstyle: "",
-        imagePath: "/images/factions/kharadron-overlords/skyhammer-task-force.jpg",
+        imagePath:
+          "/images/factions/kharadron-overlords/skyhammer-task-force.jpg",
       },
       {
         id: "grundstok-trailblazers",
@@ -809,7 +838,8 @@ export const factions = [
         notRecommended: [],
         units: [],
         playstyle: "",
-        imagePath: "/images/factions/kharadron-overlords/grundstok-trailblazers.jpg",
+        imagePath:
+          "/images/factions/kharadron-overlords/grundstok-trailblazers.jpg",
       },
     ],
   },
@@ -821,7 +851,7 @@ export const factions = [
     lore: "",
     color: "#8a7a20",
     accentColor: "#f0e080",
-    imagePath: "/images/factions/lumineth-realm-lords/banner.jpg",
+    imagePath: "/images/factions/lumineth-realm-lords/banner.webp",
     spearheads: [
       {
         id: "glittering-phalanx",
@@ -833,7 +863,8 @@ export const factions = [
         notRecommended: [],
         units: [],
         playstyle: "",
-        imagePath: "/images/factions/lumineth-realm-lords/glittering-phalanx.jpg",
+        imagePath:
+          "/images/factions/lumineth-realm-lords/glittering-phalanx.jpg",
       },
     ],
   },
@@ -845,7 +876,7 @@ export const factions = [
     lore: "",
     color: "#1a5a5a",
     accentColor: "#40c0a0",
-    imagePath: "/images/factions/seraphon/banner.jpg",
+    imagePath: "/images/factions/seraphon/banner.webp",
     spearheads: [
       {
         id: "starscale-warhost",
@@ -881,7 +912,7 @@ export const factions = [
     lore: "",
     color: "#2a5a1a",
     accentColor: "#80c840",
-    imagePath: "/images/factions/sylvaneth/banner.jpg",
+    imagePath: "/images/factions/sylvaneth/banner.webp",
     spearheads: [
       {
         id: "bitterbark-corpse",
@@ -919,7 +950,7 @@ export const factions = [
     lore: "",
     color: "#8a1a1a",
     accentColor: "#c83030",
-    imagePath: "/images/factions/blades-of-khorne/banner.jpg",
+    imagePath: "/images/factions/blades-of-khorne/banner.webp",
     spearheads: [
       {
         id: "bloodbound-gore-pilgrims",
@@ -931,7 +962,8 @@ export const factions = [
         notRecommended: [],
         units: [],
         playstyle: "",
-        imagePath: "/images/factions/blades-of-khorne/bloodbound-gore-pilgrims.jpg",
+        imagePath:
+          "/images/factions/blades-of-khorne/bloodbound-gore-pilgrims.jpg",
       },
       {
         id: "fangs-of-the-blood-god",
@@ -943,7 +975,8 @@ export const factions = [
         notRecommended: [],
         units: [],
         playstyle: "",
-        imagePath: "/images/factions/blades-of-khorne/fangs-of-the-blood-god.jpg",
+        imagePath:
+          "/images/factions/blades-of-khorne/fangs-of-the-blood-god.jpg",
       },
     ],
   },
@@ -955,7 +988,7 @@ export const factions = [
     lore: "",
     color: "#1a2a8a",
     accentColor: "#60a0f0",
-    imagePath: "/images/factions/disciples-of-tzeentch/banner.jpg",
+    imagePath: "/images/factions/disciples-of-tzeentch/banner.webp",
     spearheads: [
       {
         id: "fluxblade-coven",
@@ -979,7 +1012,7 @@ export const factions = [
     lore: "",
     color: "#6a1a6a",
     accentColor: "#d060c0",
-    imagePath: "/images/factions/hedonites-of-slaanesh/banner.jpg",
+    imagePath: "/images/factions/hedonites-of-slaanesh/banner.webp",
     spearheads: [
       {
         id: "blades-of-the-lurid-dream",
@@ -991,7 +1024,8 @@ export const factions = [
         notRecommended: [],
         units: [],
         playstyle: "",
-        imagePath: "/images/factions/hedonites-of-slaanesh/blades-of-the-lurid-dream.jpg",
+        imagePath:
+          "/images/factions/hedonites-of-slaanesh/blades-of-the-lurid-dream.jpg",
       },
     ],
   },
@@ -1003,7 +1037,7 @@ export const factions = [
     lore: "",
     color: "#5a3a10",
     accentColor: "#c07030",
-    imagePath: "/images/factions/helsmiths-of-hashut/banner.jpg",
+    imagePath: "/images/factions/helsmiths-of-hashut/banner.webp",
     spearheads: [
       {
         id: "helforge-host",
@@ -1027,7 +1061,7 @@ export const factions = [
     lore: "",
     color: "#4a5a1a",
     accentColor: "#90b030",
-    imagePath: "/images/factions/maggotkin-of-nurgle/banner.jpg",
+    imagePath: "/images/factions/maggotkin-of-nurgle/banner.webp",
     spearheads: [
       {
         id: "bleak-host",
@@ -1065,7 +1099,7 @@ export const factions = [
     lore: "",
     color: "#5a3a20",
     accentColor: "#c09060",
-    imagePath: "/images/factions/flesh-eater-courts/banner.jpg",
+    imagePath: "/images/factions/flesh-eater-courts/banner.webp",
     spearheads: [
       {
         id: "carrion-retainers",
@@ -1101,7 +1135,7 @@ export const factions = [
     lore: "",
     color: "#6a5a20",
     accentColor: "#c8b060",
-    imagePath: "/images/factions/ossiarch-bonereapers/banner.jpg",
+    imagePath: "/images/factions/ossiarch-bonereapers/banner.webp",
     spearheads: [
       {
         id: "mortisan-elite",
@@ -1125,7 +1159,8 @@ export const factions = [
         notRecommended: [],
         units: [],
         playstyle: "",
-        imagePath: "/images/factions/ossiarch-bonereapers/tithe-reaper-echelon.jpg",
+        imagePath:
+          "/images/factions/ossiarch-bonereapers/tithe-reaper-echelon.jpg",
       },
       {
         id: "kavalos-vanguard",
@@ -1151,7 +1186,7 @@ export const factions = [
     lore: "",
     color: "#5a4a20",
     accentColor: "#c09040",
-    imagePath: "/images/factions/ogor-mawtribes/banner.jpg",
+    imagePath: "/images/factions/ogor-mawtribes/banner.webp",
     spearheads: [
       {
         id: "tyrants-bellow",
@@ -1187,7 +1222,7 @@ export const factions = [
     lore: "",
     color: "#4a4a3a",
     accentColor: "#a09060",
-    imagePath: "/images/factions/sons-of-behemat/banner.jpg",
+    imagePath: "/images/factions/sons-of-behemat/banner.webp",
     spearheads: [
       {
         id: "wallsmasher-stomp",
