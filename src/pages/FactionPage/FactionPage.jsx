@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { getFactionById, GRAND_ALLIANCES } from '../../data/factions'
+import { assetUrl } from '../../utils/asset'
 import styles from './FactionPage.module.css'
 
 export default function FactionPage() {
@@ -16,7 +17,7 @@ export default function FactionPage() {
       <div className={styles.banner} style={{ '--faction-color': faction.color }}>
         <div className={styles.bannerImage}>
           <img
-            src={faction.imagePath}
+            src={assetUrl(faction.imagePath)}
             alt={faction.name}
             onError={e => {
               e.currentTarget.parentElement.classList.add(styles.bannerImageFallback)
@@ -56,30 +57,40 @@ export default function FactionPage() {
 
         <div className={styles.divider} />
 
-        {/* Spearhead link */}
-        <section className={styles.spearheadTeaser}>
-          <div className={styles.teaserContent}>
-            <p className={styles.teaserEyebrow}>스피어헤드 아미</p>
-            <h2 className={styles.teaserTitle}>{faction.spearhead.name}</h2>
-            <p className={styles.teaserDesc}>{faction.spearhead.description}</p>
-            <Link
-              to={`/faction/${faction.id}/spearhead`}
-              className={styles.teaserBtn}
-              style={{ '--btn-color': faction.color, '--btn-accent': faction.accentColor }}
-            >
-              <span>스피어헤드 아미 보기</span>
-              <span className={styles.teaserArrow} aria-hidden="true">→</span>
-            </Link>
+        {/* Spearhead links */}
+        <section>
+          <div className={styles.sectionHeader}>
+            <span className={styles.sectionLabel}>스피어헤드 아미</span>
+            <div className={styles.sectionLine} />
           </div>
-          <div className={styles.teaserImage}>
-            <img
-              src={faction.spearhead.imagePath}
-              alt={faction.spearhead.name}
-              onError={e => {
-                e.currentTarget.parentElement.classList.add(styles.teaserImageFallback)
-                e.currentTarget.style.display = 'none'
-              }}
-            />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            {faction.spearheads.map(spearhead => (
+              <div key={spearhead.id} className={styles.spearheadTeaser}>
+                <div className={styles.teaserContent}>
+                  <p className={styles.teaserEyebrow}>스피어헤드 아미</p>
+                  <h2 className={styles.teaserTitle}>{spearhead.name}</h2>
+                  <p className={styles.teaserDesc}>{spearhead.description}</p>
+                  <Link
+                    to={`/faction/${faction.id}/spearhead/${spearhead.id}`}
+                    className={styles.teaserBtn}
+                    style={{ '--btn-color': faction.color, '--btn-accent': faction.accentColor }}
+                  >
+                    <span>스피어헤드 아미 보기</span>
+                    <span className={styles.teaserArrow} aria-hidden="true">→</span>
+                  </Link>
+                </div>
+                <div className={styles.teaserImage}>
+                  <img
+                    src={assetUrl(spearhead.imagePath)}
+                    alt={spearhead.name}
+                    onError={e => {
+                      e.currentTarget.parentElement.classList.add(styles.teaserImageFallback)
+                      e.currentTarget.style.display = 'none'
+                    }}
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </div>

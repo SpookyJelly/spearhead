@@ -11,7 +11,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/faction/:id" element={<FactionPage />} />
-          <Route path="/faction/:id/spearhead" element={<SpearheadPage />} />
+          <Route path="/faction/:id/spearhead/:spearheadId" element={<SpearheadPage />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>

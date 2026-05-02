@@ -1,15 +1,16 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
-import { getFactionById, GRAND_ALLIANCES } from '../../data/factions'
+import { getFactionById, getSpearheadById, GRAND_ALLIANCES } from '../../data/factions'
+import { assetUrl } from '../../utils/asset'
 import RadarChart from '../../components/RadarChart/RadarChart'
 import styles from './SpearheadPage.module.css'
 
 export default function SpearheadPage() {
-  const { id } = useParams()
+  const { id, spearheadId } = useParams()
   const faction = getFactionById(id)
+  const spearhead = getSpearheadById(id, spearheadId)
 
-  if (!faction) return <Navigate to="/" replace />
+  if (!faction || !spearhead) return <Navigate to="/" replace />
 
-  const { spearhead } = faction
   const alliance = Object.values(GRAND_ALLIANCES).find(a => a.id === faction.alliance)
 
   return (
@@ -61,7 +62,7 @@ export default function SpearheadPage() {
         </div>
         <div className={styles.headerImage}>
           <img
-            src={spearhead.imagePath}
+            src={assetUrl(spearhead.imagePath)}
             alt={spearhead.name}
             onError={e => {
               e.currentTarget.parentElement.classList.add(styles.headerImageFallback)

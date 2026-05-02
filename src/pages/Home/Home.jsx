@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { factions, GRAND_ALLIANCES } from '../../data/factions'
+import { assetUrl } from '../../utils/asset'
 import styles from './Home.module.css'
 
 const allianceOrder = ['order', 'chaos', 'death', 'destruction']
@@ -76,7 +77,7 @@ function FactionCard({ faction }) {
     >
       <div className={styles.cardImage}>
         <img
-          src={faction.imagePath}
+          src={assetUrl(faction.imagePath)}
           alt={faction.name}
           onError={e => {
             e.currentTarget.parentElement.classList.add(styles.imageFallback)

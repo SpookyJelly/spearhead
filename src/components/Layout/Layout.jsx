@@ -1,8 +1,14 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Sidebar from '../Sidebar/Sidebar'
 import styles from './Layout.module.css'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
 
 export default function Layout() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -10,6 +16,7 @@ export default function Layout() {
 
   return (
     <div className={styles.root}>
+      <ScrollToTop />
       <Navbar
         onMenuToggle={() => setSidebarOpen(o => !o)}
         sidebarOpen={sidebarOpen}
