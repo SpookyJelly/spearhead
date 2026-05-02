@@ -1,0 +1,297 @@
+export const GRAND_ALLIANCES = {
+  ORDER: { id: 'order', label: 'Grand Alliance Order', color: '#1a6fce', accent: '#c9a84c' },
+  CHAOS: { id: 'chaos', label: 'Grand Alliance Chaos', color: '#9b1a1a', accent: '#e05a1a' },
+  DEATH: { id: 'death', label: 'Grand Alliance Death', color: '#5a1a8f', accent: '#2ab8b8' },
+  DESTRUCTION: { id: 'destruction', label: 'Grand Alliance Destruction', color: '#2d6e2d', accent: '#c8a84c' },
+}
+
+export const factions = [
+  {
+    id: 'stormcast-eternals',
+    name: 'Stormcast Eternals',
+    alliance: 'order',
+    tagline: '시그마르의 천둥 전사들',
+    lore: `시그마르 신이 직접 단련한 불멸의 전사들. 죽음을 맞이할 때마다 아지르의 하늘 신전으로 소환되어 다시 단련되고 부활한다. 신성한 시그마리트 갑옷으로 무장한 그들은 재앙의 시대를 거치며 생존한 모든 영역을 수호하기 위해 파견된다.
+
+하늘을 가르는 천둥과 함께 강림하는 스톰캐스트 이터널즈는 죽음 그 자체도 두려워하지 않는다. 하지만 거듭되는 부활 속에서 그들은 인간이었던 자신의 기억과 감정을 조금씩 잃어간다 — 이것이 시그마르가 그들에게 지운 진정한 대가다.`,
+    color: '#1a6fce',
+    accentColor: '#c9a84c',
+    imagePath: '/images/factions/stormcast/banner.jpg',
+    spearhead: {
+      name: 'Thunderstrike Exemplars',
+      gwUrl: 'https://www.games-workshop.com/en-WW/Stormcast-Eternals-3',
+      description: `천둥강림 예시단은 스톰캐스트 이터널즈의 정예 선봉대다. 리버레이터 전사들이 방패의 벽을 이루는 동안, 라이트오어 기사들이 하늘에서 급강하하며 적진을 분쇄한다. 천공의 맹세를 지키는 그들의 선봉 돌격은 적군에게 공포와 혼란을 안긴다.`,
+      stats: { 공격력: 7, 생존력: 8, 기동성: 5, 미션수행: 7, 유틸리티: 7 },
+      recommended: [
+        '묵직하고 안정적인 전선 전투를 즐기는 분',
+        '강인한 생존력으로 차근차근 전장을 장악해나가는 플레이를 선호하는 분',
+        '황금빛 시그마리트 갑옷의 웅장한 미니어처를 페인팅하고 싶은 분',
+      ],
+      notRecommended: [
+        '빠른 기동과 기습으로 현란한 전술을 구사하고 싶은 분',
+        '수많은 모델로 압도적인 물량 공세를 즐기는 분',
+      ],
+      units: [
+        { name: 'Lord-Imperatant', role: '지휘관', count: 1, description: '선봉 돌격을 이끄는 천둥 군주' },
+        { name: 'Liberators', role: '핵심 전력', count: 10, description: '시그마리트 방패와 워해머로 무장한 정예 보병' },
+        { name: 'Prosecutors', role: '기동 전력', count: 3, description: '하늘을 날며 천둥 창을 투척하는 날개 달린 전사들' },
+        { name: 'Vindictors', role: '돌격 전력', count: 5, description: '장창으로 적진을 꿰뚫는 돌격 창병' },
+      ],
+      playstyle: '균형잡힌 라인 전투에 하늘에서의 기동력을 결합한 전형적인 Order 전력. 정면 돌파보다는 우세한 위치를 선점하는 전략을 선호한다.',
+      imagePath: '/images/factions/stormcast/spearhead.jpg',
+    },
+  },
+  {
+    id: 'daughters-of-khaine',
+    name: 'Daughters of Khaine',
+    alliance: 'order',
+    tagline: '피와 환희의 여신도들',
+    lore: `케인의 피로 물들인 숭배자들로 이루어진 아엘프 전사 집단. 그들의 신전은 끝없는 제의와 피로 가득하며, 전투는 그 자체로 신성한 행위다. 그들이 섬기는 신 케인은 언제나 더 많은 피를 원한다 — 그리고 그의 딸들은 기꺼이 그 욕망을 채운다.
+
+메두사 하이 가디스트가 이끄는 무희 전사들은 전장 위를 춤추듯 질주하며, 그 우아함 뒤에 숨은 잔혹함으로 적을 도살한다. 전투가 길어질수록 그들은 점점 광기에 가까운 황홀경에 빠져든다.`,
+    color: '#8f1a3c',
+    accentColor: '#e84c6e',
+    imagePath: '/images/factions/daughters-of-khaine/banner.jpg',
+    spearhead: {
+      name: 'Cauldron Guard',
+      gwUrl: 'https://www.games-workshop.com/en-WW/Daughters-of-Khaine',
+      description: `케인의 성스러운 피 가마솥을 중심으로 결집한 수호 전단. 헤카티 크로넨이 선혈의 의식을 집전하는 동안, 위치아엘프 전사들이 사방을 질주하며 적을 쓰러뜨린다. 전투가 고조될수록 케인의 가호가 더욱 강렬해진다.`,
+      stats: { 공격력: 9, 생존력: 5, 기동성: 8, 미션수행: 6, 유틸리티: 6 },
+      recommended: [
+        '전광석화 같은 속도로 적진을 붕괴시키는 공격적인 플레이를 즐기는 분',
+        '높은 리스크와 짜릿한 하이 리워드의 긴장감을 원하는 분',
+        '역동적이고 화려한 아엘프 전사 미니어처를 페인팅하고 싶은 분',
+      ],
+      notRecommended: [
+        '안정적인 전선을 유지하며 방어적으로 버티는 플레이를 선호하는 분',
+        '실수를 만회할 여유가 있는 느긋한 운용 방식을 원하는 분',
+      ],
+      units: [
+        { name: 'Hag Queen on Cauldron of Blood', role: '지휘관', count: 1, description: '피 가마솥을 타고 전장을 지휘하는 마녀 여왕' },
+        { name: 'Witch Aelves', role: '핵심 전력', count: 10, description: '두 자루의 칼을 들고 광란의 춤을 추며 싸우는 여전사들' },
+        { name: 'Khinerai Lifetakers', role: '기동 전력', count: 5, description: '하늘에서 급강하하여 낫으로 적을 베어 쓰러뜨리는 날개 전사' },
+        { name: 'Blood Stalkers', role: '원거리 전력', count: 5, description: '심장을 꿰뚫는 피의 화살을 쏘는 저격수' },
+      ],
+      playstyle: '극단적인 공격 속도와 다수의 공격 횟수가 특징. 적을 압도적인 기세로 몰아붙이되, 방어력이 낮으므로 선제권 확보가 필수다.',
+      imagePath: '/images/factions/daughters-of-khaine/spearhead.jpg',
+    },
+  },
+  {
+    id: 'slaves-to-darkness',
+    name: 'Slaves to Darkness',
+    alliance: 'chaos',
+    tagline: '어둠의 신들을 섬기는 전사들',
+    lore: `카오스의 어둠 신들 — 코른, 티젠치, 너글, 슬라네쉬 — 모두를 또는 그 누구도 섬기지 않는 전사들의 연맹. 그들은 오직 정복과 파괴만을 추구하며, 어둠의 힘을 통해 카오스 스폰이나 다에몬 프린스로 거듭나기를 꿈꾼다.
+
+에버코즌 스틸 소드를 이끄는 아르카온의 군대는 모든 영역을 짓밟으며 시그마르의 창조물을 차례차례 무너뜨리고 있다. 그들에게 패배란 없다 — 오직 더 강해지거나, 카오스로 녹아드는 것뿐이다.`,
+    color: '#5a1a1a',
+    accentColor: '#c84c1a',
+    imagePath: '/images/factions/slaves-to-darkness/banner.jpg',
+    spearhead: {
+      name: "Godsworn Champions of Ruin",
+      gwUrl: 'https://www.games-workshop.com/en-WW/Slaves-to-Darkness',
+      description: `어둠의 신들에게 축복받은 정예 전사단. 카오스 워리어들이 강철 같은 방어선을 유지하는 동안, 나이트메어 기병대가 측면을 강타한다. 카오스 로드의 오라가 팀 전체에 카오스의 힘을 불어넣는다.`,
+      stats: { 공격력: 7, 생존력: 9, 기동성: 4, 미션수행: 6, 유틸리티: 5 },
+      recommended: [
+        '무너지지 않는 강철 방어선으로 상대를 천천히 압박하는 플레이를 즐기는 분',
+        '어둡고 묵직한 카오스 워리어 미니어처의 미학에 끌리는 분',
+        '게임 내내 굳건히 버티다 결정적 순간에 역전하는 쾌감을 원하는 분',
+      ],
+      notRecommended: [
+        '빠른 이동과 기동전으로 전장을 종횡무진 누비고 싶은 분',
+        '원거리 화력과 다양한 전략적 옵션으로 유연하게 운용하고 싶은 분',
+      ],
+      units: [
+        { name: 'Chaos Lord on Karkadrak', role: '지휘관', count: 1, description: '거대한 카르카드락을 타고 전장을 누비는 카오스 군주' },
+        { name: 'Chaos Warriors', role: '핵심 전력', count: 10, description: '카오스 강철 갑옷을 두른 무적의 전사들' },
+        { name: 'Chaos Knights', role: '돌격 전력', count: 5, description: '나이트메어 군마를 타고 돌진하는 기사들' },
+        { name: 'Chaos Chosen', role: '정예 전력', count: 5, description: '어둠 신들의 직접적인 가호를 받은 최정예 전사' },
+      ],
+      playstyle: '두터운 갑옷과 높은 내구성으로 전선을 유지하며, 기병의 측면 기동으로 적을 포위한다. 느리지만 일단 접근하면 압도적인 전투력을 발휘한다.',
+      imagePath: '/images/factions/slaves-to-darkness/spearhead.jpg',
+    },
+  },
+  {
+    id: 'skaven',
+    name: 'Skaven',
+    alliance: 'chaos',
+    tagline: '위대한 뿔 달린 쥐신의 쥐 군단',
+    lore: `스케이븐은 언더웨이의 어둠 속에 숨어 영역들의 기반을 무너뜨리는 쥐인간 종족이다. 그들의 신 — 위대한 뿔 달린 쥐 — 는 카오스 신들과 동등한 권능을 자랑하며, 스케이븐은 숫자와 비열한 기술로 어떤 적도 압도한다.
+
+클랜 스커머스와 기타 클랜들은 끊임없이 서로 배신하고 다투지만, 외부의 적이 나타나면 쥐의 물결처럼 밀려들어 모든 것을 갉아먹는다. 기괴한 워프스톤 기술과 쥐오거 등의 돌연변이 괴물이 그들의 무기다.`,
+    color: '#2a4a1a',
+    accentColor: '#7fc41a',
+    imagePath: '/images/factions/skaven/banner.jpg',
+    spearhead: {
+      name: 'Screaming Swarm',
+      gwUrl: 'https://www.games-workshop.com/en-WW/Skaven-1',
+      description: `수십 마리의 클랜래트가 쏟아지는 사이, 워프록 화염포와 워프 번개 대포가 적을 녹여버린다. 스케이뱅 위치닥터의 비열한 마법이 혼란을 가중시키고, 래트-오거가 쓸고 지나간 자리엔 아무것도 남지 않는다.`,
+      stats: { 공격력: 6, 생존력: 4, 기동성: 7, 미션수행: 8, 유틸리티: 9 },
+      recommended: [
+        '쥐 떼처럼 전장을 뒤덮는 압도적인 물량전의 쾌감을 원하는 분',
+        '예측 불가한 혼돈 속에서 기회를 낚아채는 즉흥적인 플레이를 즐기는 분',
+        '기괴하고 독창적인 워프스톤 기계와 돌연변이 미니어처에 매력을 느끼는 분',
+      ],
+      notRecommended: [
+        '정밀하게 계획을 세우고 예측 가능한 방식으로 실행하고 싶은 분',
+        '소수의 강력한 정예 모델로 깔끔하게 운용하고 싶은 분',
+      ],
+      units: [
+        { name: 'Warlock Engineer', role: '지휘관', count: 1, description: '워프스톤 기술의 광신도적 엔지니어' },
+        { name: 'Clanrats', role: '핵심 전력', count: 20, description: '수로 압도하는 무수한 쥐인간 전사들' },
+        { name: 'Rat Ogors', role: '돌격 전력', count: 2, description: '기계 개조로 더욱 흉포해진 쥐오거' },
+        { name: 'Warpfire Thrower', role: '지원 전력', count: 1, description: '워프스톤 화염을 뿜어내는 특수 병기' },
+      ],
+      playstyle: '압도적인 수적 우위와 화력 지원의 조합. 클랜래트의 물결로 전선을 채우고 후방에서 워프스톤 병기가 지원 사격한다. 개별 전투력은 낮지만 수가 많다.',
+      imagePath: '/images/factions/skaven/spearhead.jpg',
+    },
+  },
+  {
+    id: 'nighthaunt',
+    name: 'Nighthaunt',
+    alliance: 'death',
+    tagline: '형벌로 묶인 망령들의 군단',
+    lore: `나이트온트는 나이트 신 나이트의 의지에 따라 활동하는 유령 군단이다. 살아있을 때의 죄악으로 저주받아 유령 사슬에 묶인 영혼들이 나이트의 병기로 재탄생한다. 죽음도, 물리적 공격도 그들을 막을 수 없다.
+
+나이트의 군주 올린더 공주가 이끄는 이 군단은 살아있는 모든 것에 공포를 심어준다. 그들이 지나간 자리엔 차가운 안개만 남고, 살아있는 자들은 영혼이 빠져나간 듯한 공포만을 기억한다.`,
+    color: '#1a3a5a',
+    accentColor: '#4adfcf',
+    imagePath: '/images/factions/nighthaunt/banner.jpg',
+    spearhead: {
+      name: 'Emerald Host',
+      gwUrl: 'https://www.games-workshop.com/en-WW/Nighthaunt-1',
+      description: `에메랄드 빛 안개 속에서 솟아오르는 형벌의 망령단. 크레이큰로어 기사단장이 사슬을 울리며 나타나고, 체인래스프 호드가 물질화하여 적을 에워싼다. 그들은 갑옷도 방패도 뚫고 지나가는 부자연스러운 존재들이다.`,
+      stats: { 공격력: 5, 생존력: 7, 기동성: 8, 미션수행: 7, 유틸리티: 6 },
+      recommended: [
+        '공포와 심리전으로 상대의 의지를 서서히 무너뜨리는 플레이를 즐기는 분',
+        '갑옷을 뚫고 지나가는 유령 특유의 독특한 메커니즘에 흥미를 느끼는 분',
+        '에테리얼하고 음울한 유령 미니어처의 미학에 매료된 분',
+      ],
+      notRecommended: [
+        '빠른 타격으로 적을 순식간에 제압하는 화끈한 플레이를 원하는 분',
+        '견고하고 예측 가능한 생존력을 바탕으로 안정적으로 운용하고 싶은 분',
+      ],
+      units: [
+        { name: 'Knight of Shrouds', role: '지휘관', count: 1, description: '죽음의 전장을 지휘하는 수의에 싸인 기사' },
+        { name: 'Chainrasp Horde', role: '핵심 전력', count: 20, description: '사슬에 묶인 원한 서린 망령의 무리' },
+        { name: 'Grimghast Reapers', role: '정예 전력', count: 10, description: '낫으로 생명을 베어 수확하는 사신 망령' },
+        { name: 'Glaivewraith Stalkers', role: '돌격 전력', count: 4, description: '거대한 장창을 들고 적을 추적하는 수확자 망령' },
+      ],
+      playstyle: '적의 방어를 무시하는 에테리얼(ethereal) 능력이 핵심. 물리 공격에 강한 세이브 수정자를 가지지만 데미지 출력이 낮으므로, 수로 누르며 적을 소모시키는 전략을 구사한다.',
+      imagePath: '/images/factions/nighthaunt/spearhead.jpg',
+    },
+  },
+  {
+    id: 'soulblight-gravelords',
+    name: 'Soulblight Gravelords',
+    alliance: 'death',
+    tagline: '영원한 밤을 지배하는 흡혈귀 군주들',
+    lore: `뱀파이어 군주들이 이끄는 불사 군단. 죽음의 신 나이트의 피조물이지만 그의 지배에 도전할 만큼 강력한 흡혈귀들은 스스로의 왕국을 건설한다. 소울블라이트의 저주로 영생을 얻은 대신, 그들은 영원히 생명의 피를 갈망한다.
+
+라두칸 왕조, 아이렌 왕조, 브리오박 왕조 등 다양한 혈통의 흡혈귀들이 각자의 방식으로 왕국을 통치한다. 그 아래엔 좀비, 스켈레톤, 좀비 드래곤으로 이루어진 불사의 군단이 끝없이 보충된다.`,
+    color: '#3a1a5a',
+    accentColor: '#c84a8f',
+    imagePath: '/images/factions/soulblight/banner.jpg',
+    spearhead: {
+      name: 'Vyrkos Dynasty',
+      gwUrl: 'https://www.games-workshop.com/en-WW/Soulblight-Gravelords',
+      description: `뷔르코스 혈통의 흡혈귀 군주가 이끄는 정예 불사 군단. 블러드나이트 기병대가 맹렬히 돌진하는 동안, 뱀파이어 군주가 전장의 피를 흡수하며 더욱 강해진다. 스켈레톤 워리어들의 파도가 그 배후를 채운다.`,
+      stats: { 공격력: 8, 생존력: 6, 기동성: 7, 미션수행: 6, 유틸리티: 7 },
+      recommended: [
+        '흡혈귀 군주의 웅장한 서사를 즐기며 극적인 역전을 만들어내고 싶은 분',
+        '불사 군단의 끝없이 소환되는 언데드의 물결로 상대를 압박하고 싶은 분',
+        '고딕 호러 미학의 화려한 언데드 미니어처를 페인팅하고 싶은 분',
+      ],
+      notRecommended: [
+        '초반부터 빠른 기세로 게임을 지배하고 싶은 분',
+        '지휘관 없이도 자립적으로 운용 가능한 심플한 구성을 원하는 분',
+      ],
+      units: [
+        { name: 'Vampire Lord', role: '지휘관', count: 1, description: '흡혈과 마법을 구사하는 영원한 군주' },
+        { name: 'Skeleton Warriors', role: '핵심 전력', count: 20, description: '뼈와 녹슨 무기로 싸우는 불사의 병사들' },
+        { name: 'Blood Knights', role: '정예 기병', count: 5, description: '흡혈귀 군주가 직접 이끄는 무적의 흡혈 기사단' },
+        { name: 'Dire Wolves', role: '척후 전력', count: 10, description: '불사의 저주에 걸린 거대한 늑대 무리' },
+      ],
+      playstyle: '흡혈 기사단의 강력한 돌격과 무한 보충되는 스켈레톤의 조합. 지휘관의 생명력 회복 능력을 활용해 전투를 지속시키는 장기전에 강하다.',
+      imagePath: '/images/factions/soulblight/spearhead.jpg',
+    },
+  },
+  {
+    id: 'ironjawz',
+    name: 'Orruk Warclans — Ironjawz',
+    alliance: 'destruction',
+    tagline: '가장 크고, 가장 녹색인 자가 지배한다',
+    lore: `아이언조즈는 오르루크 중에서도 가장 크고 강력한 자들이다. 도끼로 직접 두드려 만든 거친 갑옷을 두르고, 파괴와 전쟁 그 자체인 고르카모르카 신을 섬긴다. 그들에게 전투는 종교이자 즐거움이다.
+
+메가보스 고르그룹과 같은 위대한 전쟁군주 아래 뭉친 아이언조즈는 영역을 가리지 않고 쳐들어가 가장 강한 적을 찾아 싸운다. 그들은 이기기 위해 싸우는 것이 아니라, 싸움 자체를 즐기기 위해 싸운다.`,
+    color: '#1a5a1a',
+    accentColor: '#c8a84c',
+    imagePath: '/images/factions/ironjawz/banner.jpg',
+    spearhead: {
+      name: "Da Big Waaagh! Fist",
+      gwUrl: 'https://www.games-workshop.com/en-WW/Orruk-Warclans',
+      description: `메가보스의 고함소리에 따라 돌진하는 순수한 폭력의 집약체. 브루타들이 충격 파동을 일으키며 돌진하고, 고어그룬타 기마대가 측면에서 적을 짓밟는다. 메가보스의 오라가 주변 오르루크들을 더욱 흉포하게 만든다.`,
+      stats: { 공격력: 10, 생존력: 7, 기동성: 5, 미션수행: 5, 유틸리티: 3 },
+      recommended: [
+        '생각보다 행동이 빠른, 본능적인 돌격 플레이를 즐기는 분',
+        'AoS를 막 시작한 입문자로 단순하고 강력한 첫 팩션을 찾는 분',
+        '압도적인 스케일의 메가보스 미니어처를 조립하고 싶은 분',
+      ],
+      notRecommended: [
+        '복잡한 콤보와 버프 체계로 정교하게 전술을 구사하고 싶은 분',
+        '원거리 화력과 기동전으로 전장의 흐름을 컨트롤하고 싶은 분',
+      ],
+      units: [
+        { name: 'Megaboss on Maw-Krusha', role: '지휘관', count: 1, description: '거대한 마우-크루샤를 타고 전장을 박살내는 메가보스' },
+        { name: 'Ardboys', role: '핵심 전력', count: 10, description: '두꺼운 갑옷을 두른 오르루크 전사들' },
+        { name: 'Brutes', role: '정예 전력', count: 5, description: '거대한 체격으로 적을 찍어 누르는 정예 오르루크' },
+        { name: 'Gore-Gruntas', role: '기병 전력', count: 3, description: '멧돼지 마우-그룬타를 타고 돌진하는 기마 전사' },
+      ],
+      playstyle: '순수한 돌격과 압도적인 근접 전투력. 전략이나 계획보다는 가장 빠르게 적에게 달려들어 뭉개버리는 스타일. 초반 기세가 중요하며 원거리 전력은 거의 없다.',
+      imagePath: '/images/factions/ironjawz/spearhead.jpg',
+    },
+  },
+  {
+    id: 'gloomspite-gitz',
+    name: 'Gloomspite Gitz',
+    alliance: 'destruction',
+    tagline: '달빛이 비추는 곳에서 솟아오르는 광기',
+    lore: `글룸스파이트 기츠는 달의 저주를 받은 그로트, 트로것, 스퀴그로 구성된 혼돈의 군단이다. 나쁜 문 — 차가운 달 — 이 하늘에 떠오를 때, 그들의 광기와 힘은 최고조에 달한다. 그들은 수도 많고 예측불가능하다.
+
+굿협, 샤만, 스퀴그 허더들이 이끄는 이 집단은 전략이라는 것이 거의 없다. 하지만 이 무작위성 자체가 그들의 강점이기도 하다 — 적도, 아군도, 심지어 그들 자신조차 무슨 일이 일어날지 예측할 수 없다.`,
+    color: '#1a3a1a',
+    accentColor: '#8fc41a',
+    imagePath: '/images/factions/gloomspite-gitz/banner.jpg',
+    spearhead: {
+      name: "Moonkrumpa's Megalofanatic",
+      gwUrl: 'https://www.games-workshop.com/en-WW/Gloomspite-Gitz',
+      description: `문클랜 그로트의 물결 뒤에 거대한 스퀴그 호퍼들이 콩콩 뛰며 돌진한다. 굿협 워보스의 기이한 카리스마에 이끌린 트로것이 전장을 헤집고, 마닛 룬스톤으로 강화된 스태반기스가 적 마법사를 방해한다.`,
+      stats: { 공격력: 6, 생존력: 4, 기동성: 8, 미션수행: 7, 유틸리티: 8 },
+      recommended: [
+        '예측 불가한 혼돈과 랜덤성을 즐기며 그 안에서 웃음을 찾는 분',
+        '스퀴그와 그로트의 유쾌하고 독특한 미니어처를 페인팅하고 싶은 분',
+        '상대방이 전혀 예상 못 한 순간 역전을 만들어내는 짜릿함을 원하는 분',
+      ],
+      notRecommended: [
+        '계획대로 정밀하게 실행되는 안정적인 플레이를 원하는 분',
+        '아군의 행동을 확실하게 예측하고 통제하고 싶은 분',
+      ],
+      units: [
+        { name: 'Loonboss on Giant Cave Squig', role: '지휘관', count: 1, description: '거대한 케이브 스퀴그를 타고 날뛰는 룬보스' },
+        { name: 'Stabbas', role: '핵심 전력', count: 20, description: '끝없이 쏟아지는 문클랜 그로트 전사들' },
+        { name: 'Boingrot Bounderz', role: '기동 전력', count: 10, description: '스퀴그를 타고 콩콩 뛰어다니는 기마 그로트' },
+        { name: 'Rockgut Troggoths', role: '중장 전력', count: 3, description: '둔감하지만 강인한 트로것 전사들' },
+      ],
+      playstyle: '예측불가능한 이동과 수적 우위가 특징. 스퀴그 기마대의 엄청난 기동력을 활용해 목표를 빠르게 점령하고, 스태반기스의 마법 방해로 적 전략을 교란한다.',
+      imagePath: '/images/factions/gloomspite-gitz/spearhead.jpg',
+    },
+  },
+]
+
+export function getFactionById(id) {
+  return factions.find(f => f.id === id)
+}
+
+export function getFactionsByAlliance(alliance) {
+  return factions.filter(f => f.alliance === alliance)
+}

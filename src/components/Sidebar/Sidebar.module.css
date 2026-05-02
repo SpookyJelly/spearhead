@@ -1,0 +1,172 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 110;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition);
+  backdrop-filter: blur(2px);
+}
+
+.overlayVisible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: var(--bg-dark);
+  border-right: 1px solid var(--border);
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform var(--transition);
+  padding-top: var(--navbar-height);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* Decorative top edge */
+.sidebar::before {
+  content: '';
+  position: absolute;
+  top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold-dim), transparent);
+}
+
+.header {
+  padding: 1.5rem 1.5rem 0.75rem;
+}
+
+.headerTitle {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.headerLine {
+  height: 1px;
+  background: linear-gradient(to right, var(--gold-dim), transparent);
+  margin-top: 0.5rem;
+}
+
+.nav {
+  flex: 1;
+  padding: 0.5rem 0 1rem;
+}
+
+.group {
+  padding: 0.75rem 0;
+}
+
+.groupLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1.5rem 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.groupDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition), background var(--transition), padding-left var(--transition);
+  position: relative;
+}
+
+.link:hover {
+  color: var(--text-primary);
+  background: rgba(201, 168, 76, 0.04);
+  padding-left: 2rem;
+}
+
+.link.active {
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.08);
+}
+
+.link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--faction-accent, var(--gold));
+}
+
+.linkDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--faction-accent, var(--gold));
+  flex-shrink: 0;
+  opacity: 0.4;
+  transition: opacity var(--transition);
+}
+
+.link:hover .linkDot,
+.link.active .linkDot {
+  opacity: 1;
+}
+
+.linkName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.homeLink {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.homeLink:hover {
+  color: var(--gold);
+}

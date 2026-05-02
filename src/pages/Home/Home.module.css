@@ -1,0 +1,312 @@
+.page {
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 5rem 2rem;
+}
+
+.heroGlow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(201, 168, 76, 0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 100% 60% at 50% 100%, rgba(26, 111, 206, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-dim), transparent);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+}
+
+.heroEyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  color: var(--gold);
+  text-shadow: 0 0 60px rgba(201, 168, 76, 0.3);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.heroDivider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 auto 1.5rem;
+  max-width: 200px;
+}
+
+.heroDivider span:not(.heroDiamond) {
+  flex: 1;
+  height: 1px;
+  background: var(--gold-dim);
+}
+
+.heroDiamond {
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.heroDesc {
+  font-family: var(--font-korean);
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 2;
+  font-style: italic;
+}
+
+/* Alliance sections */
+.alliances {
+  padding: 3rem 0;
+}
+
+.allianceSection {
+  margin-bottom: 4rem;
+}
+
+.allianceHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.allianceStripe {
+  width: 3px;
+  height: 2.5rem;
+  border-radius: 2px;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.allianceTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+/* Faction grid */
+.factionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--card-color);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.cardImage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-card-hover);
+  overflow: hidden;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .cardImage img {
+  transform: scale(1.05);
+}
+
+.cardImageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--bg-card) 0%, transparent 50%);
+}
+
+.cardAlliance {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+/* Image fallback */
+.imageFallback {
+  background: linear-gradient(135deg, var(--bg-card-hover), var(--bg-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageFallback::after {
+  content: '⚔';
+  font-size: 2rem;
+  opacity: 0.15;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardBody {
+  padding: 1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.cardName {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.03em;
+}
+
+.cardTagline {
+  font-family: var(--font-korean);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  flex: 1;
+}
+
+.cardCta {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--card-accent, var(--gold));
+  margin-top: 0.5rem;
+  transition: gap var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.card:hover .cardCta {
+  gap: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+.footerOrnament {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 200px;
+  margin: 0 auto 1rem;
+}
+
+.footerOrnament span:not(.footerDiamond) {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.footerDiamond {
+  width: 6px;
+  height: 6px;
+  background: var(--text-dim);
+  transform: rotate(45deg);
+}
+
+.footerText {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+@media (max-width: 600px) {
+  .factionGrid {
+    padding: 0 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  .allianceHeader {
+    padding: 0 1rem;
+  }
+}

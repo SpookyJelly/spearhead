@@ -1,0 +1,99 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-deep: #06080e;
+  --bg-dark: #0c0f1a;
+  --bg-card: #111622;
+  --bg-card-hover: #161d2e;
+  --border: rgba(201, 168, 76, 0.2);
+  --border-hover: rgba(201, 168, 76, 0.5);
+  --gold: #c9a84c;
+  --gold-light: #e8c96a;
+  --gold-dim: rgba(201, 168, 76, 0.6);
+  --text-primary: #e8e0d0;
+  --text-secondary: #9a9080;
+  --text-dim: #5a5448;
+  --sidebar-width: 280px;
+  --navbar-height: 64px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Cinzel 은 영문 전용 — 한글은 Nanum Myeongjo 로 폴백 */
+  --font-display: 'Cinzel Decorative', 'Cinzel', 'Nanum Myeongjo', serif;
+  --font-heading: 'Cinzel', 'Nanum Myeongjo', serif;
+  --font-body: 'EB Garamond', 'Nanum Myeongjo', Georgia, serif;
+  --font-korean: 'Nanum Myeongjo', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 21px;
+  line-height: 1.9;
+  min-height: 100vh;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--gold-light);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dim);
+}
+
+/* Decorative divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-dim), transparent);
+  margin: 2rem 0;
+}
+
+/* Alliance badge colors */
+[data-alliance="order"] { --alliance-color: #1a6fce; --alliance-accent: #c9a84c; }
+[data-alliance="chaos"] { --alliance-color: #9b1a1a; --alliance-accent: #e05a1a; }
+[data-alliance="death"] { --alliance-color: #5a1a8f; --alliance-accent: #2ab8b8; }
+[data-alliance="destruction"] { --alliance-color: #2d6e2d; --alliance-accent: #c8a84c; }
