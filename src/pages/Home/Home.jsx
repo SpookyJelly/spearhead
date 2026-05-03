@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom'
-import { factions, GRAND_ALLIANCES } from '../../data/factions'
-import { assetUrl } from '../../utils/asset'
-import styles from './Home.module.css'
+import { Link } from "react-router-dom";
+import { factions, GRAND_ALLIANCES } from "../../data/factions";
+import { assetUrl } from "../../utils/asset";
+import styles from "./Home.module.css";
 
-const allianceOrder = ['order', 'chaos', 'death', 'destruction']
+const allianceOrder = ["order", "chaos", "death", "destruction"];
 
 export default function Home() {
   return (
@@ -20,17 +20,21 @@ export default function Home() {
             <span />
           </div>
           <p className={styles.heroDesc}>
-            모르탈 렐름의 전장을 누비는 강력한 팩션들을 만나보세요.<br />
-            각 세력의 로어와 스피어헤드 아미를 탐험하십시오.
+            모탈렐름의 전장을 누비는 강력한 세력들을 만나보세요.
+            <br />각 세력의 로어와 스피어헤드 아미를 탐험해보세요.
           </p>
         </div>
       </section>
 
       {/* Alliance sections */}
       <div className={styles.alliances}>
-        {allianceOrder.map(allianceId => {
-          const alliance = Object.values(GRAND_ALLIANCES).find(a => a.id === allianceId)
-          const allianceFactions = factions.filter(f => f.alliance === allianceId)
+        {allianceOrder.map((allianceId) => {
+          const alliance = Object.values(GRAND_ALLIANCES).find(
+            (a) => a.id === allianceId,
+          );
+          const allianceFactions = factions.filter(
+            (f) => f.alliance === allianceId,
+          );
           return (
             <section
               key={allianceId}
@@ -48,24 +52,26 @@ export default function Home() {
               </div>
 
               <div className={styles.factionGrid}>
-                {allianceFactions.map(faction => (
+                {allianceFactions.map((faction) => (
                   <FactionCard key={faction.id} faction={faction} />
                 ))}
               </div>
             </section>
-          )
+          );
         })}
       </div>
 
       {/* Footer ornament */}
       <footer className={styles.footer}>
         <div className={styles.footerOrnament}>
-          <span /><span className={styles.footerDiamond} /><span />
+          <span />
+          <span className={styles.footerDiamond} />
+          <span />
         </div>
         <p className={styles.footerText}>Age of Sigmar Spearhead — Fansite</p>
       </footer>
     </div>
-  )
+  );
 }
 
 function FactionCard({ faction }) {
@@ -73,15 +79,18 @@ function FactionCard({ faction }) {
     <Link
       to={`/faction/${faction.id}`}
       className={styles.card}
-      style={{ '--card-color': faction.color, '--card-accent': faction.accentColor }}
+      style={{
+        "--card-color": faction.color,
+        "--card-accent": faction.accentColor,
+      }}
     >
       <div className={styles.cardImage}>
         <img
           src={assetUrl(faction.imagePath)}
           alt={faction.name}
-          onError={e => {
-            e.currentTarget.parentElement.classList.add(styles.imageFallback)
-            e.currentTarget.style.display = 'none'
+          onError={(e) => {
+            e.currentTarget.parentElement.classList.add(styles.imageFallback);
+            e.currentTarget.style.display = "none";
           }}
         />
         <div className={styles.cardImageOverlay} />
@@ -98,5 +107,5 @@ function FactionCard({ faction }) {
         </span>
       </div>
     </Link>
-  )
+  );
 }

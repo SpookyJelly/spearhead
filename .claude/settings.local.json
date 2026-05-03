@@ -10,7 +10,9 @@
       "WebFetch(domain:ttgamingdiary.wordpress.com)",
       "WebFetch(domain:ageofminiatures.com)",
       "WebFetch(domain:1d6chan.miraheze.org)",
-      "WebFetch(domain:www.warhammer-community.com)"
+      "WebFetch(domain:www.warhammer-community.com)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\user\\\\Desktop\\\\spearhead\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)"
     ]
   }
 }

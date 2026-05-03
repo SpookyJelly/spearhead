@@ -119,8 +119,8 @@
   flex-shrink: 0;
 }
 
-/* Feedback button */
-.feedbackBtn {
+/* Nav buttons (random, feedback) */
+.navBtn {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -128,22 +128,28 @@
   padding: 0.35rem 0.8rem;
   font-family: var(--font-heading);
   font-size: 0.62rem;
+  line-height: 1;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-dim);
+  background: none;
   border: 1px solid var(--border);
   border-radius: 3px;
-  text-decoration: none;
+  cursor: pointer;
   transition: color var(--transition), border-color var(--transition), background var(--transition);
 }
 
-.feedbackBtn:hover {
+.navBtn:hover {
   color: var(--text-secondary);
   border-color: color-mix(in srgb, var(--border) 60%, white);
   background: rgba(255, 255, 255, 0.04);
 }
 
-.feedbackIcon {
+.navBtn:active {
+  transform: scale(0.97);
+}
+
+.navBtnIcon {
   width: 12px;
   height: 12px;
   flex-shrink: 0;
