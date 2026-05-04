@@ -1444,7 +1444,8 @@ export const factions = [
         id: "skyhammer-task-force",
         name: "Skyhammer Task Force",
         rarity: true,
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://assets.kogan.com/images/mightyape/MPE-40712387/1-7aa87e37e1-328580178.jpeg?auto=webp&bg-color=fff&canvas=1200%2C800&dpr=1&enable=upscale&fit=bounds&height=800&quality=90&width=1200",
         description: `하늘을 지배하는 카라드론의 정예 함대입니다. 견고한 비공정을 기반으로 보병들이 신속하게 전개하며, 압도적인 화망을 형성하여 적의 접근을 원천 봉쇄합니다. 공중 기동력과 사격 화력의 완벽한 조화를 통해 전장의 주도권을 쥐는 데 특화되어 있습니다.`,
         stats: { 공격력: 8, 생존력: 6, 기동성: 9, 미션수행: 6, 유틸리티: 7 },
         recommended: [
@@ -1467,7 +1468,14 @@ export const factions = [
           {
             name: "Arkanaut Company",
             role: "기간 보병",
-            count: 10,
+            count: 5,
+            description:
+              "카라드론의 주력 보병. 거점을 점령하고 근거리 사격과 투척 무기로 전선을 방어한다.",
+          },
+          {
+            name: "Arkanaut Company",
+            role: "기간 보병",
+            count: 5,
             description:
               "카라드론의 주력 보병. 거점을 점령하고 근거리 사격과 투척 무기로 전선을 방어한다.",
           },
@@ -1488,12 +1496,13 @@ export const factions = [
         ],
         playstyle: `스카이해머 태스크 포스는 '비공정의 사선 확보'가 핵심입니다. 프리깃함에 보병을 태워 유리한 고지로 신속히 이동시킨 뒤, 내린 보병들이 거점을 점령하는 동안 프리깃과 제독이 강력한 화력 지원을 제공합니다. 스카이워든은 상대의 기습을 차단하거나 취약한 지점을 타격하는 유동적인 운용이 필요합니다.`,
         imagePath:
-          "/images/factions/kharadron-overlords/skyhammer-task-force.jpg",
+          "/images/factions/kharadron-overlords/skyhammer-task-force.webp",
       },
       {
         id: "grundstok-trailblazers",
         name: "Grundstok Trailblazers",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-kharadron-overlords-grundstok-trailblazers-2025?queryID=6b738ef351abfeb7e8daccfd04faceef",
         rarity: false,
         description: `전문적인 용병 사수들과 소형 비행정으로 구성된 유격 부대입니다. 대형 전함 대신 날렵한 기동 병기를 활용하여 적을 끊임없이 괴롭히며, 정밀한 사격을 통해 적의 지휘 체계를 무너뜨립니다. 정면 대결보다는 철저한 거리 유격전에 최적화되어 있습니다.`,
         stats: { 공격력: 9, 생존력: 5, 기동성: 10, 미션수행: 7, 유틸리티: 6 },
@@ -1556,7 +1565,8 @@ export const factions = [
       {
         id: "glittering-phalanx",
         name: "Glittering Phalanx",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.gamemat.eu/media/produkty/1953/99120210062-lrlspearheadstock.jpg",
         rarity: true,
         description: `빛의 마법과 견고한 창술로 무장한 루미네스의 정석적인 군단입니다. 적의 공격을 완벽하게 쳐내는 방패 진형과 원거리에서 쏟아지는 화살 비, 그리고 강력한 마법 지원을 통해 전장을 통제합니다. 질서 정연한 전술의 정수를 보여주는 아미입니다.`,
         stats: { 공격력: 7, 생존력: 8, 기동성: 5, 미션수행: 7, 유틸리티: 9 },
@@ -1587,26 +1597,34 @@ export const factions = [
           {
             name: "Vanari Auralan Sentinels",
             role: "사격 전력",
-            count: 10,
+            count: 5,
             description:
               "곡사 사격이 가능한 궁수대. 시야 밖의 적이나 숨어있는 핵심 유닛을 마법 화살로 저격한다.",
           },
           {
-            name: "Vanari Dawnriders",
-            role: "기병 전력",
+            name: "Vanari Auralan Sentinels",
+            role: "사격 전력",
             count: 5,
             description:
-              "눈부신 속도의 중기병대. 적의 보병 무리를 짓밟거나 취약해진 측면을 돌파하는 데 사용된다.",
+              "곡사 사격이 가능한 궁수대. 시야 밖의 적이나 숨어있는 핵심 유닛을 마법 화살로 저격한다.",
+          },
+          {
+            name: "Vanari Bladelords",
+            role: "정예 전력",
+            count: 5,
+            description:
+              "검술에 통달한 귀재들. 적의 방어를 무시하는 파괴적인 공격을 구사할 수 있다",
           },
         ],
         playstyle: `글리터링 팔랑크스는 '통제된 전장'을 지향합니다. 워든들이 중앙에서 방진을 짜고 버티는 동안 센티널들이 후방에서 핵심 타겟을 제거합니다. 카탈라의 마법으로 적의 사기를 꺾고, 상대가 방진에 부딪혀 주춤할 때 던라이더 기병이 측면을 마무리하는 유기적인 플레이가 핵심입니다.`,
         imagePath:
-          "/images/factions/lumineth-realm-lords/glittering-phalanx.jpg",
+          "/images/factions/lumineth-realm-lords/glittering-phalanx.webp",
       },
       {
         id: "hurakan-vanguard",
         name: "Hurakan Vanguard",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-hurakan-vanguard-2026?queryID=70cc56175444087b7cb25932b2e429cd",
         rarity: false,
         description: `바람의 정령들과 함께 전장을 휩쓰는 초고속 습격대입니다. 바람처럼 빠른 속도로 이동하며 사격하고 적이 반격하기 전에 사라집니다. 기존 루미네스와는 달리 고정된 진형보다는 유동적인 움직임으로 상대를 농락하는 데 특화되어 있습니다.`,
         stats: { 공격력: 8, 생존력: 5, 기동성: 10, 미션수행: 6, 유틸리티: 7 },
@@ -1668,7 +1686,8 @@ export const factions = [
       {
         id: "starscale-warhost",
         name: "Starscale Warhost",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-seraphon-2024?queryID=ea7f7605f8e65fddf35dba8c14812dcf",
         rarity: false,
         description: `고대 별의 힘을 이어받은 세라폰의 정예 군단입니다. 튼튼한 사우루스 보병들이 전선을 유지하는 동안, 날렵한 기병과 강력한 괴수가 적의 측면을 들이받습니다. 안정적인 방어력과 폭발적인 반격 능력을 동시에 갖춘 올라운더형 아미입니다.`,
         stats: { 공격력: 7, 생존력: 8, 기동성: 6, 미션수행: 7, 유틸리티: 6 },
@@ -1687,21 +1706,21 @@ export const factions = [
             role: "지휘관",
             count: 1,
             description:
-              "수많은 전투를 겪은 노련한 전사. 주변 사우루스 유닛들의 전투 효율을 높이고 직접적인 근접전 능력도 뛰어나다.",
+              "수많은 전투를 겪은 노련한 전사. 거대한 괴수를 부리며 전장을 휘젓는 파괴적인 군주",
           },
           {
             name: "Saurus Warriors",
             role: "기간 보병",
-            count: 10,
+            count: 5,
             description:
               "세라폰의 강철 같은 방패. 높은 생존력을 바탕으로 점령지를 사수하고 적의 공세를 받아낸다.",
           },
           {
-            name: "Aggradon Lancers",
-            role: "기병 전력",
-            count: 3,
+            name: "Saurus Warriors",
+            role: "기간 보병",
+            count: 5,
             description:
-              "전투가 지속될수록 광기에 빠져 강력해지는 기병대. 적의 정예 보병이나 측면을 타격하는 데 최적화되어 있다.",
+              "세라폰의 강철 같은 방패. 높은 생존력을 바탕으로 점령지를 사수하고 적의 공세를 받아낸다.",
           },
           {
             name: "Kroxigor",
@@ -1718,7 +1737,8 @@ export const factions = [
         id: "sunblood-prowlers",
         name: "Sunblood Prowlers",
         rarity: false,
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-seraphon-sunblooded-prowlers-2025?queryID=ea7f7605f8e65fddf35dba8c14812dcf",
         description: `태양의 축복을 받은 사냥꾼들의 무리입니다. 정면 대결보다는 빠른 기동력과 기습을 통해 적의 핵심 요소를 제거하는 데 특화되어 있습니다. 기존 세라폰보다 유연한 움직임을 보여주며, 적이 예상치 못한 타이밍에 치명적인 타격을 입힙니다.`,
         stats: { 공격력: 8, 생존력: 6, 기동성: 8, 미션수행: 8, 유틸리티: 5 },
         recommended: [
@@ -1732,25 +1752,45 @@ export const factions = [
         ],
         units: [
           {
-            name: "Saurus Scar-Veteran on Aggradon",
+            name: "Sunblood Pack with Venomites token",
             role: "지휘관",
             count: 1,
-            description:
-              "어그라돈에 올라탄 지휘관. 강력한 돌격력과 함께 아군 기병대의 기동성을 극대화한다.",
-          },
-          {
-            name: "Aggradon Lancers",
-            role: "기병 전력",
-            count: 3,
-            description:
-              "아미의 주력 타격대. 빠른 속도로 전장을 가로질러 적의 방어선을 무너뜨린다.",
+            description: "3인으로 구성된 지휘관. 세 명이 합심해 적을 분쇄한다.",
           },
           {
             name: "Saurus Warriors",
             role: "기간 보병",
-            count: 10,
+            count: 5,
             description:
-              "기병들이 활약할 공간을 만들기 위해 전선을 형성하거나 후방 거점을 점령한다.",
+              "세라폰의 강철 같은 방패. 높은 생존력을 바탕으로 점령지를 사수하고 적의 공세를 받아낸다.",
+          },
+          {
+            name: "Saurus Warriors",
+            role: "기간 보병",
+            count: 5,
+            description:
+              "세라폰의 강철 같은 방패. 높은 생존력을 바탕으로 점령지를 사수하고 적의 공세를 받아낸다.",
+          },
+          {
+            name: "Hunters of Huanchi",
+            role: "사격 전력",
+            count: 5,
+            description:
+              "바람총을 쏘는 날렵한 사냥꾼들. 예상치 못한 곳에서 등장해 적을 마취시켜 나약하게 만든다.",
+          },
+          {
+            name: "Hunters of Huanchi",
+            role: "사격 전력",
+            count: 5,
+            description:
+              "바람총을 쏘는 날렵한 사냥꾼들. 예상치 못한 곳에서 등장해 적을 마취시켜 나약하게 만든다.",
+          },
+          {
+            name: "Terrawings",
+            role: "괴수",
+            count: 3,
+            description:
+              "하늘을 누비는 민첩한 괴수들. 적의 취약점을 급습하는데 특화되어있다.",
           },
           {
             name: "Spawn of Chotec",
@@ -1780,7 +1820,8 @@ export const factions = [
       {
         id: "bitterbark-corpse",
         name: "Bitterbark Corpse",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://vaultgames.com.au/cdn/shop/products/99120204033_SYLVanguardStock_800x.jpg?v=1667612163",
         rarity: false,
         description: `숲의 고대 원한을 집행하는 복수자들입니다. 거대한 트리로드의 압도적인 위압감을 중심으로, 끈질긴 트리-포크들이 전선을 형성합니다. 지형을 활용해 적을 옥죄고, 한 번 뿌리내린 곳은 절대 내어주지 않는 견고함을 자랑합니다.`,
         stats: { 공격력: 7, 생존력: 8, 기동성: 6, 미션수행: 7, 유틸리티: 8 },
@@ -1813,7 +1854,7 @@ export const factions = [
             role: "정예 전력",
             count: 3,
             description:
-              "숲의 수호자들. 거대한 대검으로 적의 정예병들을 분쇄하는 아미의 실질적인 타격대.",
+              "숲의 수호자들. 거대한 활로 적의 정예병들을 분쇄하는 아미의 실질적인 타격대.",
           },
           {
             name: "Treelord",
@@ -1829,10 +1870,11 @@ export const factions = [
       {
         id: "spitewing-flight",
         name: "Spitewing Flight",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-spitewing-flight-2026?queryID=6fed34d29857b36762859e8084a89248",
         rarity: false,
         description: `바람보다 빠르게 전장을 가로지르는 요정 기병 연대입니다. 날개 달린 벌레 괴수에 올라탄 전사들이 사방에서 적을 유린하며, 대응할 틈도 없이 치명적인 상처를 입히고 사라집니다. 실바네스 중 가장 공격적이고 빠른 속도감을 자랑합니다.`,
-        stats: { 공격력: 8, 생존력: 5, 기동성: 10, 미션수행: 8, 유틸리티: 6 },
+        stats: { 공격력: 7, 생존력: 5, 기동성: 8, 미션수행: 7, 유틸리티: 8 },
         recommended: [
           "히트 앤 런 스타일의 고속 기동전을 극한으로 즐기고 싶은 분",
           "공중 유닛 중심의 역동적인 배치를 선호하는 분",
@@ -1894,7 +1936,8 @@ export const factions = [
       {
         id: "bloodbound-gore-pilgrims",
         name: "Bloodbound Gore Pilgrims",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.broadswordwargaming.com/cdn/shop/files/https___trade.games-workshop.com_assets_2024_05_TR-99120201197-70-17-SpearheadBladesofKhorne_1200x1239.jpg?v=1716354151",
         rarity: true,
         description: `코른을 향한 광기 어린 신념으로 뭉친 필멸자 군단입니다. 피의 기도를 통해 아군을 강화하고, 적에게는 공포를 선사합니다. 단순히 무력을 휘두르는 것을 넘어, 제단과 기도를 활용한 전략적인 버프 중첩으로 근접전에서 압도적인 폭발력을 보여줍니다.`,
         stats: { 공격력: 9, 생존력: 6, 기동성: 6, 미션수행: 7, 유틸리티: 8 },
@@ -1915,17 +1958,18 @@ export const factions = [
             description:
               "피의 기도자. 적에게 직접적인 피해를 주거나 아군에게 강력한 근접전 버프를 부여한다.",
           },
+
           {
-            name: "Bloodsecrator",
-            role: "지원 전력",
-            count: 1,
+            name: "Blood Warriors",
+            role: "기간 보병",
+            count: 5,
             description:
-              "코른의 깃발을 든 전사. 주변 아군들의 공격 횟수를 늘려 전장을 피바다로 만든다.",
+              "코른의 정예 보병. 죽어가는 순간에도 반격을 가하는 끈질긴 호전성을 가졌다.",
           },
           {
             name: "Blood Warriors",
             role: "기간 보병",
-            count: 10,
+            count: 5,
             description:
               "코른의 정예 보병. 죽어가는 순간에도 반격을 가하는 끈질긴 호전성을 가졌다.",
           },
@@ -1937,21 +1981,22 @@ export const factions = [
               "광기에 빠진 돌격병들. 머릿수로 적을 압도하며 거점 점령 및 고기방패 역할을 수행한다.",
           },
           {
-            name: "Khorgorath",
-            role: "괴수",
+            name: "Mighty Skullcrushers",
+            role: "정예 기병",
             count: 1,
             description:
-              "살점과 뼈가 뒤엉킨 끔찍한 괴수. 적 보병진을 들이받아 진형을 붕괴시키고 공포를 유발한다.",
+              "코른의 최정예 기병. 육중한 돌진으로 마주친 적을 말 그대로 박살내버린다.",
           },
         ],
-        playstyle: `고어 필그림스는 '버프의 중첩'이 생명입니다. 슬로터프리스트와 블러드세크레이터가 후방에서 아군을 강화하는 동안, 블러드 워리어와 리버들이 전진합니다. 적과 맞붙는 순간 모든 버프를 쏟아부어 한 차례의 근접전으로 적의 주력을 전멸시키는 것이 핵심입니다. 괴수인 코고라스는 적의 강력한 유닛을 묶어두는 용도로 사용됩니다.`,
+        playstyle: `고어 필그림스는 '버프의 중첩'이 생명입니다. 슬로터프리스트와 블러드세크레이터가 후방에서 아군을 강화하는 동안, 블러드 워리어와 리버들이 전진합니다. 적과 맞붙는 순간 모든 버프를 쏟아부어 한 차례의 근접전으로 적의 주력을 전멸시키는 것이 핵심입니다.`,
         imagePath:
           "/images/factions/blades-of-khorne/bloodbound-gore-pilgrims.jpg",
       },
       {
         id: "fangs-of-the-blood-god",
         name: "Fangs of the Blood God",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "hhttps://www.warhammer.com/en-WW/shop/spearhead-blades-of-khorne-fangs-of-the-blood-god-2025?queryID=c4586dc44c5d0d4e43278ad2557a6314",
         rarity: false,
         description: `코른의 직접적인 분노가 형상화된 데몬 군단입니다. 붉은 피부의 블러드하운드들이 차원문을 넘어 강림하며, 복잡한 전술 대신 오직 살육만을 위해 움직입니다. 필멸자 부대보다 기동성이 뛰어나며, 적의 방어력을 무시하는 치명적인 일격을 가합니다.`,
         stats: { 공격력: 10, 생존력: 5, 기동성: 8, 미션수행: 6, 유틸리티: 5 },
@@ -1966,19 +2011,26 @@ export const factions = [
         ],
         units: [
           {
-            name: "Skullmaster, Herald of Khorne",
+            name: "Karanak",
             role: "지휘관",
             count: 1,
             description:
-              "저거너트에 올라탄 데몬 지휘관. 강력한 돌격력으로 전선의 선봉에 선다.",
+              "머리 셋 달린 코른의 고위 악마. 한번 포착한 사냥감은 놓치지 않는다.",
+          },
+          {
+            name: "Claws of Karanak",
+            role: "기병 전력",
+            count: 8,
+            description:
+              "피의 사냥개들. 매우 빠른 속도로 적의 마법사나 후방 유닛을 추격하여 사냥한다.",
           },
 
           {
-            name: "Bloodcrushers",
+            name: "Flesh Hounds",
             role: "기병 전력",
-            count: 3,
+            count: 5,
             description:
-              "저거너트를 탄 데몬 중기병. 압도적인 충격 대미지로 적의 방어선을 분쇄한다.",
+              "피의 사냥개들. 매우 빠른 속도로 적의 마법사나 후방 유닛을 추격하여 사냥한다.",
           },
           {
             name: "Flesh Hounds",
@@ -1988,7 +2040,7 @@ export const factions = [
               "피의 사냥개들. 매우 빠른 속도로 적의 마법사나 후방 유닛을 추격하여 사냥한다.",
           },
         ],
-        playstyle: `팽스 오브 더 블러드 갓은 '선제 공격'이 모든 것입니다. 플레시 하운드가 선제적으로 기동하여 적의 이동을 방해하고, 그 뒤를 이어 스컬마스터와 블러드크러셔가 돌격하여 파괴적인 피해를 입힙니다. 블러드레터들은 적의 거점을 직접 타격하며, 방어력이 낮은 점을 보완하기 위해 적이 반격하기 전에 섬멸하는 공격적인 운영이 필수적입니다.`,
+        playstyle: `팽스 오브 더 블러드 갓은 '선제 공격'이 모든 것입니다. 플레시 하운드가 선제적으로 기동하여 적의 이동을 방해하고, 그 뒤를 이어 카라낙크의 군세들이 숨통을 끊습니다.방어력이 낮은 점을 보완하기 위해 적이 반격하기 전에 섬멸하는 공격적인 운영이 필수적입니다.`,
         imagePath:
           "/images/factions/blades-of-khorne/fangs-of-the-blood-god.jpg",
       },
@@ -2008,9 +2060,10 @@ export const factions = [
       {
         id: "fluxblade-coven",
         name: "Fluxblade Coven",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.gamemat.eu/media/produkty/1946/99120201193-dotspearheadstock.jpg",
         rarity: true,
-        description: `변화의 군주 젠취의 마법적 정수를 담은 군단입니다. 변화의 불꽃을 내뿜는 핑크 호러들과 강력한 마법을 구사하는 마기스터가 전장을 뒤덮습니다. 적의 운명을 조작하는 '데스티니 다이스' 시스템을 통해 전장의 불확실성을 아군에게 유리한 필연으로 바꾸는 교활한 아미입니다.`,
+        description: `변화의 군주 젠취의 마법적 정수를 담은 군단입니다. 변화의 불꽃을 내뿜는 플레이머들과 강력한 마법을 구사하는 마기스터가 전장을 뒤덮습니다. 적의 운명을 조작하는 '데스티니 다이스' 시스템을 통해 전장의 불확실성을 아군에게 유리한 필연으로 바꾸는 교활한 아미입니다.`,
         stats: { 공격력: 7, 생존력: 6, 기동성: 5, 미션수행: 7, 유틸리티: 10 },
         recommended: [
           "강력한 마법과 원거리 사격 위주의 전술을 선호하는 분",
@@ -2030,19 +2083,27 @@ export const factions = [
               "젠취의 필멸자 마법사. 강력한 마법으로 적을 약화시키거나 변이시키며 전장을 조율한다.",
           },
           {
-            name: "Pink Horrors",
+            name: "Kairic Acolytes",
             role: "기간 보병",
             count: 10,
             description:
-              "젠취의 데몬 보병. 죽으면서 분열하거나 적에게 화염을 발사하며 끈질기게 거점을 점령한다.",
+              "젠취의 필멸자 보병. 죽으면서 잔고어로 승천하여 집요하게 전장에 남아있는다.",
           },
           {
-            name: "Burning Chariot of Tzeentch",
-            role: "전쟁기계",
-            count: 1,
+            name: "Tzaangors",
+            role: "기간 보병",
+            count: 5,
             description:
-              "하늘을 나는 화염 전차. 지형을 무시하고 이동하며 전장에 푸른 불꽃을 퍼붓는 강력한 화력 지원 수단.",
+              "젠취의 축복을 받은 비스트맨들. 적진에 깊숙히 들어가면 근접전 능력이 향상된다.",
           },
+          {
+            name: "Tzaangors",
+            role: "기간 보병",
+            count: 5,
+            description:
+              "젠취의 축복을 받은 비스트맨들. 적진에 깊숙히 들어가면 근접전 능력이 향상된다.",
+          },
+
           {
             name: "Flamers of Tzeentch",
             role: "사격 전력",
@@ -2064,10 +2125,11 @@ export const factions = [
       {
         id: "tzaangor-warflock",
         name: "Tzaangor Warflock",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-tzaangor-warflock-2026?queryID=293b6eef108334c45916951f7f7d640d",
         rarity: false,
         description: `잔고어(Tzaangor) 무리와 하늘을 나는 공중 기병들이 중심이 된 신속 타격대입니다. 기존 젠취 군단보다 훨씬 공격적이며, 마법보다는 날카로운 발톱과 무기로 적을 직접 유린합니다. 바람처럼 빠른 기동성으로 전장의 빈틈을 파고드는 데 특화되어 있습니다.`,
-        stats: { 공격력: 8, 생존력: 6, 기동성: 9, 미션수행: 8, 유틸리티: 6 },
+        stats: { 공격력: 6, 생존력: 5, 기동성: 7, 미션수행: 6, 유틸리티: 9 },
         recommended: [
           "젠취 진형에서도 근접전과 기동성을 중시하는 분",
           "조인(鳥人) 테마인 잔고어 유닛의 역동적인 디자인을 선호하는 분",
@@ -2093,7 +2155,7 @@ export const factions = [
               "광폭한 조인 전사들. 일반적인 보병보다 뛰어난 이동력과 근접 공격력을 가졌다.",
           },
           {
-            name: "Tzaangor Enlightened on Discs of Tzeentch",
+            name: "Tzaangor Skyfires",
             role: "기병 전력",
             count: 3,
             description:
@@ -2127,10 +2189,11 @@ export const factions = [
       {
         id: "blades-of-the-lurid-dream",
         name: "Blades of the Lurid Dream",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-hedonites-of-slaanesh-2024?queryID=a29d3fb6dcac7b08a3f71bf03fd42fba",
         rarity: false,
         description: `관능적이고 치명적인 쾌락을 쫓는 슬라네쉬의 추종자들입니다. 눈이 따라가기 힘들 정도로 빠른 속도로 전장을 누비며, 적의 가장 취약한 지점을 정확하게 찔러 유린합니다. 적을 유혹하여 실수를 유도하고, 그 틈을 타서 휘몰아치는 공격을 퍼붓는 데 특화되어 있습니다.`,
-        stats: { 공격력: 9, 생존력: 4, 기동성: 10, 미션수행: 7, 유틸리티: 3 },
+        stats: { 공격력: 9, 생존력: 3, 기동성: 10, 미션수행: 5, 유틸리티: 3 },
         recommended: [
           "압도적인 기동성으로 전장 전체를 컨트롤하고 싶은 분",
           "적의 방어선을 우회하여 핵심 유닛을 암살하는 정교한 플레이를 선호하는 분",
@@ -2177,7 +2240,7 @@ export const factions = [
               "독 화살을 퍼붓는 궁수대. 빠른 이동 중에도 사격이 가능하며 적을 끊임없이 괴롭힌다.",
           },
         ],
-        playstyle: `블레이즈 오브 더 루리드 드림은 '속도의 우위'를 점해야 승리할 수 있습니다. 블리스바브 아처들이 원거리에서 적의 시선을 끄는 사이, 슬릭블레이드 시커들이 전장의 측면을 빠르게 돌파합니다. 적이 대응하기 위해 진형을 흐트러뜨리는 순간, 샤드스피커의 마법 지원을 받는 슬라언고어들이 결정적인 타격을 입히는 유기적인 연계가 핵심입니다.`,
+        playstyle: `블레이즈 오브 더 루리드 드림은 '속도의 우위'를 점해야 승리할 수 있습니다. 블리스바브 아처들이 원거리에서 적의 시선을 끄는 사이, 슬릭블레이드 시커들이 전장의 측면을 빠르게 돌파합니다. 적이 대응하기 위해 진형을 흐트러뜨리는 순간, 샤드스피커의 마법 지원을 받는 슬란고어들이 결정적인 타격을 입히는 유기적인 연계가 핵심입니다.`,
         imagePath:
           "/images/factions/hedonites-of-slaanesh/blades-of-the-lurid-dream.jpg",
       },
@@ -2197,7 +2260,8 @@ export const factions = [
       {
         id: "helforge-host",
         name: "Helforge Host",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-hellsmiths-of-hashut-helforge-host-2026?queryID=b4e9e8ec77a19c06d4a1f60e9a25a46d",
         rarity: false,
         description: `하슈트의 대장간에서 벼려진 강철과 화염의 군단입니다. 튼튼한 장갑을 두른 전사들이 전선을 형성하고, 그 뒤에서 기괴한 증기 기계들과 대포가 적을 잿더미로 만듭니다. 느리지만 확실하게 적을 짓밟는 파괴적인 전진 압박이 특징입니다.`,
         stats: { 공격력: 9, 생존력: 8, 기동성: 4, 미션수행: 6, 유틸리티: 7 },
@@ -2212,29 +2276,36 @@ export const factions = [
         ],
         units: [
           {
-            name: "Daemonsmith Overlord",
+            name: "War Despot",
             role: "지휘관",
             count: 1,
             description:
               "대장간의 군주. 마법을 통해 적을 공격하거나 아군 전쟁기계들의 화력을 폭발적으로 강화한다.",
           },
           {
-            name: "Infernal Guard",
+            name: "Infernal Cohort",
             role: "기간 보병",
-            count: 10,
+            count: 5,
             description:
-              "하슈트의 정예 보병. 중갑과 방패로 무장하여 전선에서 적의 공격을 완벽히 차단한다.",
+              "하슈트의 기간 보병. 중갑과 방패로 무장하여 전선에서 적의 공격을 완벽히 차단한다.",
           },
           {
-            name: "Bull Centaur Render",
-            role: "괴수",
+            name: "Infernal Cohort",
+            role: "기간 보병",
+            count: 5,
+            description:
+              "하슈트의 기간 보병. 중갑과 방패로 무장하여 전선에서 적의 공격을 완벽히 차단한다.",
+          },
+          {
+            name: "Dominator Engine",
+            role: "전쟁기계",
             count: 1,
             description:
-              "반인반수의 강력한 괴수 기병. 아미의 느린 속도를 보완하며 적의 측면을 타격하거나 선봉에서 돌격한다.",
+              "악마들을 연료로 삼아 구동되는 지옥의 전쟁기계. 강력한 사격과 무지막지한 근접능력을 동시에 갖춘 만능 유닛.",
           },
 
           {
-            name: "Magma Cannon",
+            name: "Tormentor Bombard",
             role: "전쟁기계",
             count: 1,
             description:
@@ -2261,9 +2332,10 @@ export const factions = [
       {
         id: "bleak-host",
         name: "Bleak Host",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://cdn.ecommercedns.uk/files/1/265541/3/45780763/70-01-001.jpg",
         rarity: true,
-        description: `부패의 군주를 섬기는 필멸자 전사들의 군단입니다. 육중한 판금 갑옷을 두른 블라이트킹들은 적의 공격을 웃어넘기며 전진합니다. 너글의 정원에 핀 곰팡이처럼 끈질기게 거점을 점령하고, 서서히 적을 질병으로 갉아먹는 압박 전술을 구사합니다.`,
+        description: `부패의 군주를 섬기는 역겨운 군단입니다. 육중한 판금 갑옷을 두른 블라이트킹들은 적의 공격을 웃어넘기며 전진합니다. 너글의 정원에 핀 곰팡이처럼 끈질기게 거점을 점령하고, 서서히 적을 질병으로 갉아먹는 압박 전술을 구사합니다.`,
         stats: { 공격력: 7, 생존력: 10, 기동성: 3, 미션수행: 8, 유틸리티: 6 },
         recommended: [
           "최강의 생존력과 방어력을 바탕으로 버티는 플레이를 선호하는 분",
@@ -2276,11 +2348,25 @@ export const factions = [
         ],
         units: [
           {
-            name: "Lord of Afflictions",
+            name: "Spoilpox Scrivener",
             role: "지휘관",
             count: 1,
             description:
-              "거대한 파리를 타고 비행하는 지휘관. 아군에게 기동성을 부여하고 적에게 질병을 퍼뜨린다.",
+              "데몬 군단의 서기. 플레이그베어러들을 독려하여 공격 횟수와 이동력을 높이는 중요한 버프를 제공한다.",
+          },
+          {
+            name: "Plaguebearers",
+            role: "기간 보병",
+            count: 5,
+            description:
+              "너글의 기본 데몬 보병. 높은 맷집과 점유 능력을 바탕으로 거점 수비의 핵심이 된다.",
+          },
+          {
+            name: "Plaguebearers",
+            role: "기간 보병",
+            count: 5,
+            description:
+              "너글의 기본 데몬 보병. 높은 맷집과 점유 능력을 바탕으로 거점 수비의 핵심이 된다.",
           },
           {
             name: "Putrid Blightkings",
@@ -2301,18 +2387,19 @@ export const factions = [
             role: "기병 전력",
             count: 1,
             description:
-              "또 다른 푸스고일 블라이트로드. 개별 유닛으로 운용되어 다각도에서 적을 압박한다.",
+              "파리를 탄 정예 기사. 아미 내에서 귀한 기동력을 담당하며 적의 핵심 보병진을 타격한다.",
           },
         ],
         playstyle: `블리크 호스트는 '무너지지 않는 벽'입니다. 블라이트킹들이 중앙 거점에서 버티는 동안 지휘관과 푸스고일들이 공중에서 적을 견제합니다. 적의 공격을 몸으로 받아내며 '너글의 사이클' 효과를 유도해, 후반부로 갈수록 말라죽어가는 적을 확인하며 승기를 굳히는 전술이 유효합니다.`,
-        imagePath: "/images/factions/maggotkin-of-nurgle/bleak-host.jpg",
+        imagePath: "/images/factions/maggotkin-of-nurgle/bleak-host.webp",
       },
       {
         id: "bubonic-cell",
         name: "Bubonic Cell",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-maggotkin-of-nurgle-bubonic-cell-2026?queryID=0ed468ac95ca4848220c3c626db9c54f",
         rarity: false,
-        description: `역병의 정원에서 기어 나온 데몬들의 무리입니다. 플레이그베어러들이 웅얼거리는 기도를 읊으며 진군하고, 기괴한 비스트들이 적을 덮칩니다. 물리적인 타격보다는 마법적인 오염과 재생 능력을 통해 상대의 전의를 상실케 만드는 부정한 군단입니다.`,
+        description: `역병의 정원에서 기어 나온 데몬들의 무리입니다. 너글링들은 낄낄거리며 진군하고, 기괴한 비스트가 적을 덮칩니다. 물리적인 타격보다는 마법적인 오염과 재생 능력을 통해 상대의 전의를 상실케 만드는 부정한 군단입니다.`,
         stats: { 공격력: 6, 생존력: 9, 기동성: 5, 미션수행: 9, 유틸리티: 8 },
         recommended: [
           "데몬 특유의 회복 메커니즘과 마법적인 견제를 선호하는 분",
@@ -2325,18 +2412,32 @@ export const factions = [
         ],
         units: [
           {
-            name: "Spoilpox Scrivener",
+            name: "Rotbringer Sorcerer",
             role: "지휘관",
             count: 1,
             description:
-              "데몬 군단의 서기. 플레이그베어러들을 독려하여 공격 횟수와 이동력을 높이는 중요한 버프를 제공한다.",
+              "데몬 군단의 마법사. 부정한 마법으로 아군의 무기를 강화해 준다.",
           },
           {
-            name: "Plaguebearers",
+            name: "Nurglings",
             role: "기간 보병",
+            count: 3,
+            description:
+              "너글의 하급 악마. 공격력은 형편없지만 끊임없는 재생으로 적을 악착같이 물고 늘어진다",
+          },
+          {
+            name: "Nurglings",
+            role: "기간 보병",
+            count: 3,
+            description:
+              "너글의 하급 악마. 공격력은 형편없지만 끊임없는 재생으로 적을 악착같이 물고 늘어진다",
+          },
+          {
+            name: "Rotmire Creed",
+            role: "사격 전력",
             count: 10,
             description:
-              "너글의 기본 데몬 보병. 높은 맷집과 점유 능력을 바탕으로 거점 수비의 핵심이 된다.",
+              "역병 묻은 바람총을 쏘는 종복들. 피해를 받지 않고 후퇴할 수 있어 지속적으로 원거리 사격을 가하는데 뛰어나다",
           },
           {
             name: "Beast of Nurgle",
@@ -2344,13 +2445,6 @@ export const factions = [
             count: 1,
             description:
               "친근하지만 치명적인 괴수. 적에게 달려들어 무작위적인 피해를 입히고 사방에 역병을 뿌린다.",
-          },
-          {
-            name: "Plague Drones",
-            role: "기병 전력",
-            count: 3,
-            description:
-              "비행하는 데몬 기병대. 원거리에서 독소를 발사하거나 빠른 속도로 기동하여 미션을 수행한다.",
           },
         ],
         playstyle: `부보닉 셀은 '거머리 같은 점령'이 핵심입니다. 스포일폭스 스크리브너의 지휘 아래 플레이그베어러들이 끈질기게 거점을 지킵니다. 비스트 오브 너글은 적의 돌격을 방해하며 전선을 흐트러뜨리고, 플레이그 드론은 유동적으로 움직이며 부족한 화력을 보충하는 역할을 수행합니다.`,
@@ -2375,10 +2469,11 @@ export const factions = [
       {
         id: "carrion-retainers",
         name: "Carrion Retainers",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://cdn11.bigcommerce.com/s-285hkc2e8r/images/stencil/500x659/products/24019/33417/https___trade.games-workshop.com_assets_2024_03_99120207128_FECSpearhead07__32446.1709929124.jpg?c=2",
         rarity: true,
         description: `고귀한 섭정의 지휘 아래 전장을 누비는 정예 기병대입니다. 스스로를 영광스러운 기사단이라 믿는 이들은 숭고한 사명감(광기)을 바탕으로 적에게 돌격합니다. 강력한 '고귀한 증서' 포인트를 쌓아 아군을 부활시키거나 공격 횟수를 폭발적으로 늘리는 상급자 위주의 플레이가 특징입니다.`,
-        stats: { 공격력: 9, 생존력: 7, 기동성: 8, 미션수행: 6, 유틸리티: 8 },
+        stats: { 공격력: 9, 생존력: 3, 기동성: 8, 미션수행: 4, 유틸리티: 4 },
         recommended: [
           "소수 정예 기병대의 강력한 돌격력을 선호하는 분",
           "유닛을 부활시키거나 강화하는 자원 관리형 메커니즘을 즐기는 분",
@@ -2419,12 +2514,13 @@ export const factions = [
           },
         ],
         playstyle: `캐리언 리테이너는 '증서 관리'가 승패를 결정합니다. 아치리전트가 안전하게 포인트를 쌓는 동안 몰벡 나이트와 바굴프가 적의 시선을 끌어야 합니다. 적절한 타이밍에 쌓인 포인트를 소모해 전멸한 유닛을 다시 불러내거나 공격 속도를 높여 한 번에 전황을 뒤집는 정교한 운영이 필요합니다.`,
-        imagePath: "/images/factions/flesh-eater-courts/carrion-retainers.jpg",
+        imagePath: "/images/factions/flesh-eater-courts/carrion-retainers.webp",
       },
       {
         id: "charnel-watch",
         name: "Charnel Watch",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-charnel-watch-2025?queryID=7bbd8f647972f91b25d75dcbdacfdfd8",
         rarity: false,
         description: `끊임없이 몰려드는 식인종 무리와 그들의 머리 위를 비행하는 감시자들입니다. 압도적인 보병 머릿수를 활용해 거점을 점령하고, 하늘에서 내려오는 기습적인 공격으로 적을 당황하게 만듭니다. '광기 신념'을 퍼뜨려 적을 공포에 빠뜨리는 심리전과 물량전이 결합된 구성입니다.`,
         stats: { 공격력: 7, 생존력: 6, 기동성: 7, 미션수행: 10, 유틸리티: 7 },
@@ -2439,16 +2535,16 @@ export const factions = [
         ],
         units: [
           {
-            name: "Abhorrant Ghoul King",
+            name: "Abhorrant Gorewarden",
             role: "지휘관",
             count: 1,
             description:
-              "광기 어린 왕. 비천한 구울들을 선동하여 평소보다 훨씬 빠른 속도로 적에게 달려들게 만든다.",
+              "광기 어린 섭정. 비천한 구울들을 선동하여 평소보다 훨씬 빠른 속도로 적에게 달려들게 만든다.",
           },
           {
-            name: "Crypt Ghouls",
+            name: "Royal Beastflayers",
             role: "기간 보병",
-            count: 20,
+            count: 10,
             description:
               "굶주린 식인종 무리. 개별적으론 약하지만 숫자로 적을 압도하며 거점을 확실하게 점유한다.",
           },
@@ -2479,7 +2575,7 @@ export const factions = [
     tagline: "뼈로 만든 완벽한 전쟁 기계들",
     lore: `죽음의 신 나가쉬의 의지로 창조된 완벽한 군세. 오시아크 본리퍼는 단순한 언데드가 아니라, 수확된 뼈와 영혼을 정교하게 재구성해 만들어진 전쟁 기계다.
 
-그들은 ‘뼈 십일조’를 요구하며 도시와 왕국을 압박하고, 거부당할 경우 체계적으로 침공해 모든 것을 자원으로 회수한다. 감정이나 자비는 존재하지 않는다 — 전쟁은 계산이며, 생명은 단지 재료일 뿐이다.`,
+그들은 ‘뼈의 십일조’를 요구하며 도시와 왕국을 압박하고, 거부당할 경우 체계적으로 침공해 모든 것을 자원으로 회수한다. 감정이나 자비는 존재하지 않는다 — 전쟁은 계산이며, 생명은 단지 재료일 뿐이다.`,
     color: "#6a5a20",
     accentColor: "#c8b060",
     imagePath: "/images/factions/ossiarch-bonereapers/banner.webp",
@@ -2487,7 +2583,8 @@ export const factions = [
       {
         id: "mortisan-elite",
         name: "Mortisan Elite",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.fantasygames-southbend.com/images/thumbnails/1982/2619/detailed/143/115141091.jpg",
         rarity: false,
         description: `뼈를 재조립하여 만든 거대 괴수들과 마법적 우위를 점하는 엘리트 부대입니다. 머릿수는 적지만 모델 하나하나가 강력한 파괴력을 지녔으며, 적의 공격을 무시하고 전진하는 압도적인 위압감을 선사합니다.`,
         stats: { 공격력: 10, 생존력: 9, 기동성: 5, 미션수행: 5, 유틸리티: 7 },
@@ -2500,34 +2597,42 @@ export const factions = [
         ],
         units: [
           {
-            name: "Mortisan Soulmason",
+            name: "Mortisan Ossifector",
             role: "지휘관",
             count: 1,
             description:
               "영혼을 다루는 마법사. 아군에게 명중률 버프를 걸거나 적의 마법을 차단하며 전장을 지원한다.",
           },
           {
-            name: "Gothizzar Harvester",
-            role: "괴수",
-            count: 1,
+            name: "Immortis Guard",
+            role: "정예 전력",
+            count: 3,
             description:
-              "뼈를 수확하는 거대 괴수. 근처에서 죽은 자들의 뼈를 모아 즉석에서 아군 유닛을 수리하거나 부활시킨다.",
+              "나가쉬의 최정예 근위대. 지휘관을 보호할 때 전투력이 더 강력해진다.",
+          },
+          {
+            name: "Necropolis Stalkers",
+            role: "정예 전력",
+            count: 3,
+            description:
+              "오시아크의 정예 투사들. 전투의 형상을 변경하여 수비적으로도, 공격적으로도 운용이 가능한 만능 유닛.",
           },
           {
             name: "Morghast Archai",
-            role: "정예 전력",
+            role: "괴수",
             count: 2,
             description:
-              "하늘을 나는 거대 구조물. 높은 맷집과 파괴적인 공격력으로 적의 핵심 타겟을 제거한다.",
+              "하늘을 나는 거대 괴수. 높은 맷집과 파괴적인 공격력으로 마주치는 모든 것을 제거한다.",
           },
         ],
-        playstyle: `모티잔 엘리트는 '유지력 기반의 섬멸'이 핵심입니다. 고티자 하베스터가 전선의 중심에서 버티며 아군을 수리하고, 모가스트가 강력한 한 방을 꽂아 넣어야 합니다. 적의 파상공세를 버텨내며 하나씩 지워나가는 운영이 중요합니다.`,
-        imagePath: "/images/factions/ossiarch-bonereapers/mortisan-elite.jpg",
+        playstyle: `모티잔 엘리트는 '유지력 기반의 섬멸'이 핵심입니다. 아카이는 엘리트 유닛을 제거하고, 이모트리스 가드가 적의 유닛을 대거 묶어놓아야 합니다. 적의 파상공세를 버텨내며 하나씩 지워나가는 운영이 중요합니다.`,
+        imagePath: "/images/factions/ossiarch-bonereapers/mortisan-elite.webp",
       },
       {
         id: "tithe-reaper-echelon",
         name: "Tithe-Reaper Echelon",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-NZ/shop/spearhead--ossiarch-bonereapers-2024?srsltid=AfmBOoowpg86nxN854zWLpcCkF4aQhZeEHEPd_x4kK0VRB9HkylbkdJB",
         rarity: true,
         description: `본리퍼 군단의 표준이라 할 수 있는 견고한 보병 방진 부대입니다. 철저한 규율 아래 움직이는 모텍 가드들이 적의 공격을 방패로 막아내고, 그 뒤에서 발리스타가 정밀한 사격을 퍼붓습니다.`,
         stats: { 공격력: 7, 생존력: 8, 기동성: 4, 미션수행: 9, 유틸리티: 8 },
@@ -2554,18 +2659,25 @@ export const factions = [
               "본리퍼의 주력 보병. 방패 벽을 형성하여 적의 공격을 효율적으로 방어한다.",
           },
           {
-            name: "Mortek Crawl",
-            role: "전쟁기계",
-            count: 1,
+            name: "Mortek Guard",
+            role: "기간 보병",
+            count: 10,
             description:
-              "영혼의 에너지를 쏘아 올리는 투석기. 원거리에서 적진 깊숙한 곳의 핵심 유닛을 저격한다.",
+              "본리퍼의 주력 보병. 방패 벽을 형성하여 적의 공격을 효율적으로 방어한다.",
           },
           {
-            name: "Necropolis Knights",
+            name: "Kavalos Deathriders",
             role: "기병 전력",
+            count: 5,
+            description:
+              "나가쉬의 기병들. 돌격 시 증가하는 데미지를 사용해 적을 힘껏 부순다.",
+          },
+          {
+            name: "Gothizzar Harvester",
+            role: "괴수",
             count: 3,
             description:
-              "거대 뱀을 탄 기병. 아미의 느린 속도를 보완하며 측면 타격을 담당한다.",
+              "육중한 파괴력이 발군인 괴수. 적을 부수고 수집한 뼈로 아군을 수리하는 능력을 가지고 있다.",
           },
         ],
         playstyle: `타이드-리퍼 에셜론은 '규율 잡힌 전진'이 목표입니다. 모텍 가드가 중앙에서 버티고 본셰이퍼가 계속해서 충원해 주는 사이, 모텍 크롤러의 화력으로 상대의 위협 요소를 제거하며 거점을 야금야금 점령해야 합니다.`,
@@ -2575,7 +2687,8 @@ export const factions = [
       {
         id: "kavalos-vanguard",
         name: "Kavalos Vanguard",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-ossiarch-bonereapers-kavalos-vanguard-2026?queryID=9724337b9a82462bf3afc39a0256279b",
         rarity: false,
         description: `본리퍼 군단 중 가장 빠른 기동성을 자랑하는 선봉대입니다. 뼈로 만들어진 군마를 탄 기사들이 전장의 빈틈을 파고들어 파괴적인 돌격을 감행하며, 적이 전열을 가다듬기 전에 붕괴시킵니다.`,
         stats: { 공격력: 8, 생존력: 7, 기동성: 10, 미션수행: 8, 유틸리티: 6 },
@@ -2604,7 +2717,14 @@ export const factions = [
             role: "기병 전력",
             count: 5,
             description:
-              "추가 기병 분대. 다각도 기습을 위해 별도로 운용되며 미션 수행력을 높인다.",
+              "본리퍼의 주력 기병. 뛰어난 기동성으로 전장을 장악하며 돌격 시 치명적인 피해를 입힌다.",
+          },
+          {
+            name: "Teratic Cohort",
+            role: "기간 보병",
+            count: 8,
+            description:
+              "켄타로우스의 형상을 띈 병사. 전투 중에도 이동할 수 있는 능력을 살려 능동적으로 교전 대상을 택할 수 있다",
           },
         ],
         playstyle: `카발로스 뱅가드는 '히트 앤 런'이 핵심입니다. 리쥬-카발로스의 버프를 받은 데스라이더들이 적의 가장 약한 지점에 동시 돌격하여 패퇴시킨 후, 다시 빠져나와 다음 타겟을 노리는 속도감이 요구됩니다.`,
@@ -2629,7 +2749,8 @@ export const factions = [
       {
         id: "tyrants-bellow",
         name: "Tyrant's Bellow",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Ftyrants-bellow-v0-xx371gx0mzcg1.jpeg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D3b96a5f1254c01d9d7a26384b25011131db4fe50",
         rarity: false,
         description: `폭군(Tyrant)의 포효 아래 모인 거구의 전사들입니다. 단순하지만 압도적인 물리력을 앞세워 적을 들이받고, 뼈째로 씹어먹는 파괴적인 돌격 부대입니다. 높은 체력과 충격력을 바탕으로 적의 전선을 정면에서 분쇄하는 데 특화되어 있습니다.`,
         stats: { 공격력: 10, 생존력: 8, 기동성: 6, 미션수행: 6, 유틸리티: 5 },
@@ -2650,9 +2771,23 @@ export const factions = [
               "아미의 군주. 엄청난 근접 공격력을 가졌으며, 주변 오거들이 겁먹지 않고 싸우도록 통제한다.",
           },
           {
+            name: "Mounfang Pack",
+            role: "기병 전력",
+            count: 2,
+            description:
+              "모운팽을 단 오거들. 단단한 가죽 덕에 사격에 저항을 가진 점이 특징이다.",
+          },
+          {
             name: "Ogor Gluttons",
             role: "기간 보병",
-            count: 6,
+            count: 3,
+            description:
+              "오거의 주력 보병. 거대한 덩치로 적을 들이받으며 돌격할 때 가장 강력한 위력을 발휘한다.",
+          },
+          {
+            name: "Ogor Gluttons",
+            role: "기간 보병",
+            count: 3,
             description:
               "오거의 주력 보병. 거대한 덩치로 적을 들이받으며 돌격할 때 가장 강력한 위력을 발휘한다.",
           },
@@ -2668,7 +2803,7 @@ export const factions = [
             role: "사격 전력",
             count: 2,
             description:
-              "추가 사격 분대. 개별적으로 운용되어 다각도에서 화력을 지원한다.",
+              "휴대용 대포를 든 오거 전사들. 원거리에서 포탄을 퍼부어 적의 방어선을 약화시킨다.",
           },
           {
             name: "Ironblaster",
@@ -2684,7 +2819,8 @@ export const factions = [
       {
         id: "scrapglutt",
         name: "Scrapglutt",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-ogor-mawtribes-scrapglutt-2025?queryID=2833c9bee09ae6c2781b85e41f3ac06e",
         rarity: false,
         description: `고철과 잡동사니를 숭배하는 변칙적인 부대입니다. 덩치 큰 오거와 영악한 그로트들이 섞여 있으며, 사정거리는 짧지만 치명적인 고철 발사기들을 사용합니다. 적을 혼란에 빠뜨리고 예상치 못한 타이밍에 큰 피해를 입히는 전술을 구사합니다.`,
         stats: { 공격력: 8, 생존력: 7, 기동성: 7, 미션수행: 9, 유틸리티: 8 },
@@ -2695,26 +2831,41 @@ export const factions = [
         notRecommended: ["정직하고 묵직한 정면 힘 싸움만을 선호하는 분"],
         units: [
           {
-            name: "Icebrow Hunter",
+            name: "Mantrappers",
             role: "지휘관",
             count: 1,
             description:
-              "노련한 사냥꾼. 적의 측면이나 후방에서 나타나 기습적인 사격과 근접 공격을 감행한다.",
+              "노련한 사냥꾼. 아군 보병을 질책해 점령 점수를 올리는 강력한 유틸리티 능력을 가지고 있다",
           },
           {
             name: "Gnoblars",
             role: "기간 보병",
-            count: 20,
+            count: 12,
             description:
               "오거를 따르는 고블린 무리. 수적 우위를 바탕으로 거점을 점령하고 적의 돌격을 몸으로 막아낸다.",
           },
           {
-            name: "Gorgers",
+            name: "Ironguts",
             role: "정예 전력",
-            count: 3,
+            count: 2,
             description:
-              "굶주림에 미친 괴물들. 매복해 있다가 적의 취약한 곳을 습격하는 기습 특화 유닛.",
+              "엄청난 체력을 가진 강력한 오거들. 묵직한 곤봉으로 적의 두개골을 산산조각낸다.",
           },
+          {
+            name: "Ironguts",
+            role: "정예 전력",
+            count: 2,
+            description:
+              "엄청난 체력을 가진 강력한 오거들. 묵직한 곤봉으로 적의 두개골을 산산조각낸다.",
+          },
+          {
+            name: "Ironguts",
+            role: "정예 전력",
+            count: 4,
+            description:
+              "엄청난 체력을 가진 강력한 오거들. 증원대로 도착하는 든든한 병력들",
+          },
+
           {
             name: "Gnoblar Scraplauncher",
             role: "전쟁기계",
@@ -2743,10 +2894,11 @@ export const factions = [
       {
         id: "wallsmasher-stomp",
         name: "Wallsmasher Stomp",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-sons-of-behemat-2024?queryID=ecfda49eb42127ea30a27ac67157e17f",
         rarity: false,
         description: `거인들의 발구르기 한 번에 도시가 무너지고 대지가 뒤흔들립니다. 월스매셔 스톰프는 압도적인 체구와 힘을 앞세워 적의 방어선을 글자 그대로 '짓밟아' 버립니다. 머릿수는 매우 적지만, 각 모델이 전장의 지형지물과 적의 대열을 파괴하는 데 특화된 거대 괴수 군단입니다.`,
-        stats: { 공격력: 10, 생존력: 10, 기동성: 6, 미션수행: 8, 유틸리티: 4 },
+        stats: { 공격력: 4, 생존력: 10, 기동성: 6, 미션수행: 10, 유틸리티: 4 },
         recommended: [
           "압도적인 크기의 모델이 주는 시각적 위압감을 즐기는 분",
           "복잡한 유닛 관리 대신 강력한 개별 모델의 파워에 집중하고 싶은 분",
@@ -2759,7 +2911,7 @@ export const factions = [
         units: [
           {
             name: "Mancrusher Gargant",
-            role: "지휘관 (괴수)",
+            role: "지휘관",
             count: 1,
             description:
               "무리의 우두머리 역할을 수행하는 거인. 가장 거대한 몽둥이를 휘두르며 아군 가르간트들의 사기를 북돋는다.",
