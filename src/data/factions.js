@@ -123,13 +123,15 @@ export const factions = [
             name: "Vanquishers",
             role: "기간 보병",
             count: 5,
-            description: "장검과 방패로 무장한 전열 보병 2개 분대",
+            description:
+              "장검으로 무장한 전열 보병분대. 다수의 적을 상대로 할 때 더욱 강해진다.",
           },
           {
             name: "Vanquishers",
             role: "기간 보병",
             count: 5,
-            description: "장검과 방패로 무장한 전열 보병 2개 분대",
+            description:
+              "장검으로 무장한 전열 보병분대. 다수의 적을 상대로 할 때 더욱 강해진다.",
           },
 
           {
@@ -384,7 +386,7 @@ export const factions = [
             role: "지휘관",
             count: 1,
             description:
-              "다크오스 야만 전사들을 이끄는 전쟁 여왕. 근처 다코아스 유닛에 버프를 부여하며 직접 전투에서도 강력하다.",
+              "다크오스 야만 전사들을 이끄는 전쟁 여왕. 근처 다크오스 유닛에 버프를 부여하며 직접 전투에서도 강력하다.",
           },
           {
             name: "Darkoath Marauders",
@@ -405,7 +407,7 @@ export const factions = [
             role: "정예 기병",
             count: 5,
             description:
-              "빠른 속도의 다코아스 기병. 측면 돌격과 목표 선점을 위해 내달리는 아미의 기동 핵심.",
+              "빠른 속도의 다크오스 기병. 측면 돌격과 목표 선점을 위해 내달리는 아미의 기동 핵심.",
           },
         ],
         playstyle: `다크오스 레이더즈는 속도와 공격성만이 답인 아미다. 매 라운드 워퀸의 버프를 받은 유닛들이 전진하며 적에게 끊임없는 압박을 가한다. 펠라이더는 빠른 기동력으로 목표 지점을 선점하거나 측면에서 기습을 감행하고, 마로더의 물량이 전선을 뒤덮는다. 단, 방어력이 낮기 때문에 집중 공격을 허용하지 않도록 전선을 넓게 펼쳐 상대의 화력을 분산시켜야 한다. 상대보다 먼저 치고 먼저 끝내는 것이 유일한 생존 전략이다.`,
@@ -2030,7 +2032,7 @@ export const factions = [
         id: "fangs-of-the-blood-god",
         name: "Fangs of the Blood God",
         gwUrl:
-          "hhttps://www.warhammer.com/en-WW/shop/spearhead-blades-of-khorne-fangs-of-the-blood-god-2025?queryID=c4586dc44c5d0d4e43278ad2557a6314",
+          "https://www.warhammer.com/en-WW/shop/spearhead-blades-of-khorne-fangs-of-the-blood-god-2025?queryID=c4586dc44c5d0d4e43278ad2557a6314",
         rarity: false,
         description: `코른의 직접적인 분노가 형상화된 데몬 군단입니다. 붉은 피부의 블러드하운드들이 차원문을 넘어 강림하며, 복잡한 전술 대신 오직 살육만을 위해 움직입니다. 필멸자 부대보다 기동성이 뛰어나며, 적의 방어력을 무시하는 치명적인 일격을 가합니다.`,
         stats: { 공격력: 10, 생존력: 5, 기동성: 8, 미션수행: 6, 유틸리티: 5 },

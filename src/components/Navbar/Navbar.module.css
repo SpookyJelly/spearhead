@@ -4,7 +4,11 @@
   left: 0;
   right: 0;
   height: var(--navbar-height);
-  background: linear-gradient(to bottom, rgba(6, 8, 14, 0.98), rgba(6, 8, 14, 0.92));
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 8, 14, 0.98),
+    rgba(6, 8, 14, 0.92)
+  );
   border-bottom: 1px solid var(--border);
   z-index: 100;
   backdrop-filter: blur(12px);
@@ -35,7 +39,9 @@
   cursor: pointer;
   padding: 8px;
   flex-shrink: 0;
-  transition: border-color var(--transition), background var(--transition);
+  transition:
+    border-color var(--transition),
+    background var(--transition);
 }
 
 .hamburger:hover {
@@ -48,7 +54,10 @@
   height: 1.5px;
   background: var(--gold);
   border-radius: 1px;
-  transition: transform var(--transition), opacity var(--transition), width var(--transition);
+  transition:
+    transform var(--transition),
+    opacity var(--transition),
+    width var(--transition);
   transform-origin: center;
 }
 
@@ -126,8 +135,8 @@
   gap: 0.4rem;
   flex-shrink: 0;
   padding: 0.35rem 0.8rem;
-  font-family: var(--font-heading);
-  font-size: 0.62rem;
+  /* font-family: var(--font-heading); */
+  font-size: 1rem;
   line-height: 1;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -136,7 +145,10 @@
   border: 1px solid var(--border);
   border-radius: 3px;
   cursor: pointer;
-  transition: color var(--transition), border-color var(--transition), background var(--transition);
+  transition:
+    color var(--transition),
+    border-color var(--transition),
+    background var(--transition);
 }
 
 .navBtn:hover {
