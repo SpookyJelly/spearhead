@@ -29,6 +29,8 @@ export const factions = [
   {
     id: "stormcast-eternals",
     name: "Stormcast Eternals",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-order/stormcast-eternals",
     alliance: "order",
     tagline: "지그마의 번개로 벼려진 불멸의 전사들",
     lore: `신왕 지그마가 직접 단련한 불멸의 전사들. 죽음을 맞이할 때마다 아지르의 하늘 신전으로 소환되어 다시 단련되고 부활한다. 신성한 지그마라이트 갑옷으로 무장한 그들은 재앙의 시대를 거치며 생존한 모든 영역을 수호하기 위해 파견된다.
@@ -159,6 +161,8 @@ export const factions = [
   {
     id: "daughters-of-khaine",
     name: "Daughters of Khaine",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-order/daughters-of-khaine",
     alliance: "order",
     tagline: "피와 광기에 취한 학살의 여신도들",
     lore: `케인의 피로 물들인 숭배자들로 이루어진 아엘프 전사 집단. 그들의 신전은 끝없는 제의와 피로 가득하며, 전투는 그 자체로 신성한 행위다. 그들이 섬기는 신 케인은 언제나 더 많은 피를 원한다 — 그리고 그의 딸들은 기꺼이 그 욕망을 채운다.
@@ -289,6 +293,8 @@ export const factions = [
   {
     id: "slaves-to-darkness",
     name: "Slaves to Darkness",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-chaos/slaves-to-darkness",
     alliance: "chaos",
     tagline: "어둠의 신들을 섬기는 전사들",
     lore: `카오스의 어둠 신들 — 코른, 젠취, 너글, 슬라네쉬 — 모두를 또는 그 누구도 섬기지 않는 전사들의 연맹. 그들은 오직 정복과 파괴만을 추구하며, 어둠의 힘을 통해 카오스 스폰이나 다에몬 프린스로 거듭나기를 꿈꾼다.
@@ -411,6 +417,8 @@ export const factions = [
     id: "skaven",
     name: "Skaven",
     alliance: "chaos",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-chaos/skaven",
     tagline: "위대한 뿔난 쥐의 쥐 군단",
     lore: `스케이븐은 언더웨이의 어둠 속에 숨어 영역들의 기반을 무너뜨리는 쥐인간 종족이다. 그들의 신 — 위대한 뿔 달린 쥐 — 는 카오스 신들과 동등한 권능을 자랑하며, 스케이븐은 숫자와 비열한 기술로 어떤 적도 압도한다.
 
@@ -545,6 +553,8 @@ export const factions = [
   {
     id: "nighthaunt",
     name: "Nighthaunt",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-death/nighthaunt",
     alliance: "death",
     tagline: "형벌로 묶인 망령들의 군단",
     lore: `나이트온트는 나이트 신 나이트의 의지에 따라 활동하는 유령 군단이다. 살아있을 때의 죄악으로 저주받아 유령 사슬에 묶인 영혼들이 나이트의 병기로 재탄생한다. 죽음도, 물리적 공격도 그들을 막을 수 없다.
@@ -698,6 +708,8 @@ export const factions = [
   {
     id: "soulblight-gravelords",
     name: "Soulblight Gravelords",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-death/soulblight-gravelords",
     alliance: "death",
     tagline: "영원한 밤을 지배하는 흡혈귀 군주들",
     lore: `뱀파이어 군주들이 이끄는 불사 군단. 죽음의 신 나이트의 피조물이지만 그의 지배에 도전할 만큼 강력한 흡혈귀들은 스스로의 왕국을 건설한다. 소울블라이트의 저주로 영생을 얻은 대신, 그들은 영원히 생명의 피를 갈망한다.
@@ -823,6 +835,8 @@ export const factions = [
   {
     id: "ironjawz",
     name: "Orruk Warclans — Ironjawz",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-destruction/orruk-warclans",
     alliance: "destruction",
     tagline: "힘이 전부인 난폭한 오크 군단",
     lore: `아이언죠즈는 오룩 중에서도 가장 크고 강력한 자들이다. 주먹으로 직접 두드려 만든 거친 갑옷을 두르고, 파괴와 전쟁 그 자체인 고카-모카 신을 섬긴다. 그들에게 전투는 종교이자 즐거움이다.
@@ -894,6 +908,8 @@ export const factions = [
   {
     id: "kruleboyz",
     name: "Orruk Warclans — Kruleboyz",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-destruction/orruk-warclans",
     alliance: "destruction",
     tagline: "비열하고 잔혹한 녹색 군단",
     lore: `크룰보이즈는 오룩 중에서 특히나 더 비열하고 교활한 자들이 모인 세력입니다. 이기기 위해 교활한 술책과 무기에 독을 바르는 등, 일반적인 오룩과는 다르게 싸움법을 선호합니다.
@@ -970,6 +986,8 @@ export const factions = [
   {
     id: "gloomspite-gitz",
     name: "Gloomspite Gitz",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-destruction/gloomspite-gitz",
     alliance: "destruction",
     tagline: "달빛에 미쳐 날뛰는 고블린 떼",
     lore: `글룸스파이트 기츠는 달의 저주를 받은 그로트, 트로것, 스퀴그로 구성된 혼돈의 군단이다. 나쁜 문 — 차가운 달 — 이 하늘에 떠오를 때, 그들의 광기와 힘은 최고조에 달한다. 그들은 수도 많고 예측불가능하다.
@@ -1114,6 +1132,8 @@ export const factions = [
   {
     id: "cities-of-sigmar",
     name: "Cities of Sigmar",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-order/cities-of-sigmar",
     alliance: "order",
     tagline: "필멸자들이 세운 마지막 희망의 도시들",
     lore: `카오스의 침략 속에서도 무너지지 않은 필멸자들의 도시 연맹. 인간, 아엘프, 듀아딘이 함께 모여 성벽을 쌓고, 불과 피로 문명을 지켜낸다.
@@ -1241,6 +1261,8 @@ export const factions = [
   {
     id: "fyreslayers",
     name: "Fyreslayers",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-order/fyreslayers",
     alliance: "order",
     tagline: "복수를 맹세한 광전사 듀아딘들",
     lore: `불의 신 그리므니르의 후예를 자처하는 듀아딘 광전사들. 그들은 신의 힘이 깃들었다고 믿는 ‘우르-골드’를 수집하기 위해, 계약과 보수를 대가로 모든 전장에 뛰어든다.
@@ -1311,6 +1333,8 @@ export const factions = [
   {
     id: "idoneth-deepkin",
     name: "Idoneth Deepkin",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-order/idoneth-deepkin",
     alliance: "order",
     tagline: "영혼을 사냥하는 바다의 망령들",
     lore: `바다 깊은 곳에 숨어 사는 저주받은 아엘프들. 영혼이 불완전하게 태어나는 운명을 지닌 그들은, 살아남기 위해 다른 종족의 영혼을 사냥해야만 한다.
@@ -1433,6 +1457,8 @@ export const factions = [
     id: "kharadron-overlords",
     name: "Kharadron Overlords",
     alliance: "order",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-order/kharadron-overlords",
     tagline: "하늘을 지배하는 탐욕스러운 듀아딘 상인들",
     lore: `하늘을 항해하는 듀아딘 상인 연합. 한때 신을 섬기던 그들은 몰락의 시대 이후 스스로를 지키기 위해 신앙을 버리고, ‘카라드론 코드’라 불리는 철저한 법과 계약의 체계를 세웠다.
 부유한 공중 항구를 거점으로 활동하는 그들은 에테르-골드를 채굴하고 거래하며 막대한 부를 축적한다. 카라드론 오버로드에게 전쟁은 신념이 아니라 사업이다 — 계약이 성립되는 순간, 그들의 함대는 어디든 도달한다.`,
@@ -1554,6 +1580,8 @@ export const factions = [
   {
     id: "lumineth-realm-lords",
     name: "Lumineth Realm-lords",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-order/lumineth-realm-lords",
     alliance: "order",
     tagline: "빛과 균형을 수호하는 아엘프들",
     lore: `빛과 지식, 그리고 완전한 균형을 추구하는 아엘프 문명. 과거의 오만으로 세계를 파멸 직전까지 몰아넣은 그들은, 스스로를 엄격히 통제하는 철학과 수련을 통해 같은 실수를 반복하지 않으려 한다.
@@ -1676,6 +1704,8 @@ export const factions = [
     id: "seraphon",
     name: "Seraphon",
     alliance: "order",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-order/seraphon",
     tagline: "별에서 내려온 냉혹한 파충류 군세",
     lore: `고대 슬란의 의지로 구현된 별의 군세. 세라폰은 현실에 존재하는 생명체이면서도, 동시에 천상에서 소환된 존재로서 물질과 마법의 경계에 서 있다.
 그들은 ‘위대한 계획’이라 불리는 이해할 수 없는 목적을 수행하기 위해 움직이며, 혼돈의 세력을 철저히 말살하는 데 모든 것을 바친다. 감정이나 자비는 없다 — 세라폰에게 전쟁은 선택이 아니라, 이미 정해진 질서를 완성하기 위한 과정일 뿐이다.`,
@@ -1809,6 +1839,8 @@ export const factions = [
     id: "sylvaneth",
     name: "Sylvaneth",
     alliance: "order",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-order/sylvaneth",
     tagline: "자연의 분노로 화한 숲의 정령들",
     lore: `생명과 자연의 화신들이 이루는 군세. 숲과 대지는 그들에게 단순한 터전이 아니라, 곧 자신들의 몸이자 영혼이다.
 
@@ -1925,6 +1957,8 @@ export const factions = [
     id: "blades-of-khorne",
     name: "Blades of Khorne",
     alliance: "chaos",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-chaos/blades-of-khorne",
     tagline: "피와 해골을 갈망하는 전쟁의 화신들",
     lore: `피와 전쟁의 신 코른을 섬기는 광신적인 전사들. 그들에게 전투는 수단이 아니라 목적이며, 피를 흘리고 해골을 쌓는 행위 자체가 신에게 바치는 최고의 헌신이다.
 
@@ -2049,6 +2083,8 @@ export const factions = [
   {
     id: "disciples-of-tzeentch",
     name: "Disciples of Tzeentch",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-chaos/disciples-of-tzeentch",
     alliance: "chaos",
     tagline: "변화와 음모를 속삭이는 마법의 추종자들",
     lore: `변화와 운명의 신 젠취를 섬기는 마도사와 음모가들. 그들은 세상의 흐름을 뒤틀고, 보이지 않는 실로 전쟁과 운명을 조종한다.
@@ -2179,6 +2215,8 @@ export const factions = [
     id: "hedonites-of-slaanesh",
     name: "Hedonites of Slaanesh",
     alliance: "chaos",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-chaos/hedonites-of-slaanesh",
     tagline: "쾌락과 과잉에 중독된 탐닉의 전사들",
     lore: `쾌락과 집착, 과잉의 신 슬라네쉬를 섬기는 추종자들. 그들은 감각과 욕망의 극한을 추구하며, 전투조차 하나의 향락이자 예술로 여긴다.
 헤도나이트 오브 슬라네쉬는 결코 만족하지 못한다. 어떤 승리도, 어떤 쾌락도 그들의 갈망을 채우지 못하며, 오히려 더 깊은 탐닉으로 이끈다. 그 끝없는 결핍은 그들을 움직이는 진정한 원동력이다 — 슬라네쉬가 속박된 지금조차도, 그 욕망은 멈추지 않는다.`,
@@ -2250,6 +2288,8 @@ export const factions = [
     id: "helsmiths-of-hashut",
     name: "Helsmiths of Hashut",
     alliance: "chaos",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-chaos/helsmiths-of-hashut",
     tagline: "카오스 신 하슈트를 추종하는 사악한 듀아딘들",
     lore: `폭정과 불의 신 하슈트를 섬기는 타락한 듀아딘들. 그들은 끝없는 노동과 희생 위에 세워진 거대한 공업 제국을 건설하고, 노예와 피를 연료 삼아 전쟁 기계를 가동한다.
 헬스미스 오브 하슈트는 불꽃과 금속을 다루는 주조장과도 같다. 그들의 대장간에서는 무기뿐만 아니라, 악마와 결합된 병기와 기괴한 창조물들이 끊임없이 탄생한다. 신앙은 곧 권력이며, 권력은 곧 지배다 — 그들의 제국은 불타는 굴뚝과 쇠사슬 위에서 유지된다.`,
@@ -2321,6 +2361,8 @@ export const factions = [
     id: "maggotkin-of-nurgle",
     name: "Maggotkin of Nurgle",
     alliance: "chaos",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-chaos/maggotkin-of-nurgle",
     tagline: "부패와 생명을 퍼뜨리는 역병의 군세",
     lore: `부패와 재생의 신 너글을 섬기는 군세. 그들은 질병과 썩음을 퍼뜨리지만, 그것을 저주가 아닌 축복으로 여긴다.
 
@@ -2458,6 +2500,8 @@ export const factions = [
     id: "flesh-eater-courts",
     name: "Flesh Eater Courts",
     alliance: "death",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-death/flesh-eater-courts",
     tagline: "광기와 망상증에 빠진 식인 왕국의 기사들",
     lore: `저주받은 광기에 사로잡힌 식인 괴물들의 왕국. 그들은 스스로를 고귀한 기사와 영주로 믿으며, 무너진 폐허와 시체 더미를 찬란한 성과 연회로 인식한다.
 
@@ -2572,6 +2616,8 @@ export const factions = [
     id: "ossiarch-bonereapers",
     name: "Ossiarch Bonereapers",
     alliance: "death",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-death/ossiarch-bonereapers",
     tagline: "뼈로 만든 완벽한 전쟁 기계들",
     lore: `죽음의 신 나가쉬의 의지로 창조된 완벽한 군세. 오시아크 본리퍼는 단순한 언데드가 아니라, 수확된 뼈와 영혼을 정교하게 재구성해 만들어진 전쟁 기계다.
 
@@ -2738,6 +2784,8 @@ export const factions = [
     id: "ogor-mawtribes",
     name: "Ogor Mawtribes",
     alliance: "destruction",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-destruction/ogor-mawtribes",
     tagline: "끝없는 허기에 굶주린 거대한 포식자들",
     lore: `끝없는 굶주림에 사로잡힌 거대한 전사 부족들. 오고르 모우트라이브는 대아귀를 숭배하며, 먹는 행위 자체를 신성한 의식으로 여긴다.
 
@@ -2883,6 +2931,8 @@ export const factions = [
     id: "sons-of-behemat",
     name: "Sons of Behemat",
     alliance: "destruction",
+    officalLink:
+      "https://www.warhammer.com/en-WW/shop/age-of-sigmar/grand-alliance-destruction/sons-of-behemat",
     tagline: "땅을 고르는 거인들의 행진",
     lore: `신 베헤마트의 후예를 자처하는 거대한 거인들. 선즈 오브 베헤마트는 끝없이 떠돌며, 발걸음 하나로 도시를 무너뜨리는 살아있는 재앙이다.
 
