@@ -169,7 +169,8 @@ export const factions = [
       {
         id: "khainite-shadow-covent",
         name: "khainite shadow covent",
-        gwUrl: "https://www.games-workshop.com/en-WW/Daughters-of-Khaine",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-khainite-shadow-coven-2026?queryID=3f3b2a3b0fcc179a000846daa7f5d477",
         description: `케인의 성스러운 피 가마솥을 중심으로 결집한 수호 전단. 헤카티 크로넨이 선혈의 의식을 집전하는 동안, 위치아엘프 전사들이 사방을 질주하며 적을 쓰러뜨린다. 전투가 고조될수록 케인의 가호가 더욱 강렬해진다.`,
         stats: { 공격력: 9, 생존력: 5, 기동성: 8, 미션수행: 6, 유틸리티: 6 },
         recommended: [
@@ -250,7 +251,13 @@ export const factions = [
           {
             name: "Witch Aelves",
             role: "기간 보병",
-            count: 10,
+            count: 5,
+            description: "두 자루의 칼을 들고 광란의 춤을 추며 싸우는 여전사들",
+          },
+          {
+            name: "Witch Aelves",
+            role: "기간 보병",
+            count: 5,
             description: "두 자루의 칼을 들고 광란의 춤을 추며 싸우는 여전사들",
           },
           {
@@ -290,7 +297,8 @@ export const factions = [
       {
         id: "bloodwind-legion",
         name: "Bloodwind Legion",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-slaves-to-darkness-2024?queryID=ff9f20dae79a9959959807de2b2a531a",
         description: `카오스 로드가 이끄는 어둠 신들의 철권. 카오스 워리어들이 강인한 방어선을 구축하는 동안, 카오스 나이츠는 '두려운 강림(Dreaded Arrival)' 규칙으로 2라운드에 전장에 강림해 적의 허를 찌르는 결정타를 날린다. 전투가 거듭될수록 Eye of the Gods 시스템으로 유닛들이 카오스의 축복을 받아 점점 강해진다.`,
         stats: { 공격력: 8, 생존력: 7, 기동성: 6, 미션수행: 7, 유틸리티: 6 },
         recommended: [
@@ -313,7 +321,14 @@ export const factions = [
           {
             name: "Chaos Warriors",
             role: "기간 보병",
-            count: 10,
+            count: 5,
+            description:
+              "두꺼운 카오스 갑옷의 베테랑 전사 두 분대. 거점을 점령하고 전선을 유지하는 중추 역할.",
+          },
+          {
+            name: "Chaos Warriors",
+            role: "기간 보병",
+            count: 5,
             description:
               "두꺼운 카오스 갑옷의 베테랑 전사 두 분대. 거점을 점령하고 전선을 유지하는 중추 역할.",
           },
@@ -338,7 +353,8 @@ export const factions = [
       {
         id: "darkoath-raiders",
         name: "Darkoath Raiders",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-slaves-to-darkness-darkoath-raiders-2024?queryID=ff9f20dae79a9959959807de2b2a531a",
         description: `다크오스 워퀸이 이끄는 폭풍 같은 야만 약탈대. 펠라이더의 기병 돌격이 적의 측면을 찢어발기는 동안, 세이버저와 마로더들이 모든 방향에서 쏟아져 들어온다. 갑옷도 방어도 없다 — 오직 광기와 속도로 적을 압도하는 고위험 고보상 아미.`,
         stats: { 공격력: 8, 생존력: 4, 기동성: 9, 미션수행: 6, 유틸리티: 5 },
         recommended: [
@@ -368,13 +384,13 @@ export const factions = [
           {
             name: "Darkoath Savagers",
             role: "정예 보병",
-            count: 5,
+            count: 10,
             description:
               "마로더보다 강인한 야만 전사들. 핵심 목표나 취약한 적 유닛을 분쇄하는 역할.",
           },
           {
             name: "Darkoath Fellriders",
-            role: "기병",
+            role: "정예 기병",
             count: 5,
             description:
               "빠른 속도의 다코아스 기병. 측면 돌격과 목표 선점을 위해 내달리는 아미의 기동 핵심.",
@@ -400,7 +416,8 @@ export const factions = [
       {
         id: "gnawfest-clawpack",
         name: "Gnawfest Clawpack",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/age-of-sigmar-ultimate-starter-set-2024-eng?queryID=5c4d71bdcd587d5b12ec74a4b05b7918",
         description: `물량과 광기로 적을 집어삼키는 스케이브의 정석. 클랜랫의 끝없는 파도가 전선을 유지하는 동안, 강력한 랫 오거들이 돌격하여 적을 분쇄한다. 'Gnawhole Ambush'를 통해 전장의 구석 어디든 예기치 못한 방향에서 나타나 적의 후방을 교란할 수 있는 기동형 물량 아미.`,
         stats: { 공격력: 7, 생존력: 5, 기동성: 8, 미션수행: 8, 유틸리티: 7 },
         recommended: [
@@ -457,12 +474,13 @@ export const factions = [
           },
         ],
         playstyle: `그나페스트 클로팩은 '전략적 소모전'이 핵심이다. 기간 보병인 클랜랫을 미끼로 던져 적을 묶어두고, 'Gnawhole Ambush' 규칙으로 보드 가장자리에서 괴수 전력인 랫 오거를 기습 투입해 적의 약점을 찌른다. 지원 전력의 마법과 지휘관의 부활 능력을 활용해 상대가 지칠 때까지 버티는 것이 승리 공식이다.`,
-        imagePath: "/images/factions/skaven/gnawfest-clawpack.jpg",
+        imagePath: "/images/factions/skaven/gnawfest-clawpack.webp",
       },
       {
         id: "warpspark-clawpack",
         name: "Warpspark Clawpack",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-skaven-2024?queryID=1393d9604daaec3ce90be6bc3255da3e",
         description: `클랜 스크라이어의 미친 과학이 만들어낸 치명적인 화기 군단. 강력한 워프 라이트닝 캐논의 한 방과 중장갑 스톰파인드의 사격으로 적이 다가오기도 전에 잿더미로 만든다. 아군이 피해를 입더라도 적을 더 빨리 파괴하는 고화력 특화 아미.`,
         stats: { 공격력: 9, 생존력: 6, 기동성: 5, 미션수행: 6, 유틸리티: 7 },
         recommended: [
@@ -499,7 +517,14 @@ export const factions = [
           {
             name: "Clanrats",
             role: "기간 보병",
-            count: 20,
+            count: 10,
+            description:
+              "화기반과 캐논을 적의 돌격으로부터 지키기 위한 방어용 보병 부대.",
+          },
+          {
+            name: "Clanrats",
+            role: "기간 보병",
+            count: 10,
             description:
               "화기반과 캐논을 적의 돌격으로부터 지키기 위한 방어용 보병 부대.",
           },
@@ -524,57 +549,139 @@ export const factions = [
       {
         id: "cursed-shacklehorde",
         name: "Cursed Shacklehorde",
-        gwUrl: "https://www.games-workshop.com",
-        description: `끝없이 소환되는 유령들의 통곡 소리가 전장을 뒤덮습니다. 가디언 오브 소울즈의 인도 아래, 억울하게 죽은 영혼들이 사슬에 묶인 채 적을 압박합니다. 개별 유닛은 약해 보일 수 있으나, 죽어도 다시 기어 나오는 강력한 부활 능력과 수적 우위를 통해 적을 지치게 만드는 끈질긴 아미입니다.`,
-        stats: { 공격력: 5, 생존력: 8, 기동성: 8, 미션수행: 9, 유틸리티: 8 },
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-cursed-shacklehorde-2025?queryID=a48e591b853b9f53f3f6e539ca702cc1",
+        description: `고통과 속박에 묶인 망령들이 끝없이 몰려드는 나이트헌트 군세. 스피릿 토먼트의 지배 아래, 처형자와 유령 전사들이 적을 추격하며 공포를 퍼뜨린다. 뛰어난 기동성과 끈질긴 복귀 능력으로 전장을 휘젓는, 잡히지 않는 악몽과도 같은 아미.`,
+        stats: { 공격력: 4, 생존력: 6, 기동성: 9, 미션수행: 9, 유틸리티: 8 },
         recommended: [
-          "죽여도 죽여도 끝없이 부활하는 좀비 같은 끈질긴 운영을 선호하는 분",
-          "많은 수의 모델로 보드를 장악하고 점령 점수를 쌓아 승리하는 방식을 즐기는 분",
-          "강력한 마법 지원을 통해 아군을 보조하는 플레이를 원하는 분",
+          "비행을 활용해 전장을 자유롭게 누비며 위치 싸움으로 승리하는 플레이를 즐기는 분",
+          "유닛을 교환하며 점수 차이를 벌리는 운영형 아미를 선호하는 분",
+          "적의 약점을 집요하게 파고드는 기동 중심 플레이를 좋아하는 분",
         ],
         notRecommended: [
-          "엘리트 유닛의 강력한 한 방으로 적을 단숨에 파괴하는 스타일을 원하는 분",
-          "모델 수가 많아 매 턴 이동과 공격 처리에 시간이 걸리는 것을 번거로워하는 분",
+          "정면에서 버티며 힘싸움으로 밀어붙이는 스타일을 원하는 분",
+          "단단한 방어력이나 확정적인 생존력을 기대하는 분",
         ],
+
         units: [
           {
-            name: "Guardian of Souls",
+            name: "Spirit Torment",
             role: "지휘관",
             count: 1,
             description:
-              "영혼을 인도하는 랜턴을 든 마법사. 아군에게 명중 버프를 주고 유닛을 부활시키는 아미의 핵심 지원가.",
+              "고통을 수확하는 처형자. 주변 적이 쓰러질 때 아군을 회복시키며, 아미의 유지력을 책임지는 핵심 지휘관.",
+          },
+          {
+            name: "Chainghasts",
+            role: "지원 전력",
+            count: 2,
+            description:
+              "사슬을 휘두르며 스피릿 토먼트를 보좌하는 망령. 근처 유닛의 공격 효율을 끌어올리는 버퍼 역할.",
+          },
+          {
+            name: "Bladegheist Revenants",
+            role: "기간 보병",
+            count: 5,
+            description:
+              "돌격 시 폭발적인 공격을 퍼붓는 망령 전사들. 기동력을 활용해 적의 핵심 유닛을 찢어버린다.",
+          },
+          {
+            name: "Bladegheist Revenants",
+            role: "기간 보병",
+            count: 5,
+            description:
+              "돌격 시 폭발적인 공격을 퍼붓는 망령 전사들. 기동력을 활용해 적의 핵심 유닛을 찢어버린다.",
+          },
+          {
+            name: "Dreadscythe Harridans",
+            role: "기동 전력",
+            count: 5,
+            description:
+              "비명을 지르며 적을 베어넘기는 유령들. 다수의 적을 상대할 때 강력한 성능을 발휘한다.",
+          },
+          {
+            name: "Dreadscythe Harridans",
+            role: "기동 전력",
+            count: 5,
+            description:
+              "비명을 지르며 적을 베어넘기는 유령들. 다수의 적을 상대할 때 강력한 성능을 발휘한다.",
+          },
+
+          {
+            name: "Dreadblade Harrows",
+            role: "정예 기병",
+            count: 2,
+            description:
+              "전장을 가로지르는 유령 기사. 순간 이동에 가까운 이동 능력으로 목표를 기습하거나 점수를 노린다.",
+          },
+        ],
+
+        playstyle: `커스드 섀클호드는 '위치와 타이밍'의 아미다. 모든 유닛이 높은 기동성을 바탕으로 전장을 자유롭게 이동하며, 블레이드가이스트 레버넌트가 핵심 타격을 담당한다. 해리단은 다수 유닛을 정리하며 전선을 흐트러뜨리고, 드레드블레이드 해로우는 기습과 점령에 특화된 움직임으로 상대의 계획을 무너뜨린다. 스피릿 토먼트와 체인고스트의 조합은 전투 중 아군을 지속적으로 회복시키며 유지력을 보완한다. 정면 교전보다는, 유리한 교전만 선택하며 점수를 쌓아가는 것이 핵심이다.`,
+        imagePath: "/images/factions/nighthaunt/cursed-shacklehorde.jpg",
+      },
+
+      {
+        id: "slasher-host",
+        name: "Slasher Host",
+        gwUrl:
+          "https://vaultgames.com.au/cdn/shop/files/https___trade.games-workshop.com_assets_2024_06_EB200a-99120207186-70-10-SpearheadNightHaunt.jpg?v=1719563706",
+        description: `슬래셔 호스트는 적의 기세를 꺾고 전장을 공포로 마비시키는 망령들의 군세입니다. 적의 관통력(Rend)을 감쇄시키고 공격 효율을 떨어뜨리는 강력한 디버프를 통해, 수치 이상의 끈질긴 생존력을 보여줍니다. 마냥 수동적으로 버티는 것이 아니라, 적의 힘이 빠진 틈을 타 낫과 검을 휘두르며 돌격할 때 터져 나오는 의외의 살상력과 변수 창출 능력이 이 부대의 진정한 무서움입니다.`,
+        stats: { 공격력: 5, 생존력: 7, 기동성: 9, 미션수행: 9, 유틸리티: 7 },
+        recommended: [
+          "상대의 공격 효율을 깎아내리며 끈질기게 소모전을 유도하는 분",
+          "비행 능력을 활용해 적의 방어선을 무시하고 전술적 요충지를 선점하고 싶은 분",
+          "디버프 뒤에 숨겨진 날카로운 한 방으로 역전의 기회를 노리는 분",
+        ],
+        notRecommended: [
+          "직접적인 부활이나 힐링 수단이 핵심인 아미를 원하는 분",
+          "돌격 시너지 없이 순수한 맷집만으로 정면 승부를 보길 원하는 분",
+        ],
+        units: [
+          {
+            name: "Knight of Shrouds",
+            role: "지휘관",
+            count: 1,
+            description:
+              "전장의 군주. 적의 관통력을 무력화하거나 아군에게 공격 명령을 내려, 수비적인 진형을 순식간에 공세로 전환시킨다.",
+          },
+          {
+            name: "Spirit Hosts",
+            role: "지원 전력",
+            count: 3,
+            description:
+              "지휘관을 수호하는 망령들. 지휘관이 받는 피해를 대신 흡수하며 부대의 핵심 시너지가 끊기지 않도록 보호한다.",
+          },
+          {
+            name: "Grimghast Reapers",
+            role: "정예 전력",
+            count: 5,
+            description:
+              "영혼을 거두는 전사들. 다수의 보병을 상대로 강력한 살상력을 보여주며, 돌격 시 의외의 폭발적인 대미지를 입힌다.",
+          },
+          {
+            name: "Grimghast Reapers",
+            role: "정예 전력",
+            count: 5,
+            description:
+              "영혼을 거두는 전사들. 다수의 보병을 상대로 강력한 살상력을 보여주며, 돌격 시 의외의 폭발적인 대미지를 입힌다.",
           },
           {
             name: "Chainrasps",
             role: "기간 보병",
-            count: 20,
+            count: 10,
             description:
-              "두 개의 유닛으로 나뉘어 전선을 형성하는 유령 떼. 쪽수와 부활 능력을 앞세워 거점을 점령한다.",
+              "기본 보병 무리. 숫자로 밀어붙여 거점을 점령하고, 디버프 지원을 받으며 끈질기게 전선을 유지한다.",
           },
           {
-            name: "Glaivewraith Stalkers",
-            role: "정예 전력",
-            count: 4,
+            name: "Chainrasps",
+            role: "기간 보병",
+            count: 10,
             description:
-              "긴 글레이브를 휘두르는 추격자들. 돌격 시 재굴림 혜택을 받으며 적의 핵심 보병을 사냥한다.",
-          },
-          {
-            name: "Lord Executioner",
-            role: "정예 전력",
-            count: 1,
-            description:
-              "거대한 도끼를 든 처형인. 적 영웅에게 치명적인 대미지를 입히거나 주변 적의 사기를 꺾는다.",
-          },
-          {
-            name: "Myrmidesh Painbringers",
-            role: "지원 전력",
-            count: 1,
-            description:
-              "특수한 유틸리티를 제공하거나 적의 공격을 방해하여 전선의 안정성을 높인다.",
+              "기본 보병 무리. 숫자로 밀어붙여 거점을 점령하고, 디버프 지원을 받으며 끈질기게 전선을 유지한다.",
           },
         ],
-        playstyle: `커스드 섀클호드의 핵심은 '점령지와 소모전'이다. 가디언 오브 소울즈가 중앙에서 'Spells'를 통해 체인래스프를 계속 보충하며 적의 돌격을 몸으로 막아낸다. 그사이 로드 엑세큐셔너와 글레이브레이스 스토커가 측면을 타격한다. 나이트헌트 공용 규칙인 '비행'을 활용해 적의 방어선을 우회하고, 상대가 체인래스프를 다 처리하기 전에 점수 차이를 벌려 승리하는 것이 정석이다.`,
-        imagePath: "/images/factions/nighthaunt/cursed-shacklehorde.jpg",
+        playstyle: `슬래셔 호스트는 '공포를 통한 감쇄'가 핵심입니다. 나이트 오브 슈라우드와 스피릿 호스트를 중심으로 단단한 핵심 진형을 짜고, 적의 관통력을 깎아내며 상대의 공격을 무의미하게 만듭니다. 체인래스프들이 거점을 점령하며 버티는 동안, 분산 배치된 그림가스트 리퍼들이 적의 취약한 지점에 돌격하여 의외의 포텐셜을 터뜨려야 합니다. 마냥 맞기만 하는 것이 아니라, 상대가 디버프에 허우적거릴 때 치명적인 일격을 가하는 유연한 운영이 요구됩니다.`,
+        imagePath: "/images/factions/nighthaunt/slasher-host.webp",
       },
     ],
   },
@@ -593,8 +700,9 @@ export const factions = [
       {
         id: "deathrattle-tomb-host",
         name: "Deathrattle Tomb Host",
-        gwUrl: "https://www.games-workshop.com",
-        description: `고대 무덤에서 깨어난 끝없는 해골 군세입니다. 개별 해골 전사들은 약해 보일 수 있으나, 위대한 네크로맨서의 마법과 'Deathless Minions' 규칙을 통해 쓰러져도 다시 일어서는 불사의 회복력을 보여줍니다. 단단한 방패벽을 형성하여 전선을 유지하고 적을 서서히 압도하는 정석적인 언데드 아미입니다.`,
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-soulblight-gravelords-deathrattle-tomb-host-2025?queryID=1cf6c24842eacd896be4e6f4334f93c1",
+        description: `고대 무덤에서 깨어난 끝없는 해골 군세입니다. 개별 해골 전사들은 약해 보일 수 있으나, 위대한 네크로맨서의 마법과 쓰러져도 다시 일어서는 불사의 회복력을 보여줍니다. 단단한 방패벽을 형성하여 전선을 유지하고 적을 서서히 압도하는 정석적인 언데드 아미입니다.`,
         stats: { 공격력: 6, 생존력: 9, 기동성: 4, 미션수행: 8, 유틸리티: 7 },
         recommended: [
           "강력한 방어력과 부활 능력을 바탕으로 한 소모전 플레이를 선호하는 분",
@@ -607,28 +715,34 @@ export const factions = [
         ],
         units: [
           {
-            name: "Wight King on Skeletal Steed",
+            name: "Wight King",
             role: "지휘관",
             count: 1,
-            description:
-              "해골 군단을 이끄는 고대의 군주. 기마 상태의 기동성을 활용해 필요한 곳에 버프를 전달한다.",
+            description: "해골 군단을 이끄는 고대의 군주",
           },
           {
             name: "Deathrattle Skeletons",
             role: "기간 보병",
-            count: 20,
+            count: 10,
             description:
               "툼 호스트의 핵심. 죽어도 다시 살아나는 규칙 덕분에 점령지 사수 능력이 독보적이다.",
           },
           {
-            name: "Black Knights",
+            name: "Deathrattle Skeletons",
+            role: "기간 보병",
+            count: 10,
+            description:
+              "툼 호스트의 핵심. 죽어도 다시 살아나는 규칙 덕분에 점령지 사수 능력이 독보적이다.",
+          },
+          {
+            name: "Barrow Knights",
             role: "기병 전력",
             count: 5,
             description:
-              "아미의 유일한 기동 타격대. 돌격 시 충격 피해를 입히며 적의 측면을 공략한다.",
+              "아미의 유일한 기동 타격대. 돌격 시 충격 피해를 입히며 적의 측면을 공략한다. 부활 능력을 활용한 거침없는 플레이가 위협적이다",
           },
           {
-            name: "Grave Guard",
+            name: "Barrow Guard",
             role: "정예 전력",
             count: 10,
             description:
@@ -641,8 +755,9 @@ export const factions = [
       {
         id: "bloodcrave-hunt",
         name: "Bloodcrave Hunt",
-        gwUrl: "https://www.games-workshop.com",
-        description: `피에 굶주린 흡혈귀 귀족들과 그들의 사냥개들이 펼치는 잔혹한 사냥입니다. 해골 군단보다 훨씬 빠르고 공격적이며, 적을 처치할 때마다 피를 마셔 상처를 회복하는 'The Hunger' 규칙을 통해 전투 지속력을 유지합니다. 우아하면서도 치명적인 속도로 적의 목을 노리는 아미입니다.`,
+        gwUrl:
+          "https://games-island.eu/media/image/product/972598/lg/soulblight-gravelords-spearhead-bloodcrave-hunt.jpg",
+        description: `피에 굶주린 흡혈귀 귀족들과 그들의 사냥개들이 펼치는 잔혹한 사냥입니다. 해골 군단보다 훨씬 빠르고 공격적이며, 우아하면서도 치명적인 속도로 적의 목을 노리는 아미입니다.`,
         stats: { 공격력: 8, 생존력: 7, 기동성: 8, 미션수행: 6, 유틸리티: 6 },
         recommended: [
           "강력한 영웅 유닛의 무쌍 플레이와 공격적인 돌격을 선호하는 분",
@@ -662,18 +777,23 @@ export const factions = [
               "강력한 근접 전투력과 마법 능력을 겸비한 리더. 아군 유닛의 공격 횟수를 늘려주는 능력이 탁월하다.",
           },
           {
-            name: "Deathmarks (Vyrkos Bloodborn)",
+            name: "Vargheists",
             role: "정예 전력",
             count: 3,
             description:
               "민첩하게 움직이며 적을 난도질하는 흡혈귀 전사들. 높은 기동성으로 적의 후방을 노린다.",
           },
           {
-            name: "Dire Wolves",
-            role: "기병 전력",
+            name: "Deathrattle Skeletons",
+            role: "기간 보병",
             count: 10,
-            description:
-              "살점 없는 늑대 무리. 기병 카테고리로 분류되며 빠른 속도로 전장을 가로질러 목표를 선점한다.",
+            description: "죽어도 다시 부활하는 머리수로 압도하는 기간보병",
+          },
+          {
+            name: "Deathrattle Skeletons",
+            role: "기간 보병",
+            count: 10,
+            description: "죽어도 다시 부활하는 머리수로 압도하는 기간보병",
           },
           {
             name: "Blood Knights",
@@ -683,7 +803,7 @@ export const factions = [
               "소울블라이트의 꽃. 압도적인 돌격 위력과 중장갑을 갖춘 최정예 기병 전력이다.",
           },
         ],
-        playstyle: `블러드크레이브 헌트는 '먼저 치고 회복하기'가 핵심입니다. 다이어 울프가 먼저 달려나가 적을 묶어두는 동안, 지휘관인 뱀파이어 로드와 정예기병인 블러드 나이츠가 가장 위협적인 적 유닛에게 돌격합니다. 피해를 입더라도 'The Hunger' 효과로 전투 중에 체력을 회복하며 적을 전멸시키는 것이 목표입니다. 물량보다는 질로 승부해야 합니다.`,
+        playstyle: `블러드크레이브 헌트는 '먼저 치고 회복하기'가 핵심입니다. 기간보병이 적을 묶어두는 동안, 지휘관인 뱀파이어 로드와 정예기병인 블러드 나이츠가 가장 위협적인 적 유닛에게 돌격합니다. 물량보다는 질로 승부해야 합니다.`,
         imagePath: "/images/factions/soulblight/bloodcrave-hunt.jpg",
       },
     ],
@@ -693,64 +813,19 @@ export const factions = [
     name: "Orruk Warclans — Ironjawz",
     alliance: "destruction",
     tagline: "힘이 전부인 난폭한 오크 군단",
-    lore: `아이언조즈는 오르루크 중에서도 가장 크고 강력한 자들이다. 주먹으로 직접 두드려 만든 거친 갑옷을 두르고, 파괴와 전쟁 그 자체인 고르카모르카 신을 섬긴다. 그들에게 전투는 종교이자 즐거움이다.
-
-메가보스 고르그룹과 같은 위대한 전쟁군주 아래 뭉친 아이언조즈는 영역을 가리지 않고 쳐들어가 가장 강한 적을 찾아 싸운다. 그들은 이기기 위해 싸우는 것이 아니라, 싸움 자체를 즐기기 위해 싸운다.`,
+    lore: `아이언죠즈는 오룩 중에서도 가장 크고 강력한 자들이다. 주먹으로 직접 두드려 만든 거친 갑옷을 두르고, 파괴와 전쟁 그 자체인 고카-모카 신을 섬긴다. 그들에게 전투는 종교이자 즐거움이다.
+메가보스 고드락과 같은 위대한 전쟁군주 아래 뭉친 아이언죠즈는 영역을 가리지 않고 쳐들어가 가장 강한 적을 찾아 싸운다. 그들은 이기기 위해 싸우는 것이 아니라, 싸움 자체를 즐기기 위해 싸운다.`,
     color: "#1a5a1a",
     accentColor: "#c8a84c",
     imagePath: "/images/factions/ironjawz/banner.webp",
     spearheads: [
       {
-        id: "da-big-waaagh-fist",
-        name: "Da Big Waaagh! Fist",
-        gwUrl: "https://www.games-workshop.com/en-WW/Orruk-Warclans",
-        description: `메가보스의 고함소리에 따라 돌진하는 순수한 폭력의 집약체. 브루타들이 충격 파동을 일으키며 돌진하고, 고어그룬타 기마대가 측면에서 적을 짓밟는다. 메가보스의 오라가 주변 오르루크들을 더욱 흉포하게 만든다.`,
-        stats: { 공격력: 10, 생존력: 7, 기동성: 5, 미션수행: 5, 유틸리티: 3 },
-        recommended: [
-          "생각보다 행동이 빠른, 본능적인 돌격 플레이를 즐기는 분",
-          "AoS를 막 시작한 입문자로 단순하고 강력한 첫 팩션을 찾는 분",
-          "압도적인 스케일의 메가보스 미니어처를 조립하고 싶은 분",
-        ],
-        notRecommended: [
-          "복잡한 콤보와 버프 체계로 정교하게 전술을 구사하고 싶은 분",
-          "원거리 화력과 기동전으로 전장의 흐름을 컨트롤하고 싶은 분",
-        ],
-        units: [
-          {
-            name: "Megaboss on Maw-Krusha",
-            role: "지휘관",
-            count: 1,
-            description: "거대한 마우-크루샤를 타고 전장을 박살내는 메가보스",
-          },
-          {
-            name: "Ardboys",
-            role: "기간 보병",
-            count: 10,
-            description: "두꺼운 갑옷을 두른 오르루크 전사들",
-          },
-          {
-            name: "Brutes",
-            role: "정예 전력",
-            count: 5,
-            description: "거대한 체격으로 적을 찍어 누르는 정예 오르루크",
-          },
-          {
-            name: "Gore-Gruntas",
-            role: "기병 전력",
-            count: 3,
-            description: "멧돼지 마우-그룬타를 타고 돌진하는 기마 전사",
-          },
-        ],
-        playstyle:
-          "순수한 돌격과 압도적인 근접 전투력. 전략이나 계획보다는 가장 빠르게 적에게 달려들어 뭉개버리는 스타일. 초반 기세가 중요하며 원거리 전력은 거의 없다.",
-        imagePath: "/images/factions/ironjawz/spearhead.jpg",
-      },
-      {
         id: "ironjawz-bigmob",
         name: "Ironjawz Bigmob",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-orruk-warclans-ironjawz-bigmob-2025?queryID=536aeeec7476e35457d7a6517be817dc",
         description: `순수한 완력과 쇳덩이 갑옷으로 무장한 오룩들의 정예 보병 집단입니다. 복잡한 기교 대신 정면으로 들이받아 적의 방어선을 으깨버리는 전술을 구사합니다. 'Mighty Destroyers' 규칙을 통해 이동과 돌격에서 이득을 보며, 근접전이 시작되는 순간 적에게 탈출 불가능한 폭력을 선사합니다.`,
-        stats: { 공격력: 9, 생존력: 8, 기동성: 5, 미션수행: 6, 유틸리티: 4 },
+        stats: { 공격력: 9, 생존력: 8, 기동성: 4, 미션수행: 4, 유틸리티: 4 },
         recommended: [
           "강력한 중장갑 보병 유닛들의 묵직한 한 방을 선호하는 분",
           "높은 세이브 수치와 체력을 바탕으로 거점을 사수하는 플레이를 원하는 분",
@@ -766,7 +841,7 @@ export const factions = [
             role: "지휘관",
             count: 1,
             description:
-              "아미의 심장부이자 최고의 전사. 주변 유닛들의 공격 횟수를 늘려주는 'Strength from Victory' 능력을 보유한다.",
+              "아미의 심장부이자 최고의 전사. 단단한 방어력과 강력한 공격력을 동시에 보유한 최고의 전사",
           },
           {
             name: "Ardboys",
@@ -799,7 +874,7 @@ export const factions = [
           },
         ],
         playstyle: `아이언죠즈 빅몹은 '압박과 분쇄'가 핵심입니다. 초반에는 아드보이즈가 중앙으로 전진하며 버티고, 그 뒤에서 메가보스가 화력을 조율합니다. 적이 전선에 맞붙는 순간 브루트와 레이저즈가 투입되어 적을 섬멸합니다. 사격이 없는 대신 일단 붙기만 하면 누구보다 강력하므로, 돌격 거리 관리가 승패의 핵심입니다.`,
-        imagePath: "/images/factions/orruk-warclans/ironjawz-bigmob.jpg",
+        imagePath: "/images/factions/ironjawz/ironjawz-bigmob.jpg",
       },
     ],
   },
@@ -808,9 +883,8 @@ export const factions = [
     name: "Orruk Warclans — Kruleboyz",
     alliance: "destruction",
     tagline: "비열하고 잔혹한 녹색 군단",
-    lore: `아이언조즈는 오르루크 중에서도 가장 크고 강력한 자들이다. 도끼로 직접 두드려 만든 거친 갑옷을 두르고, 파괴와 전쟁 그 자체인 고르카모르카 신을 섬긴다. 그들에게 전투는 종교이자 즐거움이다.
-
-메가보스 고르그룹과 같은 위대한 전쟁군주 아래 뭉친 아이언조즈는 영역을 가리지 않고 쳐들어가 가장 강한 적을 찾아 싸운다. 그들은 이기기 위해 싸우는 것이 아니라, 싸움 자체를 즐기기 위해 싸운다.`,
+    lore: `크룰보이즈는 오룩 중에서 특히나 더 비열하고 교활한 자들이 모인 세력입니다. 이기기 위해 교활한 술책과 무기에 독을 바르는 등, 일반적인 오룩과는 다르게 싸움법을 선호합니다.
+    `,
     color: "#1a5a1a",
     accentColor: "#c8a84c",
     imagePath: "/images/factions/kruleboyz/banner.webp",
@@ -818,7 +892,8 @@ export const factions = [
       {
         id: "swampskulka-gang",
         name: "Swampskulka Gang",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-orruk-warclans-2024?queryID=536aeeec7476e35457d7a6517be817dc",
         description: `늪지대의 안개 속에서 기습을 노리는 교활한 오룩 군단입니다. 정면 승부보다는 비열한 함정과 독 화살로 적을 약화시키는 데 능숙합니다. 'Venom-encrusted Weapons'를 통해 방어력이 높은 적에게도 치명적인 상처를 입히며, 적을 농락하는 전술적 재미가 가득한 아미입니다.`,
         stats: { 공격력: 7, 생존력: 5, 기동성: 7, 미션수행: 8, 유틸리티: 8 },
         recommended: [
@@ -874,7 +949,7 @@ export const factions = [
           },
         ],
         playstyle: `스왐프스컬카 갱은 '철저한 거리 유지'가 생명입니다. 홉그롯과 거트리파즈가 전방에서 시간을 버는 동안, 볼트보이즈가 후방에서 적의 고포인트 유닛을 저격해야 합니다. 킬라보스는 패주하는 아군을 강제로 붙잡으며 거점을 유지하고, 적이 독으로 인해 취약해진 순간을 노려 승기를 잡아야 합니다.`,
-        imagePath: "/images/factions/orruk-warclans/swampskulka-gang.jpg",
+        imagePath: "/images/factions/kruleboyz/swampskulka-gang.jpg",
       },
     ],
   },
@@ -893,8 +968,9 @@ export const factions = [
       {
         id: "bad-moon-madmob",
         name: "Bad Moon Madmob",
-        gwUrl: "https://www.games-workshop.com",
-        description: `배드 문의 빛 아래 광기에 빠진 고블린 군단입니다. 수많은 슈타즈가 화살 비를 퍼붓는 동안, 거대한 트로그오스가 적의 방어선을 뭉개버립니다. 'Bad Moon'의 위상에 따라 아미 전체가 무작위적인 버프를 받으며, 예측 불가능하지만 폭발적인 잠재력을 가진 전형적인 깃츠 아미입니다.`,
+        gwUrl:
+          "https://gamesempire.com.au/cdn/shop/files/5011921256938_x700.jpg?v=1759363187",
+        description: `배드 문의 빛 아래 광기에 빠진 고블린 군단입니다. 수많은 스태파들이 달려드는 동안, 거대한 트로고스가 적의 방어선을 뭉개버립니다. 'Bad Moon'의 위상에 따라 아미 전체가 무작위적인 버프를 받으며, 예측 불가능하지만 폭발적인 잠재력을 가진 전형적인 깃츠 아미입니다.`,
         stats: { 공격력: 6, 생존력: 7, 기동성: 5, 미션수행: 8, 유틸리티: 8 },
         recommended: [
           "무작위로 발생하는 강력한 버프와 변수를 즐기는 전술가",
@@ -950,14 +1026,15 @@ export const factions = [
           },
         ],
         playstyle: `배드 문 매드몹은 '배드 문의 위치'를 계속 확인하며 싸워야 합니다. 기간 보병인 슈타즈/스타바즈로 전선을 넓게 펼쳐 적을 유인하고, 적이 가까이 오면 숨겨둔 퍼나틱스를 사출해 타격을 입힙니다. 그동안 락것 트로그오스가 중앙에서 버티며 적의 주력을 묶어두는 것이 핵심입니다. 운이 따라준다면 배드 문의 가호 아래 무적의 군단이 될 수 있습니다.`,
-        imagePath: "/images/factions/gloomspite-gitz/bad-moon-madmob.jpg",
+        imagePath: "/images/factions/gloomspite-gitz/bad-moon-madmob.webp",
       },
       {
         id: "snarlpack-huntaz",
         name: "Snarlpack Huntaz",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-gloomspite-gitz-snarlpack-huntaz-2025?queryID=f50f534727ec6a14bd70f984c2fd5776",
         description: `태양을 쫓는 늑대 기병들과 기괴한 전차들이 전장을 휩쓰는 고속 약탈대입니다. 늑대의 날렵함과 전차의 파괴력을 결합하여, 적이 전열을 가다듬기도 전에 측면을 찢어발깁니다. 끊임없이 움직이며 적을 교란하고, 가장 취약한 지점에 화력을 집중하는 사냥꾼들의 군단입니다.`,
-        stats: { 공격력: 8, 생존력: 5, 기동성: 10, 미션수행: 6, 유틸리티: 6 },
+        stats: { 공격력: 4, 생존력: 3, 기동성: 10, 미션수행: 10, 유틸리티: 6 },
         recommended: [
           "압도적인 기동성으로 전장 전체를 위협하는 플레이를 선호하는 분",
           "전차의 충격 피해와 기병의 유연함을 동시에 활용하고 싶은 분",
