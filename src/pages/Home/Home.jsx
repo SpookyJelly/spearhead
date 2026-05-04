@@ -69,6 +69,10 @@ export default function Home() {
           <span />
         </div>
         <p className={styles.footerText}>Age of Sigmar Spearhead — Fansite</p>
+        <p className={styles.footerText}>
+          ※ 본 사이트의 정보는 일부 부정확할 수 있습니다. 오류나 수정이 필요한
+          내용은 버그 제보 기능을 통해 알려주세요.
+        </p>
       </footer>
     </div>
   );
