@@ -291,9 +291,9 @@ export const factions = [
     name: "Slaves to Darkness",
     alliance: "chaos",
     tagline: "어둠의 신들을 섬기는 전사들",
-    lore: `카오스의 어둠 신들 — 코른, 티젠치, 너글, 슬라네쉬 — 모두를 또는 그 누구도 섬기지 않는 전사들의 연맹. 그들은 오직 정복과 파괴만을 추구하며, 어둠의 힘을 통해 카오스 스폰이나 다에몬 프린스로 거듭나기를 꿈꾼다.
+    lore: `카오스의 어둠 신들 — 코른, 젠취, 너글, 슬라네쉬 — 모두를 또는 그 누구도 섬기지 않는 전사들의 연맹. 그들은 오직 정복과 파괴만을 추구하며, 어둠의 힘을 통해 카오스 스폰이나 다에몬 프린스로 거듭나기를 꿈꾼다.
 
-에버코즌 스틸 소드를 이끄는 아르카온의 군대는 모든 영역을 짓밟으며 시그마르의 창조물을 차례차례 무너뜨리고 있다. 그들에게 패배란 없다 — 오직 더 강해지거나, 카오스로 녹아드는 것뿐이다.`,
+에버초즌 아카온의 군대는 모든 영역을 짓밟으며 지그마의 창조물을 차례차례 무너뜨리고 있다. 그들에게 패배란 없다 — 오직 더 강해지거나, 카오스로 녹아드는 것뿐이다.`,
     color: "#5a1a1a",
     accentColor: "#c84c1a",
     imagePath: "/images/factions/slaves-to-darkness/banner.webp",
@@ -1116,20 +1116,24 @@ export const factions = [
     name: "Cities of Sigmar",
     alliance: "order",
     tagline: "필멸자들이 세운 마지막 희망의 도시들",
-    lore: "",
+    lore: `카오스의 침략 속에서도 무너지지 않은 필멸자들의 도시 연맹. 인간, 아엘프, 듀아딘이 함께 모여 성벽을 쌓고, 불과 피로 문명을 지켜낸다.
+
+지그마의 명 아래 세워진 이 도시들은 각기 다른 신념과 이해관계를 지녔지만, 살아남기 위해 하나로 뭉쳤다. 끝없는 전쟁 속에서 그들은 매일을 버텨낸다 — 신의 번개도, 불사의 육체도 없이, 오직 의지와 강철, 그리고 서로에 대한 믿음으로.`,
     color: "#3a5a7a",
     accentColor: "#c9a84c",
     imagePath: "/images/factions/cities-of-sigmar/banner.webp",
     spearheads: [
       {
-        id: "castellite-company",
-        name: "Castellite Company",
-        gwUrl: "https://www.games-workshop.com",
+        id: "castelite-company",
+        name: "Castelite Company",
+        gwUrl:
+          "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F4plzphippkdf1.png",
+        rarity: true,
         description: `지그마의 도시를 수호하는 정예 군단입니다. 견고한 보병 방진 뒤에서 강력한 대포가 불을 뿜고, 중갑 기사단이 적의 측면을 분쇄합니다. 규율 잡힌 사격과 근접전의 완벽한 조화를 보여주는 인간 연합군의 정석적인 구성입니다.`,
-        stats: { 공격력: 7, 생존력: 7, 기동성: 6, 미션수행: 7, 유틸리티: 6 },
+        stats: { 공격력: 6, 생존력: 5, 기동성: 6, 미션수행: 5, 유틸리티: 5 },
         recommended: [
           "보병, 기병, 포병의 균형 잡힌 연합 작전을 선호하는 분",
-          "니가 와 전략과 강력한 돌격 한 방을 동시에 갖추고 싶은 분",
+          "니가와 전략과 강력한 돌격 한 방을 동시에 갖추고 싶은 분",
           "정통 판타지 군대의 웅장한 디자인을 좋아하는 분",
         ],
         notRecommended: [
@@ -1137,13 +1141,6 @@ export const factions = [
           "속도가 느린 보병대 위주의 전진 압박을 선호하지 않는 분",
         ],
         units: [
-          {
-            name: "Freeguild Marshal",
-            role: "지휘관",
-            count: 1,
-            description:
-              "전장을 호령하는 사령관. 아군 유닛들에게 전술적 명령을 내려 전투 효율을 극대화한다.",
-          },
           {
             name: "Freeguild Cavalier Marshal",
             role: "지휘관",
@@ -1154,7 +1151,14 @@ export const factions = [
           {
             name: "Freeguild Steelhelms",
             role: "기간 보병",
-            count: 10,
+            count: 5,
+            description:
+              "도시의 강철 방패. 거점을 점령하고 적의 돌격을 몸으로 받아내며 전선을 유지한다.",
+          },
+          {
+            name: "Freeguild Steelhelms",
+            role: "기간 보병",
+            count: 5,
             description:
               "도시의 강철 방패. 거점을 점령하고 적의 돌격을 몸으로 받아내며 전선을 유지한다.",
           },
@@ -1174,12 +1178,14 @@ export const factions = [
           },
         ],
         playstyle: `카스텔라이트 컴퍼니는 '방패와 창'의 원리를 따릅니다. 스틸헬름이 전선에서 버티는 동안 그레이트 캐논이 적의 위협 요소를 제거합니다. 적이 아군 방진에 부딪혀 주춤하는 순간, 카발리어 기사단이 돌격하여 전투를 종결짓는 운영이 핵심입니다.`,
-        imagePath: "/images/factions/cities-of-sigmar/castellite-company.jpg",
+        imagePath: "/images/factions/cities-of-sigmar/castelite-company.webp",
       },
       {
         id: "fusil-platoon",
         name: "Fusil-Platoon",
-        gwUrl: "https://www.games-workshop.com",
+        rarity: false,
+        gwUrl:
+          "https://funforge.co.kr/web/product/big/202505/4ffe07de5ab3532e5ebf37a2d081c847.jpg",
         description: `화약 냄새 진동하는 사격 전문 부대입니다. 방패를 든 사수들이 견고한 사격 진형을 구축하고, 끊임없는 화망을 형성하여 접근하는 모든 적을 잿더미로 만듭니다. 수비적인 운용을 통해 적의 접근을 원천 봉쇄하는 데 특화되어 있습니다.`,
         stats: { 공격력: 8, 생존력: 6, 기동성: 4, 미션수행: 6, 유틸리티: 7 },
         recommended: [
@@ -1228,7 +1234,7 @@ export const factions = [
           },
         ],
         playstyle: `퓨질 플래툰은 '움직이는 요새'입니다. 오고어 워헐크의 지휘 아래 퓨질리어 분대들이 겹겹이 사격망을 구축합니다. 적이 가까이 오기 전에 전쟁기계와 총기로 최대한 숫자를 줄이는 것이 관건이며, 지형을 활용해 사선(LOS)을 확보하는 능력이 승패를 결정합니다.`,
-        imagePath: "/images/factions/cities-of-sigmar/fusil-platoon.jpg",
+        imagePath: "/images/factions/cities-of-sigmar/fusil-platoon.webp",
       },
     ],
   },
@@ -1237,7 +1243,8 @@ export const factions = [
     name: "Fyreslayers",
     alliance: "order",
     tagline: "복수를 맹세한 광전사 듀아딘들",
-    lore: "",
+    lore: `불의 신 그리므니르의 후예를 자처하는 듀아딘 광전사들. 그들은 신의 힘이 깃들었다고 믿는 ‘우르-골드’를 수집하기 위해, 계약과 보수를 대가로 모든 전장에 뛰어든다.
+파이어슬레이어들은 전투를 단순한 생계나 명예가 아닌 신앙으로 여긴다. 그들의 육신에 새겨지는 황금 룬은 그리므니르의 힘을 일시적으로 불러오며, 언젠가 모든 우르-골드를 되찾아 죽은 신을 다시 완전하게 만들기를 꿈꾼다.`,
     color: "#8a3a10",
     accentColor: "#f0a030",
     imagePath: "/images/factions/fyreslayers/banner.webp",
@@ -1245,7 +1252,9 @@ export const factions = [
       {
         id: "saga-axeband",
         name: "Saga Axeband",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-fyreslayers-2024?queryID=8e0f3fdb5baf310742acbc5849b1203d",
+        rarity: false,
         description: `전설적인 영웅들의 서사를 몸소 실천하는 파이어슬레이어즈의 정예 부대입니다. 갑옷 대신 금빛 룬을 피부에 박아 넣은 이들은 죽음을 두려워하지 않고 적진으로 돌격합니다. 전투가 치열해질수록 룬의 마법을 해방하여 신체 한계를 뛰어넘는 위력을 보여줍니다.`,
         stats: { 공격력: 8, 생존력: 9, 기동성: 4, 미션수행: 6, 유틸리티: 7 },
         recommended: [
@@ -1291,7 +1300,7 @@ export const factions = [
             role: "정예 전력",
             count: 5,
             description:
-              "두 번째 정예 분대. 지휘관 근처에서 보디가드 역할을 수행하며 아미의 화력을 담당한다.",
+              "지휘관을 호위하는 강력한 전사들. 거대한 무기를 휘둘러 적의 정예병이나 괴수에게 큰 피해를 입힌다.",
           },
         ],
         playstyle: `사가 액스밴드는 '중앙 점거와 버티기'가 핵심입니다. 배틀스미스의 버프를 받은 베르제르커들이 중앙 거점에서 성벽처럼 버티는 동안, 룬의 힘을 적절한 타이밍에 발동시켜 공격력을 폭증시켜야 합니다. 상대가 아군 방어선을 뚫지 못해 지쳐갈 때, 하스 가드들이 돌격하여 승기를 굳히는 묵직한 운영이 필요합니다.`,
@@ -1304,7 +1313,9 @@ export const factions = [
     name: "Idoneth Deepkin",
     alliance: "order",
     tagline: "영혼을 사냥하는 바다의 망령들",
-    lore: "",
+    lore: `바다 깊은 곳에 숨어 사는 저주받은 아엘프들. 영혼이 불완전하게 태어나는 운명을 지닌 그들은, 살아남기 위해 다른 종족의 영혼을 사냥해야만 한다.
+
+아이도네스 딥킨은 해저 왕국에 숨어 세상과 단절된 채 살아가지만, 필요할 때마다 갑작스럽게 수면 위로 나타나 마을과 군대를 휩쓸고 사라진다. 그들의 침공은 파도처럼 조용히 다가와 모든 생명을 앗아가며, 흔적조차 남기지 않는다.`,
     color: "#0d4060",
     accentColor: "#2ab8c8",
     imagePath: "/images/factions/idoneth-deepkin/banner.webp",
@@ -1312,9 +1323,11 @@ export const factions = [
       {
         id: "akhelian-tide-guard",
         name: "Akhelian Tide Guard",
-        gwUrl: "https://www.games-workshop.com",
+        rarity: false,
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-idoneth-deepkin-akhelian-tide-guard-2025?queryID=a068dc935467c1b8dfd2ac56c4c3b039",
         description: `바다의 분노를 형상화한 정예 습격대입니다. 강력한 해수 괴수와 날렵한 기병들이 중심이 되어, 적이 대응하기 전에 치명적인 타격을 입히고 물러납니다. 매 라운드 변화하는 바다의 위상에 맞춰 전술을 전개하며, 결정적인 순간에 적을 압살하는 폭발력을 지니고 있습니다.`,
-        stats: { 공격력: 9, 생존력: 6, 기동성: 9, 미션수행: 5, 유틸리티: 7 },
+        stats: { 공격력: 7, 생존력: 7, 기동성: 10, 미션수행: 7, 유틸리티: 5 },
         recommended: [
           "소수의 정예 유닛으로 적의 핵심을 정밀 타격하는 스타일을 선호하는 분",
           "높은 기동성과 강력한 괴수의 파괴력을 동시에 느끼고 싶은 분",
@@ -1337,7 +1350,7 @@ export const factions = [
             role: "기병 전력",
             count: 3,
             description:
-              "전기 가오리를 탄 기병대. 적의 사격을 튕겨내며 돌격하여 진형을 무너뜨리는 데 특화되어 있다.",
+              "전기뱀장어를 탄 기병대. 적의 사격을 튕겨내며 돌격하여 진형을 무너뜨리는 데 특화되어 있다.",
           },
           {
             name: "Akhelian Morrsarr Guard",
@@ -1347,11 +1360,11 @@ export const factions = [
               "공격적인 성향의 기병대. 강력한 전기 충격으로 적에게 막대한 피해를 입히는 타격 전력.",
           },
           {
-            name: "Akhelian Allopex",
-            role: "괴수",
-            count: 1,
+            name: "Namarti Reavers",
+            role: "기간 보병",
+            count: 10,
             description:
-              "굶주린 상어 괴수. 매우 빠른 속도로 움직이며 사격과 근접전을 동시에 수행하는 다재다능한 사냥꾼.",
+              "거대한 양손 무기를 휘두르는 보병대. 보병 유닛을 상대할 때 특히 잔혹한 위력을 발휘한다.",
           },
         ],
         playstyle: `아켈리안 타이드 가드는 '히트 앤 런'의 정석입니다. 초반에는 기동성을 살려 적의 사선을 피하고, 3라운드 '하이 타이드' 타이밍에 알로펙스와 킹, 기병대가 동시에 돌격하여 승기를 잡아야 합니다. 유닛 하나하나가 소중하므로 불필요한 소모전을 피하는 것이 핵심입니다.`,
@@ -1360,7 +1373,9 @@ export const factions = [
       {
         id: "soulraid-hunt",
         name: "Soulraid Hunt",
-        gwUrl: "https://www.games-workshop.com",
+        gwUrl:
+          "https://www.belloflostsouls.net/wp-content/uploads/2024/06/Idoenth-Deepkin-Soulraid-Hunt.jpg",
+        rarity: true,
         description: `영혼을 수확하기 위해 지상으로 올라온 나마르티 부대입니다. 수많은 보병이 화살 비를 퍼붓고 창으로 적을 저지하는 동안, 마법적인 지원 유닛들이 적의 감각을 흐트러뜨립니다. 아켈리안 중심의 부대보다 물량이 많아 거점 점령전에서 우위를 점하기 유리합니다.`,
         stats: { 공격력: 7, 생존력: 5, 기동성: 7, 미션수행: 9, 유틸리티: 8 },
         recommended: [
@@ -1383,16 +1398,23 @@ export const factions = [
           {
             name: "Namarti Thralls",
             role: "기간 보병",
-            count: 10,
+            count: 5,
             description:
-              "거대한 양손 무기를 휘두르는 보병대. 보병 유닛을 상대할 때 특히 잔혹한 위력을 발휘한다.",
+              "거대한 양손 무기를 휘두르는 보병대. 괴수 유닛을 상대할 때 특히 잔혹한 위력을 발휘한다.",
           },
           {
-            name: "Namarti Reavers",
-            role: "사격 전력",
-            count: 10,
+            name: "Namarti Thralls",
+            role: "기간 보병",
+            count: 5,
             description:
-              "빠른 사격 속도를 자랑하는 궁수 부대. 적의 접근을 견제하고 끊임없이 피해를 누적시킨다.",
+              "거대한 양손 무기를 휘두르는 보병대. 괴수 유닛을 상대할 때 특히 잔혹한 위력을 발휘한다.",
+          },
+          {
+            name: "Akhelian Morrsarr Guard",
+            role: "기병 전력",
+            count: 3,
+            description:
+              "공격적인 성향의 기병대. 강력한 전기 충격으로 적에게 막대한 피해를 입히는 타격 전력.",
           },
           {
             name: "Akhelian Allopex",
@@ -1402,8 +1424,8 @@ export const factions = [
               "나마르티 부대를 지원하는 강력한 해수 괴수. 보병들이 거점을 점령하는 동안 위협적인 적을 제거한다.",
           },
         ],
-        playstyle: `소울레이드 헌트는 '소모전과 부활'을 활용합니다. 리버들이 원거리에서 적을 갉아먹고, 쓰랄들이 돌격하여 적을 저지합니다. 피해를 입은 유닛은 소울렌더의 능력으로 복구하며 적보다 끈질기게 거점을 사수하는 것이 핵심입니다. 알로펙스는 나마르티가 처리하기 힘든 중장갑 유닛을 마크하는 데 사용됩니다.`,
-        imagePath: "/images/factions/idoneth-deepkin/soulraid-hunt.jpg",
+        playstyle: `소울레이드 헌트는 '소모전과 부활'을 활용합니다. 증원이 있는 괴수 유닛을 적극적으로 소모하여 적들을 만신창이로 만든 뒤, 후속하는 보병들로 약해진 적들을 유린합니다.`,
+        imagePath: "/images/factions/idoneth-deepkin/soulraid-hunt.webp",
       },
     ],
   },
@@ -1412,7 +1434,8 @@ export const factions = [
     name: "Kharadron Overlords",
     alliance: "order",
     tagline: "하늘을 지배하는 탐욕스러운 듀아딘 상인들",
-    lore: "",
+    lore: `하늘을 항해하는 듀아딘 상인 연합. 한때 신을 섬기던 그들은 몰락의 시대 이후 스스로를 지키기 위해 신앙을 버리고, ‘카라드론 코드’라 불리는 철저한 법과 계약의 체계를 세웠다.
+부유한 공중 항구를 거점으로 활동하는 그들은 에테르-골드를 채굴하고 거래하며 막대한 부를 축적한다. 카라드론 오버로드에게 전쟁은 신념이 아니라 사업이다 — 계약이 성립되는 순간, 그들의 함대는 어디든 도달한다.`,
     color: "#2a5a7a",
     accentColor: "#c0d0e0",
     imagePath: "/images/factions/kharadron-overlords/banner.webp",
@@ -1420,6 +1443,7 @@ export const factions = [
       {
         id: "skyhammer-task-force",
         name: "Skyhammer Task Force",
+        rarity: true,
         gwUrl: "https://www.games-workshop.com",
         description: `하늘을 지배하는 카라드론의 정예 함대입니다. 견고한 비공정을 기반으로 보병들이 신속하게 전개하며, 압도적인 화망을 형성하여 적의 접근을 원천 봉쇄합니다. 공중 기동력과 사격 화력의 완벽한 조화를 통해 전장의 주도권을 쥐는 데 특화되어 있습니다.`,
         stats: { 공격력: 8, 생존력: 6, 기동성: 9, 미션수행: 6, 유틸리티: 7 },
@@ -1470,6 +1494,7 @@ export const factions = [
         id: "grundstok-trailblazers",
         name: "Grundstok Trailblazers",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `전문적인 용병 사수들과 소형 비행정으로 구성된 유격 부대입니다. 대형 전함 대신 날렵한 기동 병기를 활용하여 적을 끊임없이 괴롭히며, 정밀한 사격을 통해 적의 지휘 체계를 무너뜨립니다. 정면 대결보다는 철저한 거리 유격전에 최적화되어 있습니다.`,
         stats: { 공격력: 9, 생존력: 5, 기동성: 10, 미션수행: 7, 유틸리티: 6 },
         recommended: [
@@ -1522,7 +1547,8 @@ export const factions = [
     name: "Lumineth Realm-lords",
     alliance: "order",
     tagline: "빛과 균형을 수호하는 아엘프들",
-    lore: "",
+    lore: `빛과 지식, 그리고 완전한 균형을 추구하는 아엘프 문명. 과거의 오만으로 세계를 파멸 직전까지 몰아넣은 그들은, 스스로를 엄격히 통제하는 철학과 수련을 통해 같은 실수를 반복하지 않으려 한다.
+루미네스 렐름로드는 자연과 정령의 힘, 그리고 정교한 마법을 결합해 전장을 지배한다. 그들의 질서는 완벽에 가까워 보이지만 — 그 집착은 언제든 또 다른 오만으로 변할 위험을 품고 있다.`,
     color: "#8a7a20",
     accentColor: "#f0e080",
     imagePath: "/images/factions/lumineth-realm-lords/banner.webp",
@@ -1531,6 +1557,7 @@ export const factions = [
         id: "glittering-phalanx",
         name: "Glittering Phalanx",
         gwUrl: "https://www.games-workshop.com",
+        rarity: true,
         description: `빛의 마법과 견고한 창술로 무장한 루미네스의 정석적인 군단입니다. 적의 공격을 완벽하게 쳐내는 방패 진형과 원거리에서 쏟아지는 화살 비, 그리고 강력한 마법 지원을 통해 전장을 통제합니다. 질서 정연한 전술의 정수를 보여주는 아미입니다.`,
         stats: { 공격력: 7, 생존력: 8, 기동성: 5, 미션수행: 7, 유틸리티: 9 },
         recommended: [
@@ -1580,6 +1607,7 @@ export const factions = [
         id: "hurakan-vanguard",
         name: "Hurakan Vanguard",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `바람의 정령들과 함께 전장을 휩쓰는 초고속 습격대입니다. 바람처럼 빠른 속도로 이동하며 사격하고 적이 반격하기 전에 사라집니다. 기존 루미네스와는 달리 고정된 진형보다는 유동적인 움직임으로 상대를 농락하는 데 특화되어 있습니다.`,
         stats: { 공격력: 8, 생존력: 5, 기동성: 10, 미션수행: 6, 유틸리티: 7 },
         recommended: [
@@ -1631,7 +1659,8 @@ export const factions = [
     name: "Seraphon",
     alliance: "order",
     tagline: "별에서 내려온 냉혹한 파충류 군세",
-    lore: "",
+    lore: `고대 슬란의 의지로 구현된 별의 군세. 세라폰은 현실에 존재하는 생명체이면서도, 동시에 천상에서 소환된 존재로서 물질과 마법의 경계에 서 있다.
+그들은 ‘위대한 계획’이라 불리는 이해할 수 없는 목적을 수행하기 위해 움직이며, 혼돈의 세력을 철저히 말살하는 데 모든 것을 바친다. 감정이나 자비는 없다 — 세라폰에게 전쟁은 선택이 아니라, 이미 정해진 질서를 완성하기 위한 과정일 뿐이다.`,
     color: "#1a5a5a",
     accentColor: "#40c0a0",
     imagePath: "/images/factions/seraphon/banner.webp",
@@ -1640,6 +1669,7 @@ export const factions = [
         id: "starscale-warhost",
         name: "Starscale Warhost",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `고대 별의 힘을 이어받은 세라폰의 정예 군단입니다. 튼튼한 사우루스 보병들이 전선을 유지하는 동안, 날렵한 기병과 강력한 괴수가 적의 측면을 들이받습니다. 안정적인 방어력과 폭발적인 반격 능력을 동시에 갖춘 올라운더형 아미입니다.`,
         stats: { 공격력: 7, 생존력: 8, 기동성: 6, 미션수행: 7, 유틸리티: 6 },
         recommended: [
@@ -1687,6 +1717,7 @@ export const factions = [
       {
         id: "sunblood-prowlers",
         name: "Sunblood Prowlers",
+        rarity: false,
         gwUrl: "https://www.games-workshop.com",
         description: `태양의 축복을 받은 사냥꾼들의 무리입니다. 정면 대결보다는 빠른 기동력과 기습을 통해 적의 핵심 요소를 제거하는 데 특화되어 있습니다. 기존 세라폰보다 유연한 움직임을 보여주며, 적이 예상치 못한 타이밍에 치명적인 타격을 입힙니다.`,
         stats: { 공격력: 8, 생존력: 6, 기동성: 8, 미션수행: 8, 유틸리티: 5 },
@@ -1739,7 +1770,9 @@ export const factions = [
     name: "Sylvaneth",
     alliance: "order",
     tagline: "자연의 분노로 화한 숲의 정령들",
-    lore: "",
+    lore: `생명과 자연의 화신들이 이루는 군세. 숲과 대지는 그들에게 단순한 터전이 아니라, 곧 자신들의 몸이자 영혼이다.
+
+실바네스는 영역을 침범하고 자연을 훼손하는 모든 존재를 적으로 간주하며, 한 번 분노가 일어나면 숲 전체가 깨어나 침입자를 집어삼킨다. 그들에게 자비는 없다 — 생명의 순환을 지키기 위해서라면, 문명조차 기꺼이 뿌리째 뽑아낼 것이다.`,
     color: "#2a5a1a",
     accentColor: "#80c840",
     imagePath: "/images/factions/sylvaneth/banner.webp",
@@ -1748,6 +1781,7 @@ export const factions = [
         id: "bitterbark-corpse",
         name: "Bitterbark Corpse",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `숲의 고대 원한을 집행하는 복수자들입니다. 거대한 트리로드의 압도적인 위압감을 중심으로, 끈질긴 트리-포크들이 전선을 형성합니다. 지형을 활용해 적을 옥죄고, 한 번 뿌리내린 곳은 절대 내어주지 않는 견고함을 자랑합니다.`,
         stats: { 공격력: 7, 생존력: 8, 기동성: 6, 미션수행: 7, 유틸리티: 8 },
         recommended: [
@@ -1796,6 +1830,7 @@ export const factions = [
         id: "spitewing-flight",
         name: "Spitewing Flight",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `바람보다 빠르게 전장을 가로지르는 요정 기병 연대입니다. 날개 달린 벌레 괴수에 올라탄 전사들이 사방에서 적을 유린하며, 대응할 틈도 없이 치명적인 상처를 입히고 사라집니다. 실바네스 중 가장 공격적이고 빠른 속도감을 자랑합니다.`,
         stats: { 공격력: 8, 생존력: 5, 기동성: 10, 미션수행: 8, 유틸리티: 6 },
         recommended: [
@@ -1849,7 +1884,9 @@ export const factions = [
     name: "Blades of Khorne",
     alliance: "chaos",
     tagline: "피와 해골을 갈망하는 전쟁의 화신들",
-    lore: "",
+    lore: `피와 전쟁의 신 코른을 섬기는 광신적인 전사들. 그들에게 전투는 수단이 아니라 목적이며, 피를 흘리고 해골을 쌓는 행위 자체가 신에게 바치는 최고의 헌신이다.
+
+블레이즈 오브 코른은 마법과 계략을 경멸하고, 오직 정면에서의 학살과 힘의 충돌만을 추구한다. 분노와 살육에 몸을 맡긴 이들은 멈추지 않는다 — 코른의 이름 아래, 모든 전장은 결국 피로 물들어야 하기 때문이다.`,
     color: "#8a1a1a",
     accentColor: "#c83030",
     imagePath: "/images/factions/blades-of-khorne/banner.webp",
@@ -1858,6 +1895,7 @@ export const factions = [
         id: "bloodbound-gore-pilgrims",
         name: "Bloodbound Gore Pilgrims",
         gwUrl: "https://www.games-workshop.com",
+        rarity: true,
         description: `코른을 향한 광기 어린 신념으로 뭉친 필멸자 군단입니다. 피의 기도를 통해 아군을 강화하고, 적에게는 공포를 선사합니다. 단순히 무력을 휘두르는 것을 넘어, 제단과 기도를 활용한 전략적인 버프 중첩으로 근접전에서 압도적인 폭발력을 보여줍니다.`,
         stats: { 공격력: 9, 생존력: 6, 기동성: 6, 미션수행: 7, 유틸리티: 8 },
         recommended: [
@@ -1914,7 +1952,8 @@ export const factions = [
         id: "fangs-of-the-blood-god",
         name: "Fangs of the Blood God",
         gwUrl: "https://www.games-workshop.com",
-        description: `코른의 직접적인 분노가 형상화된 데몬 군단입니다. 붉은 피부의 블러드레터들이 차원문을 넘어 강림하며, 복잡한 전술 대신 오직 살육만을 위해 움직입니다. 필멸자 부대보다 기동성이 뛰어나며, 적의 방어력을 무시하는 치명적인 일격을 가합니다.`,
+        rarity: false,
+        description: `코른의 직접적인 분노가 형상화된 데몬 군단입니다. 붉은 피부의 블러드하운드들이 차원문을 넘어 강림하며, 복잡한 전술 대신 오직 살육만을 위해 움직입니다. 필멸자 부대보다 기동성이 뛰어나며, 적의 방어력을 무시하는 치명적인 일격을 가합니다.`,
         stats: { 공격력: 10, 생존력: 5, 기동성: 8, 미션수행: 6, 유틸리티: 5 },
         recommended: [
           "군더더기 없는 극단적인 근접 타격 위주의 플레이를 원하는 분",
@@ -1933,13 +1972,7 @@ export const factions = [
             description:
               "저거너트에 올라탄 데몬 지휘관. 강력한 돌격력으로 전선의 선봉에 선다.",
           },
-          {
-            name: "Bloodletters",
-            role: "기간 보병",
-            count: 10,
-            description:
-              "지옥의 칼날을 든 데몬 전사들. 치명적인 일격으로 적의 중장갑 유닛조차 순식간에 베어 넘긴다.",
-          },
+
           {
             name: "Bloodcrushers",
             role: "기병 전력",
@@ -1966,7 +1999,8 @@ export const factions = [
     name: "Disciples of Tzeentch",
     alliance: "chaos",
     tagline: "변화와 음모를 속삭이는 마법의 추종자들",
-    lore: "",
+    lore: `변화와 운명의 신 젠취를 섬기는 마도사와 음모가들. 그들은 세상의 흐름을 뒤틀고, 보이지 않는 실로 전쟁과 운명을 조종한다.
+디사이플즈 오브 젠취에게 계획은 끝이 없다. 수많은 계략이 겹겹이 쌓여 서로를 덮고, 그 결과조차 또 다른 계획의 일부가 된다. 진실과 거짓의 경계는 이미 무너졌다 — 그들이 따르는 것은 승리가 아니라, 끝없이 이어지는 변화 그 자체다.`,
     color: "#1a2a8a",
     accentColor: "#60a0f0",
     imagePath: "/images/factions/disciples-of-tzeentch/banner.webp",
@@ -1975,6 +2009,7 @@ export const factions = [
         id: "fluxblade-coven",
         name: "Fluxblade Coven",
         gwUrl: "https://www.games-workshop.com",
+        rarity: true,
         description: `변화의 군주 젠취의 마법적 정수를 담은 군단입니다. 변화의 불꽃을 내뿜는 핑크 호러들과 강력한 마법을 구사하는 마기스터가 전장을 뒤덮습니다. 적의 운명을 조작하는 '데스티니 다이스' 시스템을 통해 전장의 불확실성을 아군에게 유리한 필연으로 바꾸는 교활한 아미입니다.`,
         stats: { 공격력: 7, 생존력: 6, 기동성: 5, 미션수행: 7, 유틸리티: 10 },
         recommended: [
@@ -2030,6 +2065,7 @@ export const factions = [
         id: "tzaangor-warflock",
         name: "Tzaangor Warflock",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `잔고어(Tzaangor) 무리와 하늘을 나는 공중 기병들이 중심이 된 신속 타격대입니다. 기존 젠취 군단보다 훨씬 공격적이며, 마법보다는 날카로운 발톱과 무기로 적을 직접 유린합니다. 바람처럼 빠른 기동성으로 전장의 빈틈을 파고드는 데 특화되어 있습니다.`,
         stats: { 공격력: 8, 생존력: 6, 기동성: 9, 미션수행: 8, 유틸리티: 6 },
         recommended: [
@@ -2082,7 +2118,8 @@ export const factions = [
     name: "Hedonites of Slaanesh",
     alliance: "chaos",
     tagline: "쾌락과 과잉에 중독된 탐닉의 전사들",
-    lore: "",
+    lore: `쾌락과 집착, 과잉의 신 슬라네쉬를 섬기는 추종자들. 그들은 감각과 욕망의 극한을 추구하며, 전투조차 하나의 향락이자 예술로 여긴다.
+헤도나이트 오브 슬라네쉬는 결코 만족하지 못한다. 어떤 승리도, 어떤 쾌락도 그들의 갈망을 채우지 못하며, 오히려 더 깊은 탐닉으로 이끈다. 그 끝없는 결핍은 그들을 움직이는 진정한 원동력이다 — 슬라네쉬가 속박된 지금조차도, 그 욕망은 멈추지 않는다.`,
     color: "#6a1a6a",
     accentColor: "#d060c0",
     imagePath: "/images/factions/hedonites-of-slaanesh/banner.webp",
@@ -2091,8 +2128,9 @@ export const factions = [
         id: "blades-of-the-lurid-dream",
         name: "Blades of the Lurid Dream",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `관능적이고 치명적인 쾌락을 쫓는 슬라네쉬의 추종자들입니다. 눈이 따라가기 힘들 정도로 빠른 속도로 전장을 누비며, 적의 가장 취약한 지점을 정확하게 찔러 유린합니다. 적을 유혹하여 실수를 유도하고, 그 틈을 타서 휘몰아치는 공격을 퍼붓는 데 특화되어 있습니다.`,
-        stats: { 공격력: 9, 생존력: 4, 기동성: 10, 미션수행: 7, 유틸리티: 8 },
+        stats: { 공격력: 9, 생존력: 4, 기동성: 10, 미션수행: 7, 유틸리티: 3 },
         recommended: [
           "압도적인 기동성으로 전장 전체를 컨트롤하고 싶은 분",
           "적의 방어선을 우회하여 핵심 유닛을 암살하는 정교한 플레이를 선호하는 분",
@@ -2150,7 +2188,8 @@ export const factions = [
     name: "Helsmiths of Hashut",
     alliance: "chaos",
     tagline: "카오스 신 하슈트를 추종하는 사악한 듀아딘들",
-    lore: "",
+    lore: `폭정과 불의 신 하슈트를 섬기는 타락한 듀아딘들. 그들은 끝없는 노동과 희생 위에 세워진 거대한 공업 제국을 건설하고, 노예와 피를 연료 삼아 전쟁 기계를 가동한다.
+헬스미스 오브 하슈트는 불꽃과 금속을 다루는 주조장과도 같다. 그들의 대장간에서는 무기뿐만 아니라, 악마와 결합된 병기와 기괴한 창조물들이 끊임없이 탄생한다. 신앙은 곧 권력이며, 권력은 곧 지배다 — 그들의 제국은 불타는 굴뚝과 쇠사슬 위에서 유지된다.`,
     color: "#5a3a10",
     accentColor: "#c07030",
     imagePath: "/images/factions/helsmiths-of-hashut/banner.webp",
@@ -2159,6 +2198,7 @@ export const factions = [
         id: "helforge-host",
         name: "Helforge Host",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `하슈트의 대장간에서 벼려진 강철과 화염의 군단입니다. 튼튼한 장갑을 두른 전사들이 전선을 형성하고, 그 뒤에서 기괴한 증기 기계들과 대포가 적을 잿더미로 만듭니다. 느리지만 확실하게 적을 짓밟는 파괴적인 전진 압박이 특징입니다.`,
         stats: { 공격력: 9, 생존력: 8, 기동성: 4, 미션수행: 6, 유틸리티: 7 },
         recommended: [
@@ -2211,7 +2251,9 @@ export const factions = [
     name: "Maggotkin of Nurgle",
     alliance: "chaos",
     tagline: "부패와 생명을 퍼뜨리는 역병의 군세",
-    lore: "",
+    lore: `부패와 재생의 신 너글을 섬기는 군세. 그들은 질병과 썩음을 퍼뜨리지만, 그것을 저주가 아닌 축복으로 여긴다.
+
+마곳킨 오브 너글은 고통과 절망 속에서도 기묘한 평온을 유지한다. 모든 것은 결국 썩어 돌아가고, 그 속에서 새로운 생명이 태어난다고 믿기 때문이다. 그들에게 전쟁은 파괴가 아니라 순환의 일부다 — 세상은 반드시 무너지고, 다시 피어나야 한다.`,
     color: "#4a5a1a",
     accentColor: "#90b030",
     imagePath: "/images/factions/maggotkin-of-nurgle/banner.webp",
@@ -2220,6 +2262,7 @@ export const factions = [
         id: "bleak-host",
         name: "Bleak Host",
         gwUrl: "https://www.games-workshop.com",
+        rarity: true,
         description: `부패의 군주를 섬기는 필멸자 전사들의 군단입니다. 육중한 판금 갑옷을 두른 블라이트킹들은 적의 공격을 웃어넘기며 전진합니다. 너글의 정원에 핀 곰팡이처럼 끈질기게 거점을 점령하고, 서서히 적을 질병으로 갉아먹는 압박 전술을 구사합니다.`,
         stats: { 공격력: 7, 생존력: 10, 기동성: 3, 미션수행: 8, 유틸리티: 6 },
         recommended: [
@@ -2268,6 +2311,7 @@ export const factions = [
         id: "bubonic-cell",
         name: "Bubonic Cell",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `역병의 정원에서 기어 나온 데몬들의 무리입니다. 플레이그베어러들이 웅얼거리는 기도를 읊으며 진군하고, 기괴한 비스트들이 적을 덮칩니다. 물리적인 타격보다는 마법적인 오염과 재생 능력을 통해 상대의 전의를 상실케 만드는 부정한 군단입니다.`,
         stats: { 공격력: 6, 생존력: 9, 기동성: 5, 미션수행: 9, 유틸리티: 8 },
         recommended: [
@@ -2321,7 +2365,9 @@ export const factions = [
     name: "Flesh Eater Courts",
     alliance: "death",
     tagline: "광기와 망상증에 빠진 식인 왕국의 기사들",
-    lore: "",
+    lore: `저주받은 광기에 사로잡힌 식인 괴물들의 왕국. 그들은 스스로를 고귀한 기사와 영주로 믿으며, 무너진 폐허와 시체 더미를 찬란한 성과 연회로 인식한다.
+
+플레시이터 코트는 끔찍한 학살과 식인을 벌이면서도, 그것을 명예로운 전투와 축제로 여긴다. 그들의 눈에 보이는 세계는 현실과 완전히 어긋나 있다 — 그러나 그 광기는 전염되며, 점점 더 많은 이들을 그들의 ‘왕국’으로 끌어들인다.`,
     color: "#5a3a20",
     accentColor: "#c09060",
     imagePath: "/images/factions/flesh-eater-courts/banner.webp",
@@ -2330,6 +2376,7 @@ export const factions = [
         id: "carrion-retainers",
         name: "Carrion Retainers",
         gwUrl: "https://www.games-workshop.com",
+        rarity: true,
         description: `고귀한 섭정의 지휘 아래 전장을 누비는 정예 기병대입니다. 스스로를 영광스러운 기사단이라 믿는 이들은 숭고한 사명감(광기)을 바탕으로 적에게 돌격합니다. 강력한 '고귀한 증서' 포인트를 쌓아 아군을 부활시키거나 공격 횟수를 폭발적으로 늘리는 상급자 위주의 플레이가 특징입니다.`,
         stats: { 공격력: 9, 생존력: 7, 기동성: 8, 미션수행: 6, 유틸리티: 8 },
         recommended: [
@@ -2378,6 +2425,7 @@ export const factions = [
         id: "charnel-watch",
         name: "Charnel Watch",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `끊임없이 몰려드는 식인종 무리와 그들의 머리 위를 비행하는 감시자들입니다. 압도적인 보병 머릿수를 활용해 거점을 점령하고, 하늘에서 내려오는 기습적인 공격으로 적을 당황하게 만듭니다. '광기 신념'을 퍼뜨려 적을 공포에 빠뜨리는 심리전과 물량전이 결합된 구성입니다.`,
         stats: { 공격력: 7, 생존력: 6, 기동성: 7, 미션수행: 10, 유틸리티: 7 },
         recommended: [
@@ -2429,7 +2477,9 @@ export const factions = [
     name: "Ossiarch Bonereapers",
     alliance: "death",
     tagline: "뼈로 만든 완벽한 전쟁 기계들",
-    lore: "",
+    lore: `죽음의 신 나가쉬의 의지로 창조된 완벽한 군세. 오시아크 본리퍼는 단순한 언데드가 아니라, 수확된 뼈와 영혼을 정교하게 재구성해 만들어진 전쟁 기계다.
+
+그들은 ‘뼈 십일조’를 요구하며 도시와 왕국을 압박하고, 거부당할 경우 체계적으로 침공해 모든 것을 자원으로 회수한다. 감정이나 자비는 존재하지 않는다 — 전쟁은 계산이며, 생명은 단지 재료일 뿐이다.`,
     color: "#6a5a20",
     accentColor: "#c8b060",
     imagePath: "/images/factions/ossiarch-bonereapers/banner.webp",
@@ -2438,6 +2488,7 @@ export const factions = [
         id: "mortisan-elite",
         name: "Mortisan Elite",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `뼈를 재조립하여 만든 거대 괴수들과 마법적 우위를 점하는 엘리트 부대입니다. 머릿수는 적지만 모델 하나하나가 강력한 파괴력을 지녔으며, 적의 공격을 무시하고 전진하는 압도적인 위압감을 선사합니다.`,
         stats: { 공격력: 10, 생존력: 9, 기동성: 5, 미션수행: 5, 유틸리티: 7 },
         recommended: [
@@ -2477,6 +2528,7 @@ export const factions = [
         id: "tithe-reaper-echelon",
         name: "Tithe-Reaper Echelon",
         gwUrl: "https://www.games-workshop.com",
+        rarity: true,
         description: `본리퍼 군단의 표준이라 할 수 있는 견고한 보병 방진 부대입니다. 철저한 규율 아래 움직이는 모텍 가드들이 적의 공격을 방패로 막아내고, 그 뒤에서 발리스타가 정밀한 사격을 퍼붓습니다.`,
         stats: { 공격력: 7, 생존력: 8, 기동성: 4, 미션수행: 9, 유틸리티: 8 },
         recommended: [
@@ -2524,6 +2576,7 @@ export const factions = [
         id: "kavalos-vanguard",
         name: "Kavalos Vanguard",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `본리퍼 군단 중 가장 빠른 기동성을 자랑하는 선봉대입니다. 뼈로 만들어진 군마를 탄 기사들이 전장의 빈틈을 파고들어 파괴적인 돌격을 감행하며, 적이 전열을 가다듬기 전에 붕괴시킵니다.`,
         stats: { 공격력: 8, 생존력: 7, 기동성: 10, 미션수행: 8, 유틸리티: 6 },
         recommended: [
@@ -2566,7 +2619,9 @@ export const factions = [
     name: "Ogor Mawtribes",
     alliance: "destruction",
     tagline: "끝없는 허기에 굶주린 거대한 포식자들",
-    lore: "",
+    lore: `끝없는 굶주림에 사로잡힌 거대한 전사 부족들. 오고르 모우트라이브는 대아귀를 숭배하며, 먹는 행위 자체를 신성한 의식으로 여긴다.
+
+그들에게 전쟁은 사냥이며, 적과 땅, 심지어 전장 자체까지 먹어치울 대상일 뿐이다. 굶주림은 결코 채워지지 않는다 — 오거들은 끝없이 떠돌며, 세상을 조금씩 집어삼키고 있다.`,
     color: "#5a4a20",
     accentColor: "#c09040",
     imagePath: "/images/factions/ogor-mawtribes/banner.webp",
@@ -2575,6 +2630,7 @@ export const factions = [
         id: "tyrants-bellow",
         name: "Tyrant's Bellow",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `폭군(Tyrant)의 포효 아래 모인 거구의 전사들입니다. 단순하지만 압도적인 물리력을 앞세워 적을 들이받고, 뼈째로 씹어먹는 파괴적인 돌격 부대입니다. 높은 체력과 충격력을 바탕으로 적의 전선을 정면에서 분쇄하는 데 특화되어 있습니다.`,
         stats: { 공격력: 10, 생존력: 8, 기동성: 6, 미션수행: 6, 유틸리티: 5 },
         recommended: [
@@ -2629,6 +2685,7 @@ export const factions = [
         id: "scrapglutt",
         name: "Scrapglutt",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `고철과 잡동사니를 숭배하는 변칙적인 부대입니다. 덩치 큰 오거와 영악한 그로트들이 섞여 있으며, 사정거리는 짧지만 치명적인 고철 발사기들을 사용합니다. 적을 혼란에 빠뜨리고 예상치 못한 타이밍에 큰 피해를 입히는 전술을 구사합니다.`,
         stats: { 공격력: 8, 생존력: 7, 기동성: 7, 미션수행: 9, 유틸리티: 8 },
         recommended: [
@@ -2676,7 +2733,9 @@ export const factions = [
     name: "Sons of Behemat",
     alliance: "destruction",
     tagline: "땅을 고르는 거인들의 행진",
-    lore: "",
+    lore: `신 베헤마트의 후예를 자처하는 거대한 거인들. 선즈 오브 베헤마트는 끝없이 떠돌며, 발걸음 하나로 도시를 무너뜨리는 살아있는 재앙이다.
+
+그들에게 전쟁은 특별한 목적이 아니다. 그저 싸우고, 부수고, 더 큰 것을 향해 나아갈 뿐이다. 그들이 지나간 자리에는 아무것도 남지 않는다 — 땅은 짓밟히고, 문명은 산산이 부서진다.`,
     color: "#4a4a3a",
     accentColor: "#a09060",
     imagePath: "/images/factions/sons-of-behemat/banner.webp",
@@ -2685,6 +2744,7 @@ export const factions = [
         id: "wallsmasher-stomp",
         name: "Wallsmasher Stomp",
         gwUrl: "https://www.games-workshop.com",
+        rarity: false,
         description: `거인들의 발구르기 한 번에 도시가 무너지고 대지가 뒤흔들립니다. 월스매셔 스톰프는 압도적인 체구와 힘을 앞세워 적의 방어선을 글자 그대로 '짓밟아' 버립니다. 머릿수는 매우 적지만, 각 모델이 전장의 지형지물과 적의 대열을 파괴하는 데 특화된 거대 괴수 군단입니다.`,
         stats: { 공격력: 10, 생존력: 10, 기동성: 6, 미션수행: 8, 유틸리티: 4 },
         recommended: [
