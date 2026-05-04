@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -21,10 +23,10 @@
   --navbar-height: 64px;
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   /* Cinzel 은 영문 전용 — 한글은 Nanum Myeongjo 로 폴백 */
-  --font-display: 'Cinzel Decorative', 'Cinzel', 'Nanum Myeongjo', serif;
-  --font-heading: 'Cinzel', 'Nanum Myeongjo', serif;
-  --font-body: 'EB Garamond', 'Nanum Myeongjo', Georgia, serif;
-  --font-korean: 'Nanum Myeongjo', serif;
+  --font-display: "Cinzel Decorative", "Cinzel", "Nanum Myeongjo", serif;
+  --font-heading: "Cinzel", "Nanum Myeongjo", serif;
+  --font-body: "EB Garamond", "Nanum Myeongjo", Georgia, serif;
+  --font-korean: "Noto Sans KR", serif;
 }
 
 html {
@@ -64,7 +66,10 @@ img {
   display: block;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-heading);
   line-height: 1.2;
   color: var(--text-primary);
@@ -88,12 +93,29 @@ h1, h2, h3, h4 {
 /* Decorative divider */
 .divider {
   height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold-dim), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--gold-dim),
+    transparent
+  );
   margin: 2rem 0;
 }
 
 /* Alliance badge colors */
-[data-alliance="order"] { --alliance-color: #1a6fce; --alliance-accent: #c9a84c; }
-[data-alliance="chaos"] { --alliance-color: #9b1a1a; --alliance-accent: #e05a1a; }
-[data-alliance="death"] { --alliance-color: #5a1a8f; --alliance-accent: #2ab8b8; }
-[data-alliance="destruction"] { --alliance-color: #2d6e2d; --alliance-accent: #c8a84c; }
+[data-alliance="order"] {
+  --alliance-color: #1a6fce;
+  --alliance-accent: #c9a84c;
+}
+[data-alliance="chaos"] {
+  --alliance-color: #9b1a1a;
+  --alliance-accent: #e05a1a;
+}
+[data-alliance="death"] {
+  --alliance-color: #5a1a8f;
+  --alliance-accent: #2ab8b8;
+}
+[data-alliance="destruction"] {
+  --alliance-color: #2d6e2d;
+  --alliance-accent: #c8a84c;
+}

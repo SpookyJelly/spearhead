@@ -71,12 +71,6 @@ export const factions = [
             description: "지그마라이트 방패와 워해머로 무장한 정예 보병",
           },
           {
-            name: "Liberators",
-            role: "기간 보병",
-            count: 5,
-            description: "지그마라이트 방패와 워해머로 무장한 정예 보병",
-          },
-          {
             name: "Prosecutors",
             role: "기동 전력",
             count: 3,
@@ -2667,7 +2661,7 @@ export const factions = [
           },
           {
             name: "Morghast Archai",
-            role: "괴수",
+            role: "정예 전력",
             count: 2,
             description:
               "하늘을 나는 거대 괴수. 높은 맷집과 파괴적인 공격력으로 마주치는 모든 것을 제거한다.",
@@ -2723,7 +2717,7 @@ export const factions = [
           {
             name: "Gothizzar Harvester",
             role: "괴수",
-            count: 3,
+            count: 1,
             description:
               "육중한 파괴력이 발군인 괴수. 적을 부수고 수집한 뼈로 아군을 수리하는 능력을 가지고 있다.",
           },
