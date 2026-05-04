@@ -41,6 +41,7 @@ export const factions = [
       {
         id: "Vigilant Brotherhood",
         name: "Vigilant Brotherhood",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/age-of-sigmar-ultimate-starter-set-2024-eng?queryID=5c4d71bdcd587d5b12ec74a4b05b7918",
         description: `비질런트 형제단은 스톰캐스트 이터널즈의 정예 선봉대이다. 리버레이터들이 방패의 벽을 이루는 동안, 날개 달린 프로세큐터들이 급강하하며 적진을 분쇄한다. 천공의 맹세를 지키는 그들의 돌격은 적군에게 공포와 혼란을 안긴다.`,
@@ -94,6 +95,7 @@ export const factions = [
       {
         id: "yndrastras-spearhead",
         name: "Yndrastra's Spearhead",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-stormcast-eternals-2024?queryID=5c4d71bdcd587d5b12ec74a4b05b7918",
         description: `천상의 창 인드라스타가 이끄는 정예 처형단. 뱅퀴셔 보병 둘이 전선을 굳건히 틀어막는 동안, 어나힐레이터 분대가 급강하하여 핵심 표적을 분쇄한다. 인드라스트라 자신은 전장에서 가장 위협적인 영웅과 몬스터를 직접 사냥하는 최후의 결전 병기다.`,
@@ -169,6 +171,7 @@ export const factions = [
       {
         id: "khainite-shadow-covent",
         name: "khainite shadow covent",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-khainite-shadow-coven-2026?queryID=3f3b2a3b0fcc179a000846daa7f5d477",
         description: `케인의 성스러운 피 가마솥을 중심으로 결집한 수호 전단. 헤카티 크로넨이 선혈의 의식을 집전하는 동안, 위치아엘프 전사들이 사방을 질주하며 적을 쓰러뜨린다. 전투가 고조될수록 케인의 가호가 더욱 강렬해진다.`,
@@ -228,6 +231,7 @@ export const factions = [
       {
         id: "heartflayer-troupe",
         name: "Heartflayer Troupe",
+        rarity: true,
         gwUrl:
           "https://www.boardgamesdallas.com/cdn/shop/files/99120212042_DoKSpearheadStock_1024x1024@2x.jpg?v=1726525586",
         description: `멜루사이 아이언스케일이 이끄는 케인의 사냥꾼 집단. 블러드 스토커의 심장을 꿰뚫는 화살이 원거리에서 적을 솎아내는 동안, 위치 아엘프들이 광란의 춤사위로 전선을 돌파한다. 전투가 격화될수록 블러드 라이츠의 가호가 쌓이며, 케인의 딸들은 걷잡을 수 없는 광기에 사로잡힌다.`,
@@ -297,6 +301,7 @@ export const factions = [
       {
         id: "bloodwind-legion",
         name: "Bloodwind Legion",
+        rarity: true,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-slaves-to-darkness-2024?queryID=ff9f20dae79a9959959807de2b2a531a",
         description: `카오스 로드가 이끄는 어둠 신들의 철권. 카오스 워리어들이 강인한 방어선을 구축하는 동안, 카오스 나이츠는 '두려운 강림(Dreaded Arrival)' 규칙으로 2라운드에 전장에 강림해 적의 허를 찌르는 결정타를 날린다. 전투가 거듭될수록 Eye of the Gods 시스템으로 유닛들이 카오스의 축복을 받아 점점 강해진다.`,
@@ -353,6 +358,7 @@ export const factions = [
       {
         id: "darkoath-raiders",
         name: "Darkoath Raiders",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-slaves-to-darkness-darkoath-raiders-2024?queryID=ff9f20dae79a9959959807de2b2a531a",
         description: `다크오스 워퀸이 이끄는 폭풍 같은 야만 약탈대. 펠라이더의 기병 돌격이 적의 측면을 찢어발기는 동안, 세이버저와 마로더들이 모든 방향에서 쏟아져 들어온다. 갑옷도 방어도 없다 — 오직 광기와 속도로 적을 압도하는 고위험 고보상 아미.`,
@@ -416,6 +422,7 @@ export const factions = [
       {
         id: "gnawfest-clawpack",
         name: "Gnawfest Clawpack",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/age-of-sigmar-ultimate-starter-set-2024-eng?queryID=5c4d71bdcd587d5b12ec74a4b05b7918",
         description: `물량과 광기로 적을 집어삼키는 스케이브의 정석. 클랜랫의 끝없는 파도가 전선을 유지하는 동안, 강력한 랫 오거들이 돌격하여 적을 분쇄한다. 'Gnawhole Ambush'를 통해 전장의 구석 어디든 예기치 못한 방향에서 나타나 적의 후방을 교란할 수 있는 기동형 물량 아미.`,
@@ -479,6 +486,7 @@ export const factions = [
       {
         id: "warpspark-clawpack",
         name: "Warpspark Clawpack",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-skaven-2024?queryID=1393d9604daaec3ce90be6bc3255da3e",
         description: `클랜 스크라이어의 미친 과학이 만들어낸 치명적인 화기 군단. 강력한 워프 라이트닝 캐논의 한 방과 중장갑 스톰파인드의 사격으로 적이 다가오기도 전에 잿더미로 만든다. 아군이 피해를 입더라도 적을 더 빨리 파괴하는 고화력 특화 아미.`,
@@ -549,6 +557,7 @@ export const factions = [
       {
         id: "cursed-shacklehorde",
         name: "Cursed Shacklehorde",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-cursed-shacklehorde-2025?queryID=a48e591b853b9f53f3f6e539ca702cc1",
         description: `고통과 속박에 묶인 망령들이 끝없이 몰려드는 나이트헌트 군세. 스피릿 토먼트의 지배 아래, 처형자와 유령 전사들이 적을 추격하며 공포를 퍼뜨린다. 뛰어난 기동성과 끈질긴 복귀 능력으로 전장을 휘젓는, 잡히지 않는 악몽과도 같은 아미.`,
@@ -623,6 +632,7 @@ export const factions = [
       {
         id: "slasher-host",
         name: "Slasher Host",
+        rarity: true,
         gwUrl:
           "https://vaultgames.com.au/cdn/shop/files/https___trade.games-workshop.com_assets_2024_06_EB200a-99120207186-70-10-SpearheadNightHaunt.jpg?v=1719563706",
         description: `슬래셔 호스트는 적의 기세를 꺾고 전장을 공포로 마비시키는 망령들의 군세입니다. 적의 관통력(Rend)을 감쇄시키고 공격 효율을 떨어뜨리는 강력한 디버프를 통해, 수치 이상의 끈질긴 생존력을 보여줍니다. 마냥 수동적으로 버티는 것이 아니라, 적의 힘이 빠진 틈을 타 낫과 검을 휘두르며 돌격할 때 터져 나오는 의외의 살상력과 변수 창출 능력이 이 부대의 진정한 무서움입니다.`,
@@ -700,6 +710,7 @@ export const factions = [
       {
         id: "deathrattle-tomb-host",
         name: "Deathrattle Tomb Host",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-soulblight-gravelords-deathrattle-tomb-host-2025?queryID=1cf6c24842eacd896be4e6f4334f93c1",
         description: `고대 무덤에서 깨어난 끝없는 해골 군세입니다. 개별 해골 전사들은 약해 보일 수 있으나, 위대한 네크로맨서의 마법과 쓰러져도 다시 일어서는 불사의 회복력을 보여줍니다. 단단한 방패벽을 형성하여 전선을 유지하고 적을 서서히 압도하는 정석적인 언데드 아미입니다.`,
@@ -755,6 +766,7 @@ export const factions = [
       {
         id: "bloodcrave-hunt",
         name: "Bloodcrave Hunt",
+        rarity: true,
         gwUrl:
           "https://games-island.eu/media/image/product/972598/lg/soulblight-gravelords-spearhead-bloodcrave-hunt.jpg",
         description: `피에 굶주린 흡혈귀 귀족들과 그들의 사냥개들이 펼치는 잔혹한 사냥입니다. 해골 군단보다 훨씬 빠르고 공격적이며, 우아하면서도 치명적인 속도로 적의 목을 노리는 아미입니다.`,
@@ -822,6 +834,7 @@ export const factions = [
       {
         id: "ironjawz-bigmob",
         name: "Ironjawz Bigmob",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-orruk-warclans-ironjawz-bigmob-2025?queryID=536aeeec7476e35457d7a6517be817dc",
         description: `순수한 완력과 쇳덩이 갑옷으로 무장한 오룩들의 정예 보병 집단입니다. 복잡한 기교 대신 정면으로 들이받아 적의 방어선을 으깨버리는 전술을 구사합니다. 'Mighty Destroyers' 규칙을 통해 이동과 돌격에서 이득을 보며, 근접전이 시작되는 순간 적에게 탈출 불가능한 폭력을 선사합니다.`,
@@ -892,6 +905,7 @@ export const factions = [
       {
         id: "swampskulka-gang",
         name: "Swampskulka Gang",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-orruk-warclans-2024?queryID=536aeeec7476e35457d7a6517be817dc",
         description: `늪지대의 안개 속에서 기습을 노리는 교활한 오룩 군단입니다. 정면 승부보다는 비열한 함정과 독 화살로 적을 약화시키는 데 능숙합니다. 'Venom-encrusted Weapons'를 통해 방어력이 높은 적에게도 치명적인 상처를 입히며, 적을 농락하는 전술적 재미가 가득한 아미입니다.`,
@@ -968,6 +982,7 @@ export const factions = [
       {
         id: "bad-moon-madmob",
         name: "Bad Moon Madmob",
+        rarity: true,
         gwUrl:
           "https://gamesempire.com.au/cdn/shop/files/5011921256938_x700.jpg?v=1759363187",
         description: `배드 문의 빛 아래 광기에 빠진 고블린 군단입니다. 수많은 스태파들이 달려드는 동안, 거대한 트로고스가 적의 방어선을 뭉개버립니다. 'Bad Moon'의 위상에 따라 아미 전체가 무작위적인 버프를 받으며, 예측 불가능하지만 폭발적인 잠재력을 가진 전형적인 깃츠 아미입니다.`,
@@ -1031,6 +1046,7 @@ export const factions = [
       {
         id: "snarlpack-huntaz",
         name: "Snarlpack Huntaz",
+        rarity: false,
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-gloomspite-gitz-snarlpack-huntaz-2025?queryID=f50f534727ec6a14bd70f984c2fd5776",
         description: `태양을 쫓는 늑대 기병들과 기괴한 전차들이 전장을 휩쓰는 고속 약탈대입니다. 늑대의 날렵함과 전차의 파괴력을 결합하여, 적이 전열을 가다듬기도 전에 측면을 찢어발깁니다. 끊임없이 움직이며 적을 교란하고, 가장 취약한 지점에 화력을 집중하는 사냥꾼들의 군단입니다.`,

@@ -50,36 +50,64 @@ export default function SpearheadPage() {
           </h1>
           <div className={styles.headerLine} />
           <p className={styles.subtitle}>{spearhead.description}</p>
-
-          {/* GW 공식 링크 */}
-          <a
-            href={spearhead.gwUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.gwLink}
-            style={{ "--btn-accent": faction.accentColor }}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "15px",
+            }}
           >
-            <span className={styles.gwLinkIcon} aria-hidden="true">
-              <svg
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 1.5A6.5 6.5 0 1 0 14.5 8 6.507 6.507 0 0 0 8 1.5zm0 11.8A5.3 5.3 0 1 1 13.3 8 5.306 5.306 0 0 1 8 13.3z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M8 5.5a.6.6 0 1 0 0-1.2.6.6 0 0 0 0 1.2zM8.6 6.8H7.4v4.4h1.2V6.8z"
-                  fill="currentColor"
-                />
-              </svg>
-            </span>
-            공식 사이트에서 모델 구경하기
-            <span className={styles.gwLinkArrow} aria-hidden="true">
-              ↗
-            </span>
-          </a>
+            {/* GW 공식 링크 */}
+            <a
+              href={spearhead.gwUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.gwLink}
+              style={{ "--btn-accent": faction.accentColor }}
+            >
+              <span className={styles.gwLinkIcon} aria-hidden="true">
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 1.5A6.5 6.5 0 1 0 14.5 8 6.507 6.507 0 0 0 8 1.5zm0 11.8A5.3 5.3 0 1 1 13.3 8 5.306 5.306 0 0 1 8 13.3z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M8 5.5a.6.6 0 1 0 0-1.2.6.6 0 0 0 0 1.2zM8.6 6.8H7.4v4.4h1.2V6.8z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              공식 사이트에서 모델 구경하기
+              <span className={styles.gwLinkArrow} aria-hidden="true">
+                ↗
+              </span>
+            </a>
+            {spearhead.rarity ? (
+              <span className={styles.rarityMark}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="M8 1.5L15 14.5H1L8 1.5Z"
+                    fill="none"
+                    stroke="#FFC107"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <rect x="7.25" y="5" width="1.5" height="5" fill="#FFC107" />
+                  <circle cx="8" cy="12" r="1" fill="#FFC107" />
+                </svg>
+                입수난이도 높음
+              </span>
+            ) : null}
+          </div>
         </div>
         <div className={styles.headerImage}>
           <img
