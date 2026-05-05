@@ -30,7 +30,7 @@
 }
 
 .sliderHint {
-  font-family: var(--font-heading);
+  font-family: var(--font-korean);
   font-size: 0.65rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -46,8 +46,8 @@
 }
 
 .rowLabel {
-  font-family: var(--font-heading);
-  font-size: 0.78rem;
+  font-family: var(--font-korean);
+  font-size: 0.8rem;
   color: var(--text-secondary);
   letter-spacing: 0.03em;
   white-space: nowrap;
@@ -93,7 +93,7 @@
 
 /* Actual styled thumb overlay */
 .track::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

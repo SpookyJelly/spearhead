@@ -85,13 +85,6 @@ export default function RadarChart({ initialStats, color = "#c9a84c" }) {
     };
   }, []);
 
-  function handleChange(key, val) {
-    const next = { ...sliderStats, [key]: val };
-    setSliderStats(next);
-    setDisplay(next);
-    targetRef.current = next;
-  }
-
   const points = dataPolygon(display);
   const colorFill = `${color}1a`;
 
@@ -175,8 +168,8 @@ export default function RadarChart({ initialStats, color = "#c9a84c" }) {
                 textAnchor={labelAnchor(i)}
                 dominantBaseline={labelBaseline(i)}
                 fill="rgba(200,185,160,0.75)"
-                fontSize={10}
-                fontFamily="'Cinzel', serif"
+                fontSize={12}
+                fontFamily="var(--font-korean)"
                 letterSpacing="0.3"
               >
                 {key}
@@ -195,7 +188,6 @@ export default function RadarChart({ initialStats, color = "#c9a84c" }) {
 
       {/* Sliders */}
       <div className={styles.sliders}>
-        {/* <p className={styles.sliderHint}>슬라이더로 수치 조정</p> */}
         {STAT_KEYS.map((key) => (
           <div key={key} className={styles.row}>
             <span className={styles.rowLabel}>{key}</span>
@@ -213,7 +205,6 @@ export default function RadarChart({ initialStats, color = "#c9a84c" }) {
                 max={MAX_VAL}
                 step={1}
                 value={sliderStats[key]}
-                // onChange={e => handleChange(key, Number(e.target.value))}
                 className={styles.slider}
                 style={{ "--col": color }}
               />

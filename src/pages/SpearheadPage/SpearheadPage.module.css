@@ -125,7 +125,7 @@
   align-self: flex-start;
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
-  font-family: var(--font-heading);
+  font-family: var(--font-korean);
   font-size: 0.9rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -218,7 +218,8 @@
   margin-bottom: 1.25rem;
 }
 .sectionLabel {
-  font-family: var(--font-heading);
+  /* font-family: var(--font-heading); */
+  font-family: var(--font-korean);
   font-size: 0.78rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;

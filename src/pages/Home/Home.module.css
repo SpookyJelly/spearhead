@@ -18,19 +18,32 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(201, 168, 76, 0.07) 0%, transparent 70%),
-    radial-gradient(ellipse 100% 60% at 50% 100%, rgba(26, 111, 206, 0.05) 0%, transparent 60%);
+    radial-gradient(
+      ellipse 60% 50% at 50% 40%,
+      rgba(201, 168, 76, 0.07) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 100% 60% at 50% 100%,
+      rgba(26, 111, 206, 0.05) 0%,
+      transparent 60%
+    );
   pointer-events: none;
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold-dim), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--gold-dim),
+    transparent
+  );
 }
 
 .heroContent {
@@ -40,7 +53,7 @@
 }
 
 .heroEyebrow {
-  font-family: var(--font-heading);
+  font-family: var(--font-korean);
   font-size: 0.7rem;
   letter-spacing: 0.4em;
   text-transform: uppercase;
@@ -149,7 +162,7 @@
 }
 
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -213,7 +226,7 @@
 }
 
 .imageFallback::after {
-  content: '⚔';
+  content: "⚔";
   font-size: 2rem;
   opacity: 0.15;
   position: absolute;
@@ -247,7 +260,7 @@
 }
 
 .cardCta {
-  font-family: var(--font-heading);
+  font-family: var(--font-korean);
   font-size: 0.65rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;

@@ -50,7 +50,11 @@ export default function FactionPage() {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.gwLink}
-            style={{ "--btn-accent": faction.accentColor, fontSize: "0.8rem" }}
+            style={{
+              "--btn-accent": faction.accentColor,
+              fontSize: "0.8rem",
+              fontFamily: "var(--font-korean)",
+            }}
           >
             모델 전체 살펴보기
           </a>
