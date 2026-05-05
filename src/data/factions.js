@@ -1339,13 +1339,6 @@ export const factions = [
             description:
               "지휘관을 호위하는 강력한 전사들. 거대한 무기를 휘둘러 적의 정예병이나 괴수에게 큰 피해를 입힌다.",
           },
-          {
-            name: "Hearthguard Berzerkers",
-            role: "정예 전력",
-            count: 5,
-            description:
-              "지휘관을 호위하는 강력한 전사들. 거대한 무기를 휘둘러 적의 정예병이나 괴수에게 큰 피해를 입힌다.",
-          },
         ],
         playstyle: `사가 액스밴드는 '중앙 점거와 버티기'가 핵심입니다. 배틀스미스의 버프를 받은 베르제르커들이 중앙 거점에서 성벽처럼 버티는 동안, 룬의 힘을 적절한 타이밍에 발동시켜 공격력을 폭증시켜야 합니다. 상대가 아군 방어선을 뚫지 못해 지쳐갈 때, 하스 가드들이 돌격하여 승기를 굳히는 묵직한 운영이 필요합니다.`,
         imagePath: "/images/factions/fyreslayers/saga-axeband.jpg",
