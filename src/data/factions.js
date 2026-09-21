@@ -93,7 +93,7 @@ export const factions = [
         name: "Yndrastra's Spearhead",
         rarity: false,
         gwUrl:
-          "https://www.warhammer.com/en-WW/shop/spearhead-stormcast-eternals-2024?queryID=5c4d71bdcd587d5b12ec74a4b05b7918",
+          "https://funforge.co.kr/web/product/big/202411/551f8d25052137e8fe6249c7a9741453.jpg",
         description: `천상의 창 인드라스타가 이끄는 정예 처형단. 뱅퀴셔 보병 둘이 전선을 굳건히 틀어막는 동안, 어나힐레이터 분대가 급강하하여 핵심 표적을 분쇄한다. 인드라스트라 자신은 전장에서 가장 위협적인 영웅과 몬스터를 직접 사냥하는 최후의 결전 병기다.`,
         stats: { 공격력: 8, 생존력: 6, 기동성: 6, 미션수행: 7, 유틸리티: 7 },
         recommended: [
@@ -547,6 +547,56 @@ export const factions = [
         ],
         playstyle: `워프스파크 클로팩은 전형적인 '사격 섬멸' 스타일이다. 기간 보병으로 전선을 막고, 뒤에서 괴수/전쟁기계 항목의 캐논과 정예 전력인 스톰파인드가 사격을 퍼붓는다. 하이 리스크 하이 리턴의 사격 화력을 적절한 타이밍에 집중시켜, 상대가 근접하기 전에 승기를 잡는 것이 중요하다.`,
         imagePath: "/images/factions/skaven/warpspark-clawpack.jpg",
+      },
+      {
+        id: "cirxxits-kill-pack",
+        name: "Crixxit's Killpack",
+        rarity: true,
+        gwUrl:
+          "https://funforge.co.kr/web/product/big/202604/65b66f28ca9ad256c2742f1b5392f285.jpg",
+        description: `암살자 가문 에신 클랜 소속의 최고위 암살자이자 군주 크릭싯의 치명적인 군단.`,
+        stats: { 공격력: 9, 생존력: 4, 기동성: 8, 미션수행: 5, 유틸리티: 4 },
+        recommended: [
+          "정면 전투보다는 기습과 암살, 히트 앤 런을 선호하시는 분",
+          "죽기 전에 죽인다는 교리를 좋아하시는 분",
+          "빠른 기동력으로 전장을 누비고 싶으신분",
+        ],
+        notRecommended: [
+          "한 순간의 실수가 모든 것을 망치는 것을 싫어하시는 분",
+          "극단적인 리스크를 감수하기 싫으신 분",
+        ],
+        units: [
+          {
+            name: "Deathmaster Crixxit",
+            role: "지휘관",
+            count: 1,
+            description:
+              "폭풍 같은 13번의 치명적인 공격으로 적을 난도질하는 무시무시한 암살자 영웅. 적의 영웅이나 지휘관을 단숨에 해치우는 데 특화 되어있다.",
+          },
+          {
+            name: "Deathmaster",
+            role: "영웅",
+            count: 1,
+            description:
+              "크릭싯을 보좌하는 암살자. 마법같은 움직임으로 어설픈 공격은 다 흘려낸다.",
+          },
+          {
+            name: "Gutter Runners",
+            role: "기간 보병",
+            count: 5,
+            description:
+              "하수구를 달리는 쥐새끼들. 폭탄 쥐와 치명적인 칼질을 통해 적을 유린한다",
+          },
+          {
+            name: "Night Runners",
+            role: "기간 보병",
+            count: 10,
+            description:
+              "빠른 속도로 전장을 누비는 보병들. 불리한 싸움은 일방적으로 도망칠 수 있다.",
+          },
+        ],
+        playstyle: `크릿싯의 킬팩은 그 이름처럼 적을 죽이는것에 사력을 다해야한다. 흉악한 공격력을 자랑하지만, 생존력은 완전히 운에 달려있기 때문에 강력한 펀치 한방으로 적을 재기하지 못하게 박살내는 것이 매우 중요하다.`,
+        imagePath: "/images/factions/skaven/cirxxits-kill-pack.jpg",
       },
     ],
   },
@@ -1262,6 +1312,114 @@ export const factions = [
         ],
         playstyle: `퓨질 플래툰은 '움직이는 요새'입니다. 오고어 워헐크의 지휘 아래 퓨질리어 분대들이 겹겹이 사격망을 구축합니다. 적이 가까이 오기 전에 전쟁기계와 총기로 최대한 숫자를 줄이는 것이 관건이며, 지형을 활용해 사선(LOS)을 확보하는 능력이 승패를 결정합니다.`,
         imagePath: "/images/factions/cities-of-sigmar/fusil-platoon.webp",
+      },
+      {
+        id: "sentinels-of-embergard",
+        name: "Sentinels of Embergard",
+        gwUrl:
+          "https://funforge.co.kr/web/product/big/202604/65b66f28ca9ad256c2742f1b5392f285.jpg",
+        rarity: true,
+        description: `불길이 몰아치는 렐름 아쿠시에 건설된 도시 앰버가드의 방어군들. 절망적인 상황 속에서 살아남은 고참병과 기술자들로 구성되어있다.`,
+        stats: { 공격력: 7, 생존력: 6, 기동성: 4, 미션수행: 4, 유틸리티: 5 },
+        recommended: [
+          "거칠고 강력한 베테랑들이 펼치는 전투를 좋아하시는 분",
+          "강력한 근접전과 게릴라 전투를 동시에 체험하고 싶으신 분",
+          "난전 중에도 전투력을 잃지 않고 치명적인 공격을 가하고 싶으신 분들",
+        ],
+        notRecommended: [
+          "원거리 전투를 좋아하시는 분",
+          "모 아니면 도 전략을 선호하지 않으시는 분",
+        ],
+        units: [
+          {
+            name: "Jorvan Kreel, Heir of the Kraken",
+            role: "지휘관",
+            count: 1,
+            description:
+              "매우 호전적이고 강력한 근접전사인 지휘관. 사나운 잿빛 표범인 텍사를 대동하고 전장을 누빈다",
+          },
+          {
+            name: "Mallus Forgepriest",
+            role: "영웅",
+            count: 1,
+            description:
+              "불타는 화염과 대장간의 힘을 다루는 사제. 전투원들의 무기를 강화하고 기술적인 지원을 아끼지 않는다",
+          },
+          {
+            name: "Freeguild Gallants",
+            role: "정예 전력",
+            count: 5,
+            description:
+              "스틸헬름보다 한 단계 더 훈련된 정예 보병. 폐허 속 근접전과 난전에 특화되어있다",
+          },
+          {
+            name: "Freeguild Grenaiers",
+            role: "기간 보병",
+            count: 5,
+            description:
+              "폭발물로 무장한 척탄병들.지형에 숨어있는 적들을 몰아내는데 능하다",
+          },
+        ],
+        playstyle: `강력한 영웅 요르반 크릴을 앞세우는 한편, 척탄병들은 적을 유리한 위치에서 몰아내어 화전을 유도합니다. 적이 대응할 틈도 없는 난전을 유도합시다.`,
+        imagePath:
+          "/images/factions/cities-of-sigmar/sentinels-of-embergard.webp",
+      },
+      {
+        id: "zenestras-zealots",
+        name: "Zenestra's Zelots",
+        gwUrl:
+          "https://www.warhammer.com/app/resources/catalog/product/920x950/99120202061_ZenestrasZEALOTSSPEARHEAD1.jpg?fm=webp&w=892&h=920",
+        rarity: false,
+        description: `위대한 사제 제네스트라와 그녀의 광신도로 구성된 신앙부대입니다. 지그마를 향한 끝없는 믿음과 자기파괴적 헌신이 병사들에게 힘을 불어넣습니다. 강력한 사제유닛인 제네스트라의 축복과, 신실한 성배운반자와 함께라면 보통의 필멸자들도 가공할만한 저력을 냅니다.`,
+        stats: { 공격력: 5, 생존력: 7, 기동성: 4, 미션수행: 4, 유틸리티: 6 },
+        recommended: [
+          "광신도들이 펼치는 처절한 전투를 좋아하시는 분",
+          "끈적한 소모전과 모루 싸움을 좋아하시는분",
+          "신비로운 마법과 기도로 전장을 휘어잡고 싶으신 분",
+        ],
+        notRecommended: [
+          "강력한 파괴력을 원하시는분",
+          "중앙 고착형 싸움을 선호하지 않으시는분",
+        ],
+        units: [
+          {
+            name: "Freeguild Cavalier Marshal and Relic Envoy",
+            role: "지휘관",
+            count: 1,
+            description:
+              "하마 상태의 지휘관. 기사단의 돌격력을 강화하며 성배운반자를 지정한다.",
+          },
+          {
+            name: "Pontifex Zenestra, Matriarch of the Great Wheel",
+            role: "영웅",
+            count: 1,
+            description:
+              "강력한 사제 영웅. 아군을 신성한 힘으로 보호하거나, 적군에게 강력한 징벌을 내린다",
+          },
+          {
+            name: "Freeguild Steelhelms",
+            role: "기간 보병",
+            count: 5,
+            description:
+              "도시의 강철 방패. 거점을 점령하고 적의 돌격을 몸으로 받아내며 전선을 유지한다.",
+          },
+          {
+            name: "Freeguild Command Corps Arch-Knight and Retinue",
+            role: "정예 전력",
+            count: 5,
+            description:
+              "두터운 체력과 세이브를 가진 정예전력. 사용한 커맨드 카드를 다시 재사용할 수 있게 하는 유틸리티 능력을 가졌다.",
+          },
+          {
+            name: "Freeguild Command Corps Whisperblade",
+            role: "정예 전력",
+            count: 1,
+            description:
+              "게임 중간에 들어오는 암살자 유닛. 적의 빈틈을 먼저 찌르고 도망치는데 능하다.",
+          },
+        ],
+        playstyle: `제네스트라와 보병들이 두터운 전선을 형성하며 적을 묶어두는 동안, 다른 영웅들이 임무수행하는 적 유닛을 제거하거나, 임무를 수행합니다. 최대한 중앙에 오래 생존하며, 적을 괴롭게 해봅시다.`,
+        imagePath: "/images/factions/cities-of-sigmar/zenestras-zealot.jpg",
       },
     ],
   },
@@ -2247,7 +2405,7 @@ export const factions = [
         name: "Blades of the Lurid Dream",
         gwUrl:
           "https://www.warhammer.com/en-WW/shop/spearhead-hedonites-of-slaanesh-2024?queryID=a29d3fb6dcac7b08a3f71bf03fd42fba",
-        rarity: false,
+        rarity: true,
         description: `관능적이고 치명적인 쾌락을 쫓는 슬라네쉬의 추종자들입니다. 눈이 따라가기 힘들 정도로 빠른 속도로 전장을 누비며, 적의 가장 취약한 지점을 정확하게 찔러 유린합니다. 적을 유혹하여 실수를 유도하고, 그 틈을 타서 휘몰아치는 공격을 퍼붓는 데 특화되어 있습니다.`,
         stats: { 공격력: 9, 생존력: 3, 기동성: 10, 미션수행: 5, 유틸리티: 3 },
         recommended: [
@@ -2299,6 +2457,59 @@ export const factions = [
         playstyle: `블레이즈 오브 더 루리드 드림은 '속도의 우위'를 점해야 승리할 수 있습니다. 블리스바브 아처들이 원거리에서 적의 시선을 끄는 사이, 슬릭블레이드 시커들이 전장의 측면을 빠르게 돌파합니다. 적이 대응하기 위해 진형을 흐트러뜨리는 순간, 샤드스피커의 마법 지원을 받는 슬란고어들이 결정적인 타격을 입히는 유기적인 연계가 핵심입니다.`,
         imagePath:
           "/images/factions/hedonites-of-slaanesh/blades-of-the-lurid-dream.jpg",
+      },
+      {
+        id: "epicurean-revellers",
+        name: "Epicurean Revellers",
+        gwUrl:
+          "https://www.warhammer.com/en-WW/shop/spearhead-epicurean-revellers-2026?srsltid=AU7gw4V1vbxJ0mBu0KHH1lOS3jznPICIWTv1UF_K7rYWP7SW6nabEgpi",
+        rarity: false,
+        description:
+          "슬라네쉬가 펼치는 황홀경에 흠뻑 취한 악마들의 무리입니다. 슬라네쉬의 챔피언 불협화음이 이끄는 군대는 아군이 쓰러질때마다 더욱 강력한 총애를 얻습니다.",
+        stats: { 공격력: 9, 생존력: 3, 기동성: 10, 미션수행: 5, 유틸리티: 5 },
+        recommended: [
+          "압도적인 기동성으로 전장 전체를 컨트롤하고 싶은 분",
+          "파괴적인 공격을 쉴 틈 없이 날리고 싶으신 분",
+          "병력이 손실될 수록 더욱 강해지는 기믹을 좋아하시는 분",
+        ],
+        notRecommended: [
+          "최소한의 방어력은 필요하다고 생각하시는 분",
+          "정정당당한 대결을 선호하시는 분",
+        ],
+        units: [
+          {
+            name: "Thricefold Discord",
+            role: "지휘관",
+            count: 3,
+            description:
+              "서로 시기하고 다투는 세 명의 악마 전령. 아군 유닛들에게 각기 다른 버프를 걸어준다",
+          },
+          {
+            name: "Seekers",
+            role: "기병 전력",
+            count: 5,
+            description:
+              "슬라네쉬의 악마 기병. 그 속도는 타의 추종을 불허한다.",
+          },
+          {
+            name: "Daemonettes",
+            role: "기간 보병",
+            count: 10,
+            description:
+              "슬라네쉬의 악마시녀들. 돌진한 턴에 엄청난 파괴력을 가진다.",
+          },
+          {
+            name: "Fiends",
+            role: "괴수",
+            count: 5,
+            description:
+              "기괴할 정도로 아름다운 슬라네쉬의 요마. 알 수 없는 울음소리로 적의 공격을 늦춘다.",
+          },
+        ],
+        playstyle:
+          "에피큐리언 향락추종자들은 아군 유닛이 전멸할 수록 강해지는 특성을 가지고 있습니다. 그렇다고 해서 이 능력을 무조건 활용해야겠다 라고 생각하며 마구잡이로 유닛을 소모시키는것보다, 이는 언제까지나 보험적인 능력으로 생각하며 운용하는 것이 승리의 비결입니다.",
+        imagePath:
+          "/images/factions/hedonites-of-slaanesh/epicurean-revellers.jpg",
       },
     ],
   },
