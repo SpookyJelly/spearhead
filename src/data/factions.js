@@ -2191,7 +2191,7 @@ export const factions = [
           {
             name: "Mighty Skullcrushers",
             role: "정예 기병",
-            count: 1,
+            count: 3,
             description:
               "코른의 최정예 기병. 육중한 돌진으로 마주친 적을 말 그대로 박살내버린다.",
           },
